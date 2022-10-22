@@ -1,0 +1,17 @@
+{
+    "name": "makhlenko/telegrambot",
+    "description": "Auto generate by mahlenko/telegram-api-parser",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Telegrambot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Makhlenko Sergey",
+            "email": "mahlenko-weblive@yandex.ru"
+        }
+    ],
+    "require": {}
+}

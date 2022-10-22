@@ -1,0 +1,28 @@
+<?php
+
+declare(strict_types=1);
+
+namespace TelegramBot\Methods;
+
+use TelegramBot\BaseMethod;
+use TelegramBot\Interface\UpdatingMessagesInterface;
+use TelegramBot\Types\InlineKeyboardMarkup;
+
+/**
+ * Use this method to stop a poll which was sent by the bot. On success,
+ * the stopped Poll is returned.
+ */
+class StopPoll extends BaseMethod implements UpdatingMessagesInterface
+{
+	/**
+	 * Unique identifier for the target chat or username of the target
+	 * channel (in the format @channelusername)
+	 */
+	public int|string $chat_id;
+
+	/** Identifier of the original message with the poll */
+	public int $message_id;
+
+	/** A JSON-serialized object for a new message inline keyboard. */
+	public ?InlineKeyboardMarkup $reply_markup;
+}
