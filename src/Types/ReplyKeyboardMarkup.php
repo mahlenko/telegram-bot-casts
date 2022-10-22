@@ -19,6 +19,8 @@ class ReplyKeyboardMarkup extends BaseType implements TypesInterface
     /**
      * Array of button rows, each represented by an Array of KeyboardButton
      * objects
+     *
+     * @var array<array>
      */
     public array $keyboard;
 

@@ -24,6 +24,8 @@ class PollAnswer extends BaseType implements TypesInterface
     /**
      * 0-based identifiers of answer options, chosen by the user. May be
      * empty if the user retracted their vote.
+     *
+     * @var array<int>
      */
     public array $option_ids;
 }

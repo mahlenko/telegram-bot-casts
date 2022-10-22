@@ -57,6 +57,8 @@ class WebhookInfo extends BaseType implements UpdatesInterface
     /**
      * Optional. A list of update types the bot is subscribed to. Defaults to
      * all update types except chat_member
+     *
+     * @var array<string>
      */
     public ?array $allowed_updates;
 }

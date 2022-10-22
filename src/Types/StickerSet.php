@@ -33,7 +33,11 @@ class StickerSet extends BaseType implements StickersInterface
     /** True, if the sticker set contains video stickers */
     public bool $is_video;
 
-    /** List of all set stickers */
+    /**
+     * List of all set stickers
+     *
+     * @var array<Sticker>
+     */
     public array $stickers;
 
     /** Optional. Sticker set thumbnail in the .WEBP, .TGS, or .WEBM format */

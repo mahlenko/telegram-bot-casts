@@ -50,6 +50,8 @@ class GetUpdates extends BaseMethod implements UpdatesInterface
      * used.Please note that this parameter doesn't affect updates created
      * before the call to the getUpdates, so unwanted updates may be received
      * for a short period of time.
+     *
+     * @var array<string>
      */
     public ?array $allowed_updates;
 

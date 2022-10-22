@@ -6,6 +6,7 @@ namespace TelegramBot\Methods;
 
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\Types\BotCommand;
 use TelegramBot\Types\BotCommandScope;
 
 /**
@@ -20,6 +21,8 @@ class SetMyCommands extends BaseMethod implements MethodsInterface
     /**
      * A JSON-serialized list of bot commands to be set as the list of the
      * bot's commands. At most 100 commands can be specified.
+     *
+     * @var array<BotCommand>
      */
     public array $commands;
 

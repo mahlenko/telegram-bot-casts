@@ -6,9 +6,12 @@ namespace TelegramBot\Methods;
 
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\InputFile;
+use TelegramBot\Types\MessageEntity;
 use TelegramBot\Types\ReplyKeyboardMarkup;
+use TelegramBot\Types\ReplyKeyboardRemove;
 
 /**
  * Use this method to send audio files, if you want Telegram clients to
@@ -49,6 +52,8 @@ class SendVoice extends BaseMethod implements MethodsInterface
     /**
      * A JSON-serialized list of special entities that appear in the caption,
      * which can be specified instead of parse_mode
+     *
+     * @var array<MessageEntity>
      */
     public ?array $caption_entities;
 
@@ -78,7 +83,7 @@ class SendVoice extends BaseMethod implements MethodsInterface
      * keyboard, custom reply keyboard, instructions to remove reply keyboard
      * or to force a reply from the user.
      */
-    public InlineKeyboardMarkup|ReplyKeyboardMarkup|null $reply_markup;
+    public InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup;
 
     /**
      * A list of necessary properties that should be checked before sending

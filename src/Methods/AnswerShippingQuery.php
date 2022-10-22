@@ -6,6 +6,7 @@ namespace TelegramBot\Methods;
 
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\PaymentsInterface;
+use TelegramBot\Types\ShippingOption;
 
 /**
  * If you sent an invoice requesting a shipping address and the parameter
@@ -31,6 +32,8 @@ class AnswerShippingQuery extends BaseMethod implements PaymentsInterface
     /**
      * Required if ok is True. A JSON-serialized array of available shipping
      * options.
+     *
+     * @var array<ShippingOption>
      */
     public ?array $shipping_options;
 

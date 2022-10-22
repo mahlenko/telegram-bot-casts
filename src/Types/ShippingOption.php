@@ -21,6 +21,10 @@ class ShippingOption extends BaseType implements PaymentsInterface
     /** Option title */
     public string $title;
 
-    /** List of price portions */
+    /**
+     * List of price portions
+     *
+     * @var array<LabeledPrice>
+     */
     public array $prices;
 }

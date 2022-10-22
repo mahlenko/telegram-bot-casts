@@ -6,6 +6,7 @@ namespace TelegramBot\Methods;
 
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\Types\InputMedia;
 
 /**
  * Use this method to send a group of photos, videos, documents or audios
@@ -27,6 +28,8 @@ class SendMediaGroup extends BaseMethod implements MethodsInterface
     /**
      * A JSON-serialized array describing messages to be sent, must include
      * 2-10 items
+     *
+     * @var array<InputMedia>
      */
     public array $media;
 

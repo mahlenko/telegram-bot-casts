@@ -52,6 +52,8 @@ class EncryptedPassportElement extends BaseType implements TelegramPassportInter
      * “rental_agreement”, “passport_registration” and
      * “temporary_registration” types. Files can be decrypted and
      * verified using the accompanying EncryptedCredentials.
+     *
+     * @var array<PassportFile>
      */
     public ?array $files;
 
@@ -88,6 +90,8 @@ class EncryptedPassportElement extends BaseType implements TelegramPassportInter
      * “rental_agreement”, “passport_registration” and
      * “temporary_registration” types. Files can be decrypted and
      * verified using the accompanying EncryptedCredentials.
+     *
+     * @var array<PassportFile>
      */
     public ?array $translation;
 

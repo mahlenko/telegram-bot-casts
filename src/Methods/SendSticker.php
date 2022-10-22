@@ -6,9 +6,11 @@ namespace TelegramBot\Methods;
 
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\StickersInterface;
+use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\InputFile;
 use TelegramBot\Types\ReplyKeyboardMarkup;
+use TelegramBot\Types\ReplyKeyboardRemove;
 
 /**
  * Use this method to send static .WEBP, animated .TGS, or video .WEBM
@@ -56,7 +58,7 @@ class SendSticker extends BaseMethod implements StickersInterface
      * keyboard, custom reply keyboard, instructions to remove reply keyboard
      * or to force a reply from the user.
      */
-    public InlineKeyboardMarkup|ReplyKeyboardMarkup|null $reply_markup;
+    public InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup;
 
     /**
      * A list of necessary properties that should be checked before sending

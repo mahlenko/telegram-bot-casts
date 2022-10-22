@@ -29,7 +29,11 @@ class PassportElementErrorTranslationFiles extends BaseType implements TelegramP
      */
     public string $type;
 
-    /** List of base64-encoded file hashes */
+    /**
+     * List of base64-encoded file hashes
+     *
+     * @var array<string>
+     */
     public array $file_hashes;
 
     /** Error message */

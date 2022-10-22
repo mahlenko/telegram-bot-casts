@@ -6,6 +6,7 @@ namespace TelegramBot\Methods;
 
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\Types\InlineQueryResult;
 
 /**
  * Use this method to send answers to an inline query. On success, True
@@ -19,7 +20,11 @@ class AnswerInlineQuery extends BaseMethod implements InlineModeInterface
     /** Unique identifier for the answered query */
     public string $inline_query_id;
 
-    /** A JSON-serialized array of results for the inline query */
+    /**
+     * A JSON-serialized array of results for the inline query
+     *
+     * @var array<InlineQueryResult>
+     */
     public array $results;
 
     /**

@@ -21,7 +21,11 @@ class Poll extends BaseType implements TypesInterface
     /** Poll question, 1-300 characters */
     public string $question;
 
-    /** List of poll options */
+    /**
+     * List of poll options
+     *
+     * @var array<PollOption>
+     */
     public array $options;
 
     /** Total number of users that voted in the poll */
@@ -55,6 +59,8 @@ class Poll extends BaseType implements TypesInterface
     /**
      * Optional. Special entities like usernames, URLs, bot commands, etc.
      * that appear in the explanation
+     *
+     * @var array<MessageEntity>
      */
     public ?array $explanation_entities;
 

@@ -48,6 +48,8 @@ class InlineQueryResultCachedPhoto extends BaseType implements InlineModeInterfa
     /**
      * Optional. List of special entities that appear in the caption, which
      * can be specified instead of parse_mode
+     *
+     * @var array<MessageEntity>
      */
     public ?array $caption_entities;
 

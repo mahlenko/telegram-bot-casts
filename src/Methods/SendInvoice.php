@@ -7,6 +7,7 @@ namespace TelegramBot\Methods;
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\PaymentsInterface;
 use TelegramBot\Types\InlineKeyboardMarkup;
+use TelegramBot\Types\LabeledPrice;
 
 /**
  * Use this method to send invoices. On success, the sent Message is
@@ -44,6 +45,8 @@ class SendInvoice extends BaseMethod implements PaymentsInterface
     /**
      * Price breakdown, a JSON-serialized list of components (e.g. product
      * price, tax, discount, delivery cost, delivery tax, bonus, etc.)
+     *
+     * @var array<LabeledPrice>
      */
     public array $prices;
 
@@ -62,6 +65,8 @@ class SendInvoice extends BaseMethod implements PaymentsInterface
      * tip amounts can be specified. The suggested tip amounts must be
      * positive, passed in a strictly increased order and must not exceed
      * max_tip_amount.
+     *
+     * @var array<int>
      */
     public ?array $suggested_tip_amounts;
 

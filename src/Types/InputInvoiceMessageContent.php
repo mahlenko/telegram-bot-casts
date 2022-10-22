@@ -37,6 +37,8 @@ class InputInvoiceMessageContent extends BaseType implements InlineModeInterface
     /**
      * Price breakdown, a JSON-serialized list of components (e.g. product
      * price, tax, discount, delivery cost, delivery tax, bonus, etc.)
+     *
+     * @var array<LabeledPrice>
      */
     public array $prices;
 
@@ -56,6 +58,8 @@ class InputInvoiceMessageContent extends BaseType implements InlineModeInterface
      * suggested tip amounts can be specified. The suggested tip amounts must
      * be positive, passed in a strictly increased order and must not exceed
      * max_tip_amount.
+     *
+     * @var array<int>
      */
     public ?array $suggested_tip_amounts;
 

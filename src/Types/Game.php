@@ -22,7 +22,11 @@ class Game extends BaseType implements GamesInterface
     /** Description of the game */
     public string $description;
 
-    /** Photo that will be displayed in the game message in chats. */
+    /**
+     * Photo that will be displayed in the game message in chats.
+     *
+     * @var array<PhotoSize>
+     */
     public array $photo;
 
     /**
@@ -36,6 +40,8 @@ class Game extends BaseType implements GamesInterface
     /**
      * Optional. Special entities that appear in text, such as usernames,
      * URLs, bot commands, etc.
+     *
+     * @var array<MessageEntity>
      */
     public ?array $text_entities;
 

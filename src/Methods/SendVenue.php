@@ -6,8 +6,10 @@ namespace TelegramBot\Methods;
 
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\ReplyKeyboardMarkup;
+use TelegramBot\Types\ReplyKeyboardRemove;
 
 /**
  * Use this method to send information about a venue. On success, the
@@ -75,7 +77,7 @@ class SendVenue extends BaseMethod implements MethodsInterface
      * keyboard, custom reply keyboard, instructions to remove reply keyboard
      * or to force a reply from the user.
      */
-    public InlineKeyboardMarkup|ReplyKeyboardMarkup|null $reply_markup;
+    public InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup;
 
     /**
      * A list of necessary properties that should be checked before sending

@@ -6,6 +6,7 @@ namespace TelegramBot\Methods;
 
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\TelegramPassportInterface;
+use TelegramBot\Types\PassportElementError;
 
 /**
  * Informs a user that some of the Telegram Passport elements they
@@ -27,7 +28,11 @@ class SetPassportDataErrors extends BaseMethod implements TelegramPassportInterf
     /** User identifier */
     public int $user_id;
 
-    /** A JSON-serialized array describing the errors */
+    /**
+     * A JSON-serialized array describing the errors
+     *
+     * @var array<PassportElementError>
+     */
     public array $errors;
 
     /**

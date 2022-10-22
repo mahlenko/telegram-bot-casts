@@ -7,6 +7,7 @@ namespace TelegramBot\Methods;
 use TelegramBot\BaseMethod;
 use TelegramBot\Interface\UpdatingMessagesInterface;
 use TelegramBot\Types\InlineKeyboardMarkup;
+use TelegramBot\Types\MessageEntity;
 
 /**
  * Use this method to edit captions of messages. On success, if the
@@ -49,6 +50,8 @@ class EditMessageCaption extends BaseMethod implements UpdatingMessagesInterface
     /**
      * A JSON-serialized list of special entities that appear in the caption,
      * which can be specified instead of parse_mode
+     *
+     * @var array<MessageEntity>
      */
     public ?array $caption_entities;
 
