@@ -8,4 +8,8 @@ You can try to do it yourself if the files of this project are outdated.
 
 🎉 You can use it to develop your own sdk for telegram bot.
 
+```shell
+composer require makhlenko/telegram-bot-objects
+```
+
 Version: Bot API 6.2
