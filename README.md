@@ -15,7 +15,7 @@ composer require makhlenko/telegram-bot-casts
 ## Расширение
 
 Выполните подмену классов `TelegramBot\BaseType` и `TelegramBot\BaseMethod` используя 
-инъекции зависимостей в своем проекте. 
+контейнер зависимостей в своем проекте. 
 
 ### Расширение через `composer.json`
 
