@@ -41,4 +41,10 @@ class AnswerShippingQuery extends BaseMethod implements PaymentsInterface
      * display this message to the user.
      */
     public ?string $error_message;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['shipping_query_id', 'ok'];
 }

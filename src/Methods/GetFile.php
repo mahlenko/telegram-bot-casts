@@ -24,4 +24,10 @@ class GetFile extends BaseMethod implements MethodsInterface
 {
     /** File identifier to get information about */
     public string $file_id;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['file_id'];
 }

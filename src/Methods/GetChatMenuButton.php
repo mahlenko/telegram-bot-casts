@@ -22,4 +22,10 @@ class GetChatMenuButton extends BaseMethod implements MethodsInterface
      * default bot's menu button will be returned
      */
     public ?int $chat_id;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = [];
 }

@@ -18,4 +18,10 @@ class DeleteStickerFromSet extends BaseMethod implements StickersInterface
 {
     /** File identifier of the sticker */
     public string $sticker;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['sticker'];
 }

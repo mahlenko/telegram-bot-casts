@@ -75,4 +75,10 @@ class PromoteChatMember extends BaseMethod implements MethodsInterface
 
     /** Pass True if the administrator can pin messages, supergroups only */
     public ?bool $can_pin_messages;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'user_id'];
 }

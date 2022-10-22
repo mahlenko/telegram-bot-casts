@@ -18,4 +18,10 @@ class GetStickerSet extends BaseMethod implements StickersInterface
 {
     /** Name of the sticker set */
     public string $name;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['name'];
 }

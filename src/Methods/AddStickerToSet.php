@@ -60,4 +60,10 @@ class AddStickerToSet extends BaseMethod implements StickersInterface
      * on faces
      */
     public ?MaskPosition $mask_position;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['user_id', 'name', 'emojis'];
 }

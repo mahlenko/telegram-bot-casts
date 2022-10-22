@@ -30,4 +30,10 @@ class GetUserProfilePhotos extends BaseMethod implements MethodsInterface
      * accepted. Defaults to 100.
      */
     public ?int $limit;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['user_id'];
 }

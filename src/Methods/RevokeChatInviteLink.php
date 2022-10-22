@@ -27,4 +27,10 @@ class RevokeChatInviteLink extends BaseMethod implements MethodsInterface
 
     /** The invite link to revoke */
     public string $invite_link;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'invite_link'];
 }

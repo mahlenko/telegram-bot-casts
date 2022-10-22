@@ -33,4 +33,10 @@ class DeleteMessage extends BaseMethod implements UpdatingMessagesInterface
 
     /** Identifier of the message to delete */
     public int $message_id;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'message_id'];
 }

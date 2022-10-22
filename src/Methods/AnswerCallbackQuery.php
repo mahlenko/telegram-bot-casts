@@ -53,4 +53,10 @@ class AnswerCallbackQuery extends BaseMethod implements MethodsInterface
      * starting in version 3.14. Defaults to 0.
      */
     public ?int $cache_time;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['callback_query_id'];
 }

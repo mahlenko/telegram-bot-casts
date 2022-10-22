@@ -21,4 +21,10 @@ class SetStickerPositionInSet extends BaseMethod implements StickersInterface
 
     /** New sticker position in the set, zero-based */
     public int $position;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['sticker', 'position'];
 }

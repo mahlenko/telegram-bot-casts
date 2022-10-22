@@ -42,4 +42,10 @@ class SendChatAction extends BaseMethod implements MethodsInterface
      * upload_video_note for video notes.
      */
     public string $action;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'action'];
 }

@@ -42,4 +42,10 @@ class GetGameHighScores extends BaseMethod implements GamesInterface
      * the inline message
      */
     public ?string $inline_message_id;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['user_id'];
 }

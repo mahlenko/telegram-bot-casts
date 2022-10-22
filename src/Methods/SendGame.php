@@ -50,4 +50,10 @@ class SendGame extends BaseMethod implements GamesInterface
      * launch the game.
      */
     public ?InlineKeyboardMarkup $reply_markup;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'game_short_name'];
 }

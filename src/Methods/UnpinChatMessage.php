@@ -31,4 +31,10 @@ class UnpinChatMessage extends BaseMethod implements MethodsInterface
      * pinned message (by sending date) will be unpinned.
      */
     public ?int $message_id;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id'];
 }

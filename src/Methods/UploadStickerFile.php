@@ -27,4 +27,10 @@ class UploadStickerFile extends BaseMethod implements StickersInterface
      * exactly 512px. More information on Sending Files »
      */
     public InputFile $png_sticker;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['user_id', 'png_sticker'];
 }

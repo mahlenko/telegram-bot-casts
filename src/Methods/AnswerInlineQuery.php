@@ -64,4 +64,10 @@ class AnswerInlineQuery extends BaseMethod implements InlineModeInterface
      * wanted to use the bot's inline capabilities.
      */
     public ?string $switch_pm_parameter;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['inline_query_id', 'results'];
 }

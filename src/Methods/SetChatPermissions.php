@@ -27,4 +27,10 @@ class SetChatPermissions extends BaseMethod implements MethodsInterface
 
     /** A JSON-serialized object for new default chat permissions */
     public ChatPermissions $permissions;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'permissions'];
 }

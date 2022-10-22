@@ -18,4 +18,10 @@ class DeleteWebhook extends BaseMethod implements UpdatesInterface
 {
     /** Pass True to drop all pending updates */
     public ?bool $drop_pending_updates;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = [];
 }

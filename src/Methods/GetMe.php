@@ -17,4 +17,9 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class GetMe extends BaseMethod implements MethodsInterface
 {
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = [];
 }

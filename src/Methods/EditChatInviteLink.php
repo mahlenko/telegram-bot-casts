@@ -44,4 +44,10 @@ class EditChatInviteLink extends BaseMethod implements MethodsInterface
      * chat administrators. If True, member_limit can't be specified
      */
     public ?bool $creates_join_request;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'invite_link'];
 }

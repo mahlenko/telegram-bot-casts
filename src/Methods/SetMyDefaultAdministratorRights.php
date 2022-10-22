@@ -31,4 +31,10 @@ class SetMyDefaultAdministratorRights extends BaseMethod implements MethodsInter
      * groups and supergroups will be changed.
      */
     public ?bool $for_channels;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = [];
 }

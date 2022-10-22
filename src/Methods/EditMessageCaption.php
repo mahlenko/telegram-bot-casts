@@ -54,4 +54,10 @@ class EditMessageCaption extends BaseMethod implements UpdatingMessagesInterface
 
     /** A JSON-serialized object for an inline keyboard. */
     public ?InlineKeyboardMarkup $reply_markup;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = [];
 }

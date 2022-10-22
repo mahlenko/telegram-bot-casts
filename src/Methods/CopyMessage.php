@@ -79,4 +79,10 @@ class CopyMessage extends BaseMethod implements MethodsInterface
      * or to force a reply from the user.
      */
     public InlineKeyboardMarkup|ReplyKeyboardMarkup|null $reply_markup;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'from_chat_id', 'message_id'];
 }

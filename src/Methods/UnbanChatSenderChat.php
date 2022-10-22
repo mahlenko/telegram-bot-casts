@@ -26,4 +26,10 @@ class UnbanChatSenderChat extends BaseMethod implements MethodsInterface
 
     /** Unique identifier of the target sender chat */
     public int $sender_chat_id;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'sender_chat_id'];
 }

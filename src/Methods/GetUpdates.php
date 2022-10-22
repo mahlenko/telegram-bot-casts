@@ -52,4 +52,10 @@ class GetUpdates extends BaseMethod implements UpdatesInterface
      * for a short period of time.
      */
     public ?array $allowed_updates;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = [];
 }

@@ -26,4 +26,10 @@ class SetChatDescription extends BaseMethod implements MethodsInterface
 
     /** New chat description, 0-255 characters */
     public ?string $description;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id'];
 }

@@ -35,4 +35,10 @@ class PinChatMessage extends BaseMethod implements MethodsInterface
      * disabled in channels and private chats.
      */
     public ?bool $disable_notification;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'message_id'];
 }

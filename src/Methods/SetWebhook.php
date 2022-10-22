@@ -75,4 +75,10 @@ class SetWebhook extends BaseMethod implements UpdatesInterface
      * by you.
      */
     public ?string $secret_token;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['url'];
 }

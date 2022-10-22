@@ -106,4 +106,10 @@ class CreateInvoiceLink extends BaseMethod implements PaymentsInterface
 
     /** Pass True if the final price depends on the shipping method */
     public ?bool $is_flexible;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['title', 'description', 'payload', 'provider_token', 'currency', 'prices'];
 }

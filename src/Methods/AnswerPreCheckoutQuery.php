@@ -39,4 +39,10 @@ class AnswerPreCheckoutQuery extends BaseMethod implements PaymentsInterface
      * the user.
      */
     public ?string $error_message;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['pre_checkout_query_id', 'ok'];
 }

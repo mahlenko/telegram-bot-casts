@@ -47,4 +47,10 @@ class SendMediaGroup extends BaseMethod implements MethodsInterface
      * replied-to message is not found
      */
     public ?bool $allow_sending_without_reply;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'media'];
 }

@@ -24,4 +24,10 @@ class UnpinAllChatMessages extends BaseMethod implements MethodsInterface
      * channel (in the format @channelusername)
      */
     public int|string $chat_id;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id'];
 }

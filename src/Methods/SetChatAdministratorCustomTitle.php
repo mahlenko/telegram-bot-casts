@@ -30,4 +30,10 @@ class SetChatAdministratorCustomTitle extends BaseMethod implements MethodsInter
      * allowed
      */
     public string $custom_title;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'user_id', 'custom_title'];
 }

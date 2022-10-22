@@ -21,4 +21,10 @@ class GetCustomEmojiStickers extends BaseMethod implements StickersInterface
      * can be specified.
      */
     public array $custom_emoji_ids;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['custom_emoji_ids'];
 }

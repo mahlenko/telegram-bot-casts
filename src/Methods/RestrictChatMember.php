@@ -37,4 +37,10 @@ class RestrictChatMember extends BaseMethod implements MethodsInterface
      * current time, they are considered to be restricted forever
      */
     public ?int $until_date;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'user_id', 'permissions'];
 }

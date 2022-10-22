@@ -24,4 +24,10 @@ class AnswerWebAppQuery extends BaseMethod implements InlineModeInterface
 
     /** A JSON-serialized object describing the message to be sent */
     public InlineQueryResult $result;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['web_app_query_id', 'result'];
 }

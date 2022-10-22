@@ -33,4 +33,10 @@ class UnbanChatMember extends BaseMethod implements MethodsInterface
 
     /** Do nothing if the user is not banned */
     public ?bool $only_if_banned;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'user_id'];
 }

@@ -25,4 +25,10 @@ class DeclineChatJoinRequest extends BaseMethod implements MethodsInterface
 
     /** Unique identifier of the target user */
     public int $user_id;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['chat_id', 'user_id'];
 }

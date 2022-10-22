@@ -35,4 +35,10 @@ class SetMyCommands extends BaseMethod implements MethodsInterface
      * are no dedicated commands
      */
     public ?string $language_code;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = ['commands'];
 }

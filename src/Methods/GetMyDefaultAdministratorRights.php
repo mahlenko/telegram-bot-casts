@@ -22,4 +22,10 @@ class GetMyDefaultAdministratorRights extends BaseMethod implements MethodsInter
      * supergroups will be returned.
      */
     public ?bool $for_channels;
+
+    /**
+     * A list of necessary properties that should be checked before sending
+     * requests to the Telegram Bot API
+     */
+    public array $required_properties = [];
 }
