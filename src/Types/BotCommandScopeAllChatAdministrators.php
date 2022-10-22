@@ -16,6 +16,6 @@ use TelegramBot\Interface\TypesInterface;
  */
 class BotCommandScopeAllChatAdministrators extends BaseType implements TypesInterface
 {
-	/** Scope type, must be all_chat_administrators */
-	public string $type;
+    /** Scope type, must be all_chat_administrators */
+    public string $type;
 }

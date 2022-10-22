@@ -16,6 +16,6 @@ use TelegramBot\Interface\UpdatesInterface;
  */
 class DeleteWebhook extends BaseMethod implements UpdatesInterface
 {
-	/** Pass True to drop all pending updates */
-	public ?bool $drop_pending_updates;
+    /** Pass True to drop all pending updates */
+    public ?bool $drop_pending_updates;
 }

@@ -16,31 +16,31 @@ use TelegramBot\Interface\InlineModeInterface;
  */
 class InputVenueMessageContent extends BaseType implements InlineModeInterface
 {
-	/** Latitude of the venue in degrees */
-	public float $latitude;
+    /** Latitude of the venue in degrees */
+    public float $latitude;
 
-	/** Longitude of the venue in degrees */
-	public float $longitude;
+    /** Longitude of the venue in degrees */
+    public float $longitude;
 
-	/** Name of the venue */
-	public string $title;
+    /** Name of the venue */
+    public string $title;
 
-	/** Address of the venue */
-	public string $address;
+    /** Address of the venue */
+    public string $address;
 
-	/** Optional. Foursquare identifier of the venue, if known */
-	public ?string $foursquare_id;
+    /** Optional. Foursquare identifier of the venue, if known */
+    public ?string $foursquare_id;
 
-	/**
-	 * Optional. Foursquare type of the venue, if known. (For example,
-	 * “arts_entertainment/default”, “arts_entertainment/aquarium” or
-	 * “food/icecream”.)
-	 */
-	public ?string $foursquare_type;
+    /**
+     * Optional. Foursquare type of the venue, if known. (For example,
+     * “arts_entertainment/default”, “arts_entertainment/aquarium” or
+     * “food/icecream”.)
+     */
+    public ?string $foursquare_type;
 
-	/** Optional. Google Places identifier of the venue */
-	public ?string $google_place_id;
+    /** Optional. Google Places identifier of the venue */
+    public ?string $google_place_id;
 
-	/** Optional. Google Places type of the venue. (See supported types.) */
-	public ?string $google_place_type;
+    /** Optional. Google Places type of the venue. (See supported types.) */
+    public ?string $google_place_type;
 }

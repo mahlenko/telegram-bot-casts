@@ -16,10 +16,10 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class GetMyDefaultAdministratorRights extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Pass True to get default administrator rights of the bot in channels.
-	 * Otherwise, default administrator rights of the bot for groups and
-	 * supergroups will be returned.
-	 */
-	public ?bool $for_channels;
+    /**
+     * Pass True to get default administrator rights of the bot in channels.
+     * Otherwise, default administrator rights of the bot for groups and
+     * supergroups will be returned.
+     */
+    public ?bool $for_channels;
 }

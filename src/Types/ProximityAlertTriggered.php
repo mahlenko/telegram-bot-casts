@@ -16,12 +16,12 @@ use TelegramBot\Interface\TypesInterface;
  */
 class ProximityAlertTriggered extends BaseType implements TypesInterface
 {
-	/** User that triggered the alert */
-	public User $traveler;
+    /** User that triggered the alert */
+    public User $traveler;
 
-	/** User that set the alert */
-	public User $watcher;
+    /** User that set the alert */
+    public User $watcher;
 
-	/** The distance between the users */
-	public int $distance;
+    /** The distance between the users */
+    public int $distance;
 }

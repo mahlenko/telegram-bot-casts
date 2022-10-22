@@ -15,6 +15,6 @@ use TelegramBot\Interface\TypesInterface;
  */
 class BotCommandScopeAllPrivateChats extends BaseType implements TypesInterface
 {
-	/** Scope type, must be all_private_chats */
-	public string $type;
+    /** Scope type, must be all_private_chats */
+    public string $type;
 }

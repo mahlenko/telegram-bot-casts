@@ -16,9 +16,9 @@ use TelegramBot\Interface\StickersInterface;
  */
 class GetCustomEmojiStickers extends BaseMethod implements StickersInterface
 {
-	/**
-	 * List of custom emoji identifiers. At most 200 custom emoji identifiers
-	 * can be specified.
-	 */
-	public array $custom_emoji_ids;
+    /**
+     * List of custom emoji identifiers. At most 200 custom emoji identifiers
+     * can be specified.
+     */
+    public array $custom_emoji_ids;
 }

@@ -15,12 +15,12 @@ use TelegramBot\Interface\GamesInterface;
  */
 class GameHighScore extends BaseType implements GamesInterface
 {
-	/** Position in high score table for the game */
-	public int $position;
+    /** Position in high score table for the game */
+    public int $position;
 
-	/** User */
-	public User $user;
+    /** User */
+    public User $user;
 
-	/** Score */
-	public int $score;
+    /** Score */
+    public int $score;
 }

@@ -15,6 +15,6 @@ use TelegramBot\Interface\TypesInterface;
  */
 class MessageId extends BaseType implements TypesInterface
 {
-	/** Unique message identifier */
-	public int $message_id;
+    /** Unique message identifier */
+    public int $message_id;
 }

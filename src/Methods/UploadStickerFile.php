@@ -18,13 +18,13 @@ use TelegramBot\Types\InputFile;
  */
 class UploadStickerFile extends BaseMethod implements StickersInterface
 {
-	/** User identifier of sticker file owner */
-	public int $user_id;
+    /** User identifier of sticker file owner */
+    public int $user_id;
 
-	/**
-	 * PNG image with the sticker, must be up to 512 kilobytes in size,
-	 * dimensions must not exceed 512px, and either width or height must be
-	 * exactly 512px. More information on Sending Files »
-	 */
-	public InputFile $png_sticker;
+    /**
+     * PNG image with the sticker, must be up to 512 kilobytes in size,
+     * dimensions must not exceed 512px, and either width or height must be
+     * exactly 512px. More information on Sending Files »
+     */
+    public InputFile $png_sticker;
 }

@@ -22,15 +22,15 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class UnbanChatMember extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target group or username of the target
-	 * supergroup or channel (in the format @channelusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target group or username of the target
+     * supergroup or channel (in the format @channelusername)
+     */
+    public int|string $chat_id;
 
-	/** Unique identifier of the target user */
-	public int $user_id;
+    /** Unique identifier of the target user */
+    public int $user_id;
 
-	/** Do nothing if the user is not banned */
-	public ?bool $only_if_banned;
+    /** Do nothing if the user is not banned */
+    public ?bool $only_if_banned;
 }

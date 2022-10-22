@@ -17,15 +17,15 @@ use TelegramBot\Types\MenuButton;
  */
 class SetChatMenuButton extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target private chat. If not specified,
-	 * default bot's menu button will be changed
-	 */
-	public ?int $chat_id;
+    /**
+     * Unique identifier for the target private chat. If not specified,
+     * default bot's menu button will be changed
+     */
+    public ?int $chat_id;
 
-	/**
-	 * A JSON-serialized object for the bot's new menu button. Defaults to
-	 * MenuButtonDefault
-	 */
-	public ?MenuButton $menu_button;
+    /**
+     * A JSON-serialized object for the bot's new menu button. Defaults to
+     * MenuButtonDefault
+     */
+    public ?MenuButton $menu_button;
 }

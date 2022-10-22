@@ -16,9 +16,9 @@ use TelegramBot\Interface\TypesInterface;
  */
 class VideoChatScheduled extends BaseType implements TypesInterface
 {
-	/**
-	 * Point in time (Unix timestamp) when the video chat is supposed to be
-	 * started by a chat administrator
-	 */
-	public int $start_date;
+    /**
+     * Point in time (Unix timestamp) when the video chat is supposed to be
+     * started by a chat administrator
+     */
+    public int $start_date;
 }

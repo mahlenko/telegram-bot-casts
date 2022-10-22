@@ -19,63 +19,63 @@ use TelegramBot\Interface\InlineModeInterface;
  */
 class InlineQueryResultMpeg4Gif extends BaseType implements InlineModeInterface
 {
-	/** Type of the result, must be mpeg4_gif */
-	public string $type;
+    /** Type of the result, must be mpeg4_gif */
+    public string $type;
 
-	/** Unique identifier for this result, 1-64 bytes */
-	public string $id;
+    /** Unique identifier for this result, 1-64 bytes */
+    public string $id;
 
-	/** A valid URL for the MPEG4 file. File size must not exceed 1MB */
-	public string $mpeg4_url;
+    /** A valid URL for the MPEG4 file. File size must not exceed 1MB */
+    public string $mpeg4_url;
 
-	/** Optional. Video width */
-	public ?int $mpeg4_width;
+    /** Optional. Video width */
+    public ?int $mpeg4_width;
 
-	/** Optional. Video height */
-	public ?int $mpeg4_height;
+    /** Optional. Video height */
+    public ?int $mpeg4_height;
 
-	/** Optional. Video duration in seconds */
-	public ?int $mpeg4_duration;
+    /** Optional. Video duration in seconds */
+    public ?int $mpeg4_duration;
 
-	/**
-	 * URL of the static (JPEG or GIF) or animated (MPEG4) thumbnail for the
-	 * result
-	 */
-	public string $thumb_url;
+    /**
+     * URL of the static (JPEG or GIF) or animated (MPEG4) thumbnail for the
+     * result
+     */
+    public string $thumb_url;
 
-	/**
-	 * Optional. MIME type of the thumbnail, must be one of “image/jpeg”,
-	 * “image/gif”, or “video/mp4”. Defaults to “image/jpeg”
-	 */
-	public ?string $thumb_mime_type;
+    /**
+     * Optional. MIME type of the thumbnail, must be one of “image/jpeg”,
+     * “image/gif”, or “video/mp4”. Defaults to “image/jpeg”
+     */
+    public ?string $thumb_mime_type;
 
-	/** Optional. Title for the result */
-	public ?string $title;
+    /** Optional. Title for the result */
+    public ?string $title;
 
-	/**
-	 * Optional. Caption of the MPEG-4 file to be sent, 0-1024 characters
-	 * after entities parsing
-	 */
-	public ?string $caption;
+    /**
+     * Optional. Caption of the MPEG-4 file to be sent, 0-1024 characters
+     * after entities parsing
+     */
+    public ?string $caption;
 
-	/**
-	 * Optional. Mode for parsing entities in the caption. See formatting
-	 * options for more details.
-	 */
-	public ?string $parse_mode;
+    /**
+     * Optional. Mode for parsing entities in the caption. See formatting
+     * options for more details.
+     */
+    public ?string $parse_mode;
 
-	/**
-	 * Optional. List of special entities that appear in the caption, which
-	 * can be specified instead of parse_mode
-	 */
-	public ?array $caption_entities;
+    /**
+     * Optional. List of special entities that appear in the caption, which
+     * can be specified instead of parse_mode
+     */
+    public ?array $caption_entities;
 
-	/** Optional. Inline keyboard attached to the message */
-	public ?InlineKeyboardMarkup $reply_markup;
+    /** Optional. Inline keyboard attached to the message */
+    public ?InlineKeyboardMarkup $reply_markup;
 
-	/**
-	 * Optional. Content of the message to be sent instead of the video
-	 * animation
-	 */
-	public ?InputMessageContent $input_message_content;
+    /**
+     * Optional. Content of the message to be sent instead of the video
+     * animation
+     */
+    public ?InputMessageContent $input_message_content;
 }

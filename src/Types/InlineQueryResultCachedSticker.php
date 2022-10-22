@@ -18,18 +18,18 @@ use TelegramBot\Interface\InlineModeInterface;
  */
 class InlineQueryResultCachedSticker extends BaseType implements InlineModeInterface
 {
-	/** Type of the result, must be sticker */
-	public string $type;
+    /** Type of the result, must be sticker */
+    public string $type;
 
-	/** Unique identifier for this result, 1-64 bytes */
-	public string $id;
+    /** Unique identifier for this result, 1-64 bytes */
+    public string $id;
 
-	/** A valid file identifier of the sticker */
-	public string $sticker_file_id;
+    /** A valid file identifier of the sticker */
+    public string $sticker_file_id;
 
-	/** Optional. Inline keyboard attached to the message */
-	public ?InlineKeyboardMarkup $reply_markup;
+    /** Optional. Inline keyboard attached to the message */
+    public ?InlineKeyboardMarkup $reply_markup;
 
-	/** Optional. Content of the message to be sent instead of the sticker */
-	public ?InputMessageContent $input_message_content;
+    /** Optional. Content of the message to be sent instead of the sticker */
+    public ?InputMessageContent $input_message_content;
 }

@@ -15,6 +15,6 @@ use TelegramBot\Interface\TypesInterface;
  */
 class MenuButtonDefault extends BaseType implements TypesInterface
 {
-	/** Type of the button, must be default */
-	public string $type;
+    /** Type of the button, must be default */
+    public string $type;
 }

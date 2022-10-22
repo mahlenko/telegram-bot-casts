@@ -18,12 +18,12 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class SetChatDescription extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target chat or username of the target
-	 * channel (in the format @channelusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target chat or username of the target
+     * channel (in the format @channelusername)
+     */
+    public int|string $chat_id;
 
-	/** New chat description, 0-255 characters */
-	public ?string $description;
+    /** New chat description, 0-255 characters */
+    public ?string $description;
 }

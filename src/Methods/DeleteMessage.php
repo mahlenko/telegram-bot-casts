@@ -25,12 +25,12 @@ use TelegramBot\Interface\UpdatingMessagesInterface;
  */
 class DeleteMessage extends BaseMethod implements UpdatingMessagesInterface
 {
-	/**
-	 * Unique identifier for the target chat or username of the target
-	 * channel (in the format @channelusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target chat or username of the target
+     * channel (in the format @channelusername)
+     */
+    public int|string $chat_id;
 
-	/** Identifier of the message to delete */
-	public int $message_id;
+    /** Identifier of the message to delete */
+    public int $message_id;
 }

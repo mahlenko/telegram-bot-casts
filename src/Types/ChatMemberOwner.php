@@ -16,15 +16,15 @@ use TelegramBot\Interface\TypesInterface;
  */
 class ChatMemberOwner extends BaseType implements TypesInterface
 {
-	/** The member's status in the chat, always “creator” */
-	public string $status;
+    /** The member's status in the chat, always “creator” */
+    public string $status;
 
-	/** Information about the user */
-	public User $user;
+    /** Information about the user */
+    public User $user;
 
-	/** True, if the user's presence in the chat is hidden */
-	public bool $is_anonymous;
+    /** True, if the user's presence in the chat is hidden */
+    public bool $is_anonymous;
 
-	/** Optional. Custom title for this user */
-	public ?string $custom_title;
+    /** Optional. Custom title for this user */
+    public ?string $custom_title;
 }

@@ -17,9 +17,9 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class GetChat extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target chat or username of the target
-	 * supergroup or channel (in the format @channelusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target chat or username of the target
+     * supergroup or channel (in the format @channelusername)
+     */
+    public int|string $chat_id;
 }

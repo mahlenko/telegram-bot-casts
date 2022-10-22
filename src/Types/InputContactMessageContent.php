@@ -16,18 +16,18 @@ use TelegramBot\Interface\InlineModeInterface;
  */
 class InputContactMessageContent extends BaseType implements InlineModeInterface
 {
-	/** Contact's phone number */
-	public string $phone_number;
+    /** Contact's phone number */
+    public string $phone_number;
 
-	/** Contact's first name */
-	public string $first_name;
+    /** Contact's first name */
+    public string $first_name;
 
-	/** Optional. Contact's last name */
-	public ?string $last_name;
+    /** Optional. Contact's last name */
+    public ?string $last_name;
 
-	/**
-	 * Optional. Additional data about the contact in the form of a vCard,
-	 * 0-2048 bytes
-	 */
-	public ?string $vcard;
+    /**
+     * Optional. Additional data about the contact in the form of a vCard,
+     * 0-2048 bytes
+     */
+    public ?string $vcard;
 }

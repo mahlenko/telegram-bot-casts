@@ -16,15 +16,15 @@ use TelegramBot\Interface\TypesInterface;
  */
 class BotCommandScopeChatMember extends BaseType implements TypesInterface
 {
-	/** Scope type, must be chat_member */
-	public string $type;
+    /** Scope type, must be chat_member */
+    public string $type;
 
-	/**
-	 * Unique identifier for the target chat or username of the target
-	 * supergroup (in the format @supergroupusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target chat or username of the target
+     * supergroup (in the format @supergroupusername)
+     */
+    public int|string $chat_id;
 
-	/** Unique identifier of the target user */
-	public int $user_id;
+    /** Unique identifier of the target user */
+    public int $user_id;
 }

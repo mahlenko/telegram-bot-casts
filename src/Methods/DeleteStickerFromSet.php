@@ -16,6 +16,6 @@ use TelegramBot\Interface\StickersInterface;
  */
 class DeleteStickerFromSet extends BaseMethod implements StickersInterface
 {
-	/** File identifier of the sticker */
-	public string $sticker;
+    /** File identifier of the sticker */
+    public string $sticker;
 }

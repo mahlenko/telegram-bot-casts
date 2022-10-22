@@ -24,9 +24,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
  */
 class SetPassportDataErrors extends BaseMethod implements TelegramPassportInterface
 {
-	/** User identifier */
-	public int $user_id;
+    /** User identifier */
+    public int $user_id;
 
-	/** A JSON-serialized array describing the errors */
-	public array $errors;
+    /** A JSON-serialized array describing the errors */
+    public array $errors;
 }

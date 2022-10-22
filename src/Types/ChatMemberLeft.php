@@ -16,9 +16,9 @@ use TelegramBot\Interface\TypesInterface;
  */
 class ChatMemberLeft extends BaseType implements TypesInterface
 {
-	/** The member's status in the chat, always “left” */
-	public string $status;
+    /** The member's status in the chat, always “left” */
+    public string $status;
 
-	/** Information about the user */
-	public User $user;
+    /** Information about the user */
+    public User $user;
 }

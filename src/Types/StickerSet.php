@@ -15,27 +15,27 @@ use TelegramBot\Interface\StickersInterface;
  */
 class StickerSet extends BaseType implements StickersInterface
 {
-	/** Sticker set name */
-	public string $name;
+    /** Sticker set name */
+    public string $name;
 
-	/** Sticker set title */
-	public string $title;
+    /** Sticker set title */
+    public string $title;
 
-	/**
-	 * Type of stickers in the set, currently one of “regular”,
-	 * “mask”, “custom_emoji”
-	 */
-	public string $sticker_type;
+    /**
+     * Type of stickers in the set, currently one of “regular”,
+     * “mask”, “custom_emoji”
+     */
+    public string $sticker_type;
 
-	/** True, if the sticker set contains animated stickers */
-	public bool $is_animated;
+    /** True, if the sticker set contains animated stickers */
+    public bool $is_animated;
 
-	/** True, if the sticker set contains video stickers */
-	public bool $is_video;
+    /** True, if the sticker set contains video stickers */
+    public bool $is_video;
 
-	/** List of all set stickers */
-	public array $stickers;
+    /** List of all set stickers */
+    public array $stickers;
 
-	/** Optional. Sticker set thumbnail in the .WEBP, .TGS, or .WEBM format */
-	public ?PhotoSize $thumb;
+    /** Optional. Sticker set thumbnail in the .WEBP, .TGS, or .WEBM format */
+    public ?PhotoSize $thumb;
 }

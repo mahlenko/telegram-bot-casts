@@ -16,9 +16,9 @@ use TelegramBot\Interface\StickersInterface;
  */
 class SetStickerPositionInSet extends BaseMethod implements StickersInterface
 {
-	/** File identifier of the sticker */
-	public string $sticker;
+    /** File identifier of the sticker */
+    public string $sticker;
 
-	/** New sticker position in the set, zero-based */
-	public int $position;
+    /** New sticker position in the set, zero-based */
+    public int $position;
 }

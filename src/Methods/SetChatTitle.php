@@ -18,12 +18,12 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class SetChatTitle extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target chat or username of the target
-	 * channel (in the format @channelusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target chat or username of the target
+     * channel (in the format @channelusername)
+     */
+    public int|string $chat_id;
 
-	/** New chat title, 1-255 characters */
-	public string $title;
+    /** New chat title, 1-255 characters */
+    public string $title;
 }

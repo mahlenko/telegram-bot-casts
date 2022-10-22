@@ -22,6 +22,6 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class GetFile extends BaseMethod implements MethodsInterface
 {
-	/** File identifier to get information about */
-	public string $file_id;
+    /** File identifier to get information about */
+    public string $file_id;
 }

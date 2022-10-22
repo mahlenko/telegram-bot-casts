@@ -16,6 +16,6 @@ use TelegramBot\Interface\TypesInterface;
  */
 class BotCommandScopeDefault extends BaseType implements TypesInterface
 {
-	/** Scope type, must be default */
-	public string $type;
+    /** Scope type, must be default */
+    public string $type;
 }

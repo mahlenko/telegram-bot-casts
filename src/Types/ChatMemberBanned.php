@@ -16,15 +16,15 @@ use TelegramBot\Interface\TypesInterface;
  */
 class ChatMemberBanned extends BaseType implements TypesInterface
 {
-	/** The member's status in the chat, always “kicked” */
-	public string $status;
+    /** The member's status in the chat, always “kicked” */
+    public string $status;
 
-	/** Information about the user */
-	public User $user;
+    /** Information about the user */
+    public User $user;
 
-	/**
-	 * Date when restrictions will be lifted for this user; unix time. If 0,
-	 * then the user is banned forever
-	 */
-	public int $until_date;
+    /**
+     * Date when restrictions will be lifted for this user; unix time. If 0,
+     * then the user is banned forever
+     */
+    public int $until_date;
 }

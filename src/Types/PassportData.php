@@ -15,12 +15,12 @@ use TelegramBot\Interface\TelegramPassportInterface;
  */
 class PassportData extends BaseType implements TelegramPassportInterface
 {
-	/**
-	 * Array with information about documents and other Telegram Passport
-	 * elements that was shared with the bot
-	 */
-	public array $data;
+    /**
+     * Array with information about documents and other Telegram Passport
+     * elements that was shared with the bot
+     */
+    public array $data;
 
-	/** Encrypted credentials required to decrypt the data */
-	public EncryptedCredentials $credentials;
+    /** Encrypted credentials required to decrypt the data */
+    public EncryptedCredentials $credentials;
 }

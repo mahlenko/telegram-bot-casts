@@ -15,15 +15,15 @@ use TelegramBot\Interface\TypesInterface;
  */
 class PollAnswer extends BaseType implements TypesInterface
 {
-	/** Unique poll identifier */
-	public string $poll_id;
+    /** Unique poll identifier */
+    public string $poll_id;
 
-	/** The user, who changed the answer to the poll */
-	public User $user;
+    /** The user, who changed the answer to the poll */
+    public User $user;
 
-	/**
-	 * 0-based identifiers of answer options, chosen by the user. May be
-	 * empty if the user retracted their vote.
-	 */
-	public array $option_ids;
+    /**
+     * 0-based identifiers of answer options, chosen by the user. May be
+     * empty if the user retracted their vote.
+     */
+    public array $option_ids;
 }

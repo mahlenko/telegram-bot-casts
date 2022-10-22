@@ -19,12 +19,12 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class SetChatStickerSet extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target chat or username of the target
-	 * supergroup (in the format @supergroupusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target chat or username of the target
+     * supergroup (in the format @supergroupusername)
+     */
+    public int|string $chat_id;
 
-	/** Name of the sticker set to be set as the group sticker set */
-	public string $sticker_set_name;
+    /** Name of the sticker set to be set as the group sticker set */
+    public string $sticker_set_name;
 }

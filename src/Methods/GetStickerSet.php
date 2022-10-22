@@ -16,6 +16,6 @@ use TelegramBot\Interface\StickersInterface;
  */
 class GetStickerSet extends BaseMethod implements StickersInterface
 {
-	/** Name of the sticker set */
-	public string $name;
+    /** Name of the sticker set */
+    public string $name;
 }

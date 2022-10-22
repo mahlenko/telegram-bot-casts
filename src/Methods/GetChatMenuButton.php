@@ -17,9 +17,9 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class GetChatMenuButton extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target private chat. If not specified,
-	 * default bot's menu button will be returned
-	 */
-	public ?int $chat_id;
+    /**
+     * Unique identifier for the target private chat. If not specified,
+     * default bot's menu button will be returned
+     */
+    public ?int $chat_id;
 }

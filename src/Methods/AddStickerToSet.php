@@ -22,42 +22,42 @@ use TelegramBot\Types\MaskPosition;
  */
 class AddStickerToSet extends BaseMethod implements StickersInterface
 {
-	/** User identifier of sticker set owner */
-	public int $user_id;
+    /** User identifier of sticker set owner */
+    public int $user_id;
 
-	/** Sticker set name */
-	public string $name;
+    /** Sticker set name */
+    public string $name;
 
-	/**
-	 * PNG image with the sticker, must be up to 512 kilobytes in size,
-	 * dimensions must not exceed 512px, and either width or height must be
-	 * exactly 512px. Pass a file_id as a String to send a file that already
-	 * exists on the Telegram servers, pass an HTTP URL as a String for
-	 * Telegram to get a file from the Internet, or upload a new one using
-	 * multipart/form-data. More information on Sending Files »
-	 */
-	public InputFile|string|null $png_sticker;
+    /**
+     * PNG image with the sticker, must be up to 512 kilobytes in size,
+     * dimensions must not exceed 512px, and either width or height must be
+     * exactly 512px. Pass a file_id as a String to send a file that already
+     * exists on the Telegram servers, pass an HTTP URL as a String for
+     * Telegram to get a file from the Internet, or upload a new one using
+     * multipart/form-data. More information on Sending Files »
+     */
+    public InputFile|string|null $png_sticker;
 
-	/**
-	 * TGS animation with the sticker, uploaded using multipart/form-data.
-	 * See https://core.telegram.org/stickers#animated-sticker-requirements
-	 * for technical requirements
-	 */
-	public ?InputFile $tgs_sticker;
+    /**
+     * TGS animation with the sticker, uploaded using multipart/form-data.
+     * See https://core.telegram.org/stickers#animated-sticker-requirements
+     * for technical requirements
+     */
+    public ?InputFile $tgs_sticker;
 
-	/**
-	 * WEBM video with the sticker, uploaded using multipart/form-data. See
-	 * https://core.telegram.org/stickers#video-sticker-requirements for
-	 * technical requirements
-	 */
-	public ?InputFile $webm_sticker;
+    /**
+     * WEBM video with the sticker, uploaded using multipart/form-data. See
+     * https://core.telegram.org/stickers#video-sticker-requirements for
+     * technical requirements
+     */
+    public ?InputFile $webm_sticker;
 
-	/** One or more emoji corresponding to the sticker */
-	public string $emojis;
+    /** One or more emoji corresponding to the sticker */
+    public string $emojis;
 
-	/**
-	 * A JSON-serialized object for position where the mask should be placed
-	 * on faces
-	 */
-	public ?MaskPosition $mask_position;
+    /**
+     * A JSON-serialized object for position where the mask should be placed
+     * on faces
+     */
+    public ?MaskPosition $mask_position;
 }

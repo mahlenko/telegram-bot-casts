@@ -15,12 +15,12 @@ use TelegramBot\Interface\TypesInterface;
  */
 class ChatLocation extends BaseType implements TypesInterface
 {
-	/**
-	 * The location to which the supergroup is connected. Can't be a live
-	 * location.
-	 */
-	public Location $location;
+    /**
+     * The location to which the supergroup is connected. Can't be a live
+     * location.
+     */
+    public Location $location;
 
-	/** Location address; 1-64 characters, as defined by the chat owner */
-	public string $address;
+    /** Location address; 1-64 characters, as defined by the chat owner */
+    public string $address;
 }

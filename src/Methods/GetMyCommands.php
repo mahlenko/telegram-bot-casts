@@ -18,12 +18,12 @@ use TelegramBot\Types\BotCommandScope;
  */
 class GetMyCommands extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * A JSON-serialized object, describing scope of users. Defaults to
-	 * BotCommandScopeDefault.
-	 */
-	public ?BotCommandScope $scope;
+    /**
+     * A JSON-serialized object, describing scope of users. Defaults to
+     * BotCommandScopeDefault.
+     */
+    public ?BotCommandScope $scope;
 
-	/** A two-letter ISO 639-1 language code or an empty string */
-	public ?string $language_code;
+    /** A two-letter ISO 639-1 language code or an empty string */
+    public ?string $language_code;
 }

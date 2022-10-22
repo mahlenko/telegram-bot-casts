@@ -15,12 +15,12 @@ use TelegramBot\Interface\PaymentsInterface;
  */
 class ShippingOption extends BaseType implements PaymentsInterface
 {
-	/** Shipping option identifier */
-	public string $id;
+    /** Shipping option identifier */
+    public string $id;
 
-	/** Option title */
-	public string $title;
+    /** Option title */
+    public string $title;
 
-	/** List of price portions */
-	public array $prices;
+    /** List of price portions */
+    public array $prices;
 }

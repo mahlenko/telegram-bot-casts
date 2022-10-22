@@ -16,6 +16,6 @@ use TelegramBot\Interface\TypesInterface;
  */
 class MessageAutoDeleteTimerChanged extends BaseType implements TypesInterface
 {
-	/** New auto-delete time for messages in the chat; in seconds */
-	public int $message_auto_delete_time;
+    /** New auto-delete time for messages in the chat; in seconds */
+    public int $message_auto_delete_time;
 }

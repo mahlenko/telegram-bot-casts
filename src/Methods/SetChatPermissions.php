@@ -19,12 +19,12 @@ use TelegramBot\Types\ChatPermissions;
  */
 class SetChatPermissions extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target chat or username of the target
-	 * supergroup (in the format @supergroupusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target chat or username of the target
+     * supergroup (in the format @supergroupusername)
+     */
+    public int|string $chat_id;
 
-	/** A JSON-serialized object for new default chat permissions */
-	public ChatPermissions $permissions;
+    /** A JSON-serialized object for new default chat permissions */
+    public ChatPermissions $permissions;
 }

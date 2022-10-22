@@ -19,12 +19,12 @@ use TelegramBot\Types\InputFile;
  */
 class SetChatPhoto extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target chat or username of the target
-	 * channel (in the format @channelusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target chat or username of the target
+     * channel (in the format @channelusername)
+     */
+    public int|string $chat_id;
 
-	/** New chat photo, uploaded using multipart/form-data */
-	public InputFile $photo;
+    /** New chat photo, uploaded using multipart/form-data */
+    public InputFile $photo;
 }

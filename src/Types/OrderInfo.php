@@ -15,15 +15,15 @@ use TelegramBot\Interface\PaymentsInterface;
  */
 class OrderInfo extends BaseType implements PaymentsInterface
 {
-	/** Optional. User name */
-	public ?string $name;
+    /** Optional. User name */
+    public ?string $name;
 
-	/** Optional. User's phone number */
-	public ?string $phone_number;
+    /** Optional. User's phone number */
+    public ?string $phone_number;
 
-	/** Optional. User email */
-	public ?string $email;
+    /** Optional. User email */
+    public ?string $email;
 
-	/** Optional. User shipping address */
-	public ?ShippingAddress $shipping_address;
+    /** Optional. User shipping address */
+    public ?ShippingAddress $shipping_address;
 }

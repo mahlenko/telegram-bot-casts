@@ -15,9 +15,9 @@ use TelegramBot\Interface\TypesInterface;
  */
 class WebAppInfo extends BaseType implements TypesInterface
 {
-	/**
-	 * An HTTPS URL of a Web App to be opened with additional data as
-	 * specified in Initializing Web Apps
-	 */
-	public string $url;
+    /**
+     * An HTTPS URL of a Web App to be opened with additional data as
+     * specified in Initializing Web Apps
+     */
+    public string $url;
 }

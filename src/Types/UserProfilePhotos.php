@@ -15,9 +15,9 @@ use TelegramBot\Interface\TypesInterface;
  */
 class UserProfilePhotos extends BaseType implements TypesInterface
 {
-	/** Total number of profile pictures the target user has */
-	public int $total_count;
+    /** Total number of profile pictures the target user has */
+    public int $total_count;
 
-	/** Requested profile pictures (in up to 4 sizes each) */
-	public array $photos;
+    /** Requested profile pictures (in up to 4 sizes each) */
+    public array $photos;
 }

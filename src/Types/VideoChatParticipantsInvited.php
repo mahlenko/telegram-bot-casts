@@ -16,6 +16,6 @@ use TelegramBot\Interface\TypesInterface;
  */
 class VideoChatParticipantsInvited extends BaseType implements TypesInterface
 {
-	/** New members that were invited to the video chat */
-	public array $users;
+    /** New members that were invited to the video chat */
+    public array $users;
 }

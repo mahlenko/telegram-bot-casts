@@ -19,12 +19,12 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class RevokeChatInviteLink extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier of the target chat or username of the target channel
-	 * (in the format @channelusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier of the target chat or username of the target channel
+     * (in the format @channelusername)
+     */
+    public int|string $chat_id;
 
-	/** The invite link to revoke */
-	public string $invite_link;
+    /** The invite link to revoke */
+    public string $invite_link;
 }

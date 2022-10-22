@@ -15,15 +15,15 @@ use TelegramBot\Interface\PaymentsInterface;
  */
 class ShippingQuery extends BaseType implements PaymentsInterface
 {
-	/** Unique query identifier */
-	public string $id;
+    /** Unique query identifier */
+    public string $id;
 
-	/** User who sent the query */
-	public User $from;
+    /** User who sent the query */
+    public User $from;
 
-	/** Bot specified invoice payload */
-	public string $invoice_payload;
+    /** Bot specified invoice payload */
+    public string $invoice_payload;
 
-	/** User specified shipping address */
-	public ShippingAddress $shipping_address;
+    /** User specified shipping address */
+    public ShippingAddress $shipping_address;
 }

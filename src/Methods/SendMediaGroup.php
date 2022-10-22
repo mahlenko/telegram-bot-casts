@@ -18,33 +18,33 @@ use TelegramBot\Interface\MethodsInterface;
  */
 class SendMediaGroup extends BaseMethod implements MethodsInterface
 {
-	/**
-	 * Unique identifier for the target chat or username of the target
-	 * channel (in the format @channelusername)
-	 */
-	public int|string $chat_id;
+    /**
+     * Unique identifier for the target chat or username of the target
+     * channel (in the format @channelusername)
+     */
+    public int|string $chat_id;
 
-	/**
-	 * A JSON-serialized array describing messages to be sent, must include
-	 * 2-10 items
-	 */
-	public array $media;
+    /**
+     * A JSON-serialized array describing messages to be sent, must include
+     * 2-10 items
+     */
+    public array $media;
 
-	/**
-	 * Sends messages silently. Users will receive a notification with no
-	 * sound.
-	 */
-	public ?bool $disable_notification;
+    /**
+     * Sends messages silently. Users will receive a notification with no
+     * sound.
+     */
+    public ?bool $disable_notification;
 
-	/** Protects the contents of the sent messages from forwarding and saving */
-	public ?bool $protect_content;
+    /** Protects the contents of the sent messages from forwarding and saving */
+    public ?bool $protect_content;
 
-	/** If the messages are a reply, ID of the original message */
-	public ?int $reply_to_message_id;
+    /** If the messages are a reply, ID of the original message */
+    public ?int $reply_to_message_id;
 
-	/**
-	 * Pass True if the message should be sent even if the specified
-	 * replied-to message is not found
-	 */
-	public ?bool $allow_sending_without_reply;
+    /**
+     * Pass True if the message should be sent even if the specified
+     * replied-to message is not found
+     */
+    public ?bool $allow_sending_without_reply;
 }

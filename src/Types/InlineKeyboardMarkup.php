@@ -16,9 +16,9 @@ use TelegramBot\Interface\TypesInterface;
  */
 class InlineKeyboardMarkup extends BaseType implements TypesInterface
 {
-	/**
-	 * Array of button rows, each represented by an Array of
-	 * InlineKeyboardButton objects
-	 */
-	public array $inline_keyboard;
+    /**
+     * Array of button rows, each represented by an Array of
+     * InlineKeyboardButton objects
+     */
+    public array $inline_keyboard;
 }

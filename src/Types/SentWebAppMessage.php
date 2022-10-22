@@ -15,9 +15,9 @@ use TelegramBot\Interface\InlineModeInterface;
  */
 class SentWebAppMessage extends BaseType implements InlineModeInterface
 {
-	/**
-	 * Optional. Identifier of the sent inline message. Available only if
-	 * there is an inline keyboard attached to the message.
-	 */
-	public ?string $inline_message_id;
+    /**
+     * Optional. Identifier of the sent inline message. Available only if
+     * there is an inline keyboard attached to the message.
+     */
+    public ?string $inline_message_id;
 }

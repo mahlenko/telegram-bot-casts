@@ -16,6 +16,6 @@ use TelegramBot\Interface\TypesInterface;
  */
 class VideoChatEnded extends BaseType implements TypesInterface
 {
-	/** Video chat duration in seconds */
-	public int $duration;
+    /** Video chat duration in seconds */
+    public int $duration;
 }

@@ -19,9 +19,9 @@ use TelegramBot\Types\InlineQueryResult;
  */
 class AnswerWebAppQuery extends BaseMethod implements InlineModeInterface
 {
-	/** Unique identifier for the query to be answered */
-	public string $web_app_query_id;
+    /** Unique identifier for the query to be answered */
+    public string $web_app_query_id;
 
-	/** A JSON-serialized object describing the message to be sent */
-	public InlineQueryResult $result;
+    /** A JSON-serialized object describing the message to be sent */
+    public InlineQueryResult $result;
 }

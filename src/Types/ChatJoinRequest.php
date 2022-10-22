@@ -15,21 +15,21 @@ use TelegramBot\Interface\TypesInterface;
  */
 class ChatJoinRequest extends BaseType implements TypesInterface
 {
-	/** Chat to which the request was sent */
-	public Chat $chat;
+    /** Chat to which the request was sent */
+    public Chat $chat;
 
-	/** User that sent the join request */
-	public User $from;
+    /** User that sent the join request */
+    public User $from;
 
-	/** Date the request was sent in Unix time */
-	public int $date;
+    /** Date the request was sent in Unix time */
+    public int $date;
 
-	/** Optional. Bio of the user. */
-	public ?string $bio;
+    /** Optional. Bio of the user. */
+    public ?string $bio;
 
-	/**
-	 * Optional. Chat invite link that was used by the user to send the join
-	 * request
-	 */
-	public ?ChatInviteLink $invite_link;
+    /**
+     * Optional. Chat invite link that was used by the user to send the join
+     * request
+     */
+    public ?ChatInviteLink $invite_link;
 }
