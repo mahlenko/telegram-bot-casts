@@ -1,7 +1,7 @@
 {
-    "name": "makhlenko/telegram-bot-objects",
-    "description": "Auto generate by mahlenko/telegram-api-parser",
-    "version": "1.0.0",
+    "name": "makhlenko/telegram-bot-casts",
+    "description": "Telegram bot API casts types and request method.",
+    "version": "1.0.1",
     "license": "MIT",
     "autoload": {
         "psr-4": {
