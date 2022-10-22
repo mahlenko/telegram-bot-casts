@@ -1,6 +1,7 @@
 {
-    "name": "makhlenko/telegrambot",
+    "name": "makhlenko/telegram-bot-objects",
     "description": "Auto generate by mahlenko/telegram-api-parser",
+    "version": "1.0.0",
     "license": "MIT",
     "autoload": {
         "psr-4": {
