@@ -17,6 +17,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
  * currently send audio files of up to 50 MB in size, this limit may be
  * changed in the future.
  * For sending voice messages, use the sendVoice method instead.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendAudio extends BaseMethod implements MethodsInterface
 {

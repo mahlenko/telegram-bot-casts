@@ -15,6 +15,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
  * without sound). On success, the sent Message is returned. Bots can
  * currently send animation files of up to 50 MB in size, this limit may
  * be changed in the future.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendAnimation extends BaseMethod implements MethodsInterface
 {

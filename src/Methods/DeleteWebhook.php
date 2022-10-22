@@ -10,6 +10,9 @@ use TelegramBot\Interface\UpdatesInterface;
 /**
  * Use this method to remove webhook integration if you decide to switch
  * back to getUpdates. Returns True on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class DeleteWebhook extends BaseMethod implements UpdatesInterface
 {

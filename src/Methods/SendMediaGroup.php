@@ -12,6 +12,9 @@ use TelegramBot\Interface\MethodsInterface;
  * as an album. Documents and audio files can be only grouped in an album
  * with messages of the same type. On success, an array of Messages that
  * were sent is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendMediaGroup extends BaseMethod implements MethodsInterface
 {

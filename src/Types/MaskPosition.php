@@ -10,6 +10,9 @@ use TelegramBot\Interface\StickersInterface;
 /**
  * This object describes the position on faces where a mask should be
  * placed by default.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class MaskPosition extends BaseType implements StickersInterface
 {

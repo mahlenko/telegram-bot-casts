@@ -16,6 +16,9 @@ use TelegramBot\Interface\TypesInterface;
  * InputMediaAudio
  * InputMediaPhoto
  * InputMediaVideo
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InputMedia extends BaseType implements TypesInterface
 {

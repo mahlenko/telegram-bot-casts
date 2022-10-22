@@ -12,6 +12,9 @@ use TelegramBot\Interface\MethodsInterface;
  * supergroup or channel. The bot must be an administrator for this to
  * work and must have the appropriate administrator rights. Returns True
  * on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class UnbanChatSenderChat extends BaseMethod implements MethodsInterface
 {

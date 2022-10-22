@@ -13,6 +13,9 @@ use TelegramBot\Types\ChatAdministratorRights;
  * by the bot when it's added as an administrator to groups or channels.
  * These rights will be suggested to users, but they are are free to
  * modify the list before adding the bot. Returns True on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetMyDefaultAdministratorRights extends BaseMethod implements MethodsInterface
 {

@@ -9,6 +9,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
 
 /**
  * Describes Telegram Passport data shared with the bot by the user.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportData extends BaseType implements TelegramPassportInterface
 {

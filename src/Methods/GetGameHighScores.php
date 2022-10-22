@@ -16,6 +16,9 @@ use TelegramBot\Interface\GamesInterface;
  * of their closest neighbors on each side. Will also return the top
  * three users if the user and their neighbors are not among them. Please
  * note that this behavior is subject to change.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetGameHighScores extends BaseMethod implements GamesInterface
 {

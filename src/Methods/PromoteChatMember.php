@@ -12,6 +12,9 @@ use TelegramBot\Interface\MethodsInterface;
  * channel. The bot must be an administrator in the chat for this to work
  * and must have the appropriate administrator rights. Pass False for all
  * boolean parameters to demote a user. Returns True on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PromoteChatMember extends BaseMethod implements MethodsInterface
 {

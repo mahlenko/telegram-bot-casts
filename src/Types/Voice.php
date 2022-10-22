@@ -9,6 +9,9 @@ use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents a voice note.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Voice extends BaseType implements TypesInterface
 {

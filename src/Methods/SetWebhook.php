@@ -19,6 +19,9 @@ use TelegramBot\Types\InputFile;
  * specify secret data in the parameter secret_token. If specified, the
  * request will contain a header “X-Telegram-Bot-Api-Secret-Token”
  * with the secret token as content.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetWebhook extends BaseMethod implements UpdatesInterface
 {

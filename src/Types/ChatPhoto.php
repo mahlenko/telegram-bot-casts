@@ -9,6 +9,9 @@ use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents a chat photo.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatPhoto extends BaseType implements TypesInterface
 {

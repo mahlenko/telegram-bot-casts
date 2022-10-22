@@ -10,6 +10,7 @@ namespace TelegramBot\Interface;
  * The following methods and objects allow your bot to handle stickers
  * and sticker sets.
  *
+ *
  * @version Bot API 6.2
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */

@@ -10,6 +10,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
 /**
  * Represents an issue in an unspecified place. The error is considered
  * resolved when new data is added.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorUnspecified extends BaseType implements TelegramPassportInterface
 {

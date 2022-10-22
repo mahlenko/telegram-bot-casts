@@ -15,6 +15,9 @@ use TelegramBot\Interface\MethodsInterface;
  * local server, but will not be able to log in back to the cloud Bot API
  * server for 10 minutes. Returns True on success. Requires no
  * parameters.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class LogOut extends BaseMethod implements MethodsInterface
 {

@@ -12,6 +12,9 @@ use TelegramBot\Interface\PaymentsInterface;
  * is_flexible was specified, the Bot API will send an Update with a
  * shipping_query field to the bot. Use this method to reply to shipping
  * queries. On success, True is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AnswerShippingQuery extends BaseMethod implements PaymentsInterface
 {

@@ -9,6 +9,9 @@ use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents an animated emoji that displays a random value.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Dice extends BaseType implements TypesInterface
 {

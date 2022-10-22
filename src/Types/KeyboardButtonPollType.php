@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents type of a poll, which is allowed to be created
  * and sent when the corresponding button is pressed.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class KeyboardButtonPollType extends BaseType implements TypesInterface
 {

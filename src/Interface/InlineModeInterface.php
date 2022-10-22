@@ -13,6 +13,7 @@ namespace TelegramBot\Interface;
  * provide the placeholder text that the user will see in the input field
  * after typing your bot's name.
  *
+ *
  * @version Bot API 6.2
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */

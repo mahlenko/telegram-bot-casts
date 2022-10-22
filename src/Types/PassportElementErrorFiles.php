@@ -10,6 +10,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
 /**
  * Represents an issue with a list of scans. The error is considered
  * resolved when the list of files containing the scans changes.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorFiles extends BaseType implements TelegramPassportInterface
 {

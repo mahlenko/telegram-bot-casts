@@ -14,6 +14,9 @@ use TelegramBot\Interface\MethodsInterface;
  * restart. The method will return error 429 in the first 10 minutes
  * after the bot is launched. Returns True on success. Requires no
  * parameters.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Close extends BaseMethod implements MethodsInterface
 {

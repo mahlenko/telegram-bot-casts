@@ -12,6 +12,9 @@ use TelegramBot\Interface\MethodsInterface;
  * The bot must be an administrator in the chat for this to work and must
  * have the appropriate administrator rights. Returns the edited invite
  * link as a ChatInviteLink object.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class EditChatInviteLink extends BaseMethod implements MethodsInterface
 {

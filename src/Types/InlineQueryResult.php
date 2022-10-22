@@ -34,6 +34,9 @@ use TelegramBot\Interface\InlineModeInterface;
  *
  * Note: All URLs passed in inline query results will be available to end
  * users and therefore must be assumed to be public.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResult extends BaseType implements InlineModeInterface
 {

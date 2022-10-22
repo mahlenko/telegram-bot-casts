@@ -13,6 +13,7 @@ namespace TelegramBot\Interface;
  * parameters in Bot API requests.On successful call, a JSON-object
  * containing the result will be returned.
  *
+ *
  * @version Bot API 6.2
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */

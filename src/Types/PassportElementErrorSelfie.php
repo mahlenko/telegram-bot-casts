@@ -10,6 +10,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
 /**
  * Represents an issue with the selfie with a document. The error is
  * considered resolved when the file with the selfie changes.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorSelfie extends BaseType implements TelegramPassportInterface
 {

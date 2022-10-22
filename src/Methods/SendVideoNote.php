@@ -14,6 +14,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
  * As of v.4.0, Telegram clients support rounded square MPEG4 videos of
  * up to 1 minute long. Use this method to send video messages. On
  * success, the sent Message is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendVideoNote extends BaseMethod implements MethodsInterface
 {

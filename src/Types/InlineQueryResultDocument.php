@@ -13,6 +13,9 @@ use TelegramBot\Interface\InlineModeInterface;
  * input_message_content to send a message with the specified content
  * instead of the file. Currently, only .PDF and .ZIP files can be sent
  * using this method.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultDocument extends BaseType implements InlineModeInterface
 {

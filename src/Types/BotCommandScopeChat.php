@@ -9,6 +9,9 @@ use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents the scope of bot commands, covering a specific chat.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class BotCommandScopeChat extends BaseType implements TypesInterface
 {

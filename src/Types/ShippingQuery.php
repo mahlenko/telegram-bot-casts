@@ -9,6 +9,9 @@ use TelegramBot\Interface\PaymentsInterface;
 
 /**
  * This object contains information about an incoming shipping query.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ShippingQuery extends BaseType implements PaymentsInterface
 {

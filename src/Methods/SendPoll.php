@@ -12,6 +12,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
 /**
  * Use this method to send a native poll. On success, the sent Message is
  * returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendPoll extends BaseMethod implements MethodsInterface
 {

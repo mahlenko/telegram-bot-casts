@@ -10,6 +10,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
 /**
  * Represents an issue in one of the data fields that was provided by the
  * user. The error is considered resolved when the field's value changes.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorDataField extends BaseType implements TelegramPassportInterface
 {

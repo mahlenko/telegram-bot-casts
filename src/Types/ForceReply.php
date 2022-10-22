@@ -13,6 +13,9 @@ use TelegramBot\Interface\TypesInterface;
  * the bot's message and tapped 'Reply'). This can be extremely useful if
  * you want to create user-friendly step-by-step interfaces without
  * having to sacrifice privacy mode.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ForceReply extends BaseType implements TypesInterface
 {

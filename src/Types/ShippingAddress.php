@@ -9,6 +9,9 @@ use TelegramBot\Interface\PaymentsInterface;
 
 /**
  * This object represents a shipping address.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ShippingAddress extends BaseType implements PaymentsInterface
 {

@@ -9,6 +9,9 @@ use TelegramBot\Interface\PaymentsInterface;
 
 /**
  * This object represents information about an order.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class OrderInfo extends BaseType implements PaymentsInterface
 {

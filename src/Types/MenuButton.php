@@ -19,6 +19,9 @@ use TelegramBot\Interface\TypesInterface;
  * chat, then it is applied in the chat. Otherwise the default menu
  * button is applied. By default, the menu button opens the list of bot
  * commands.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class MenuButton extends BaseType implements TypesInterface
 {

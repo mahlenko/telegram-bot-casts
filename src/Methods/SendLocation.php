@@ -12,6 +12,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
 /**
  * Use this method to send point on the map. On success, the sent Message
  * is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendLocation extends BaseMethod implements MethodsInterface
 {

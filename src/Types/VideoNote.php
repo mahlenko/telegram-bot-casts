@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents a video message (available in Telegram apps as
  * of v.4.0).
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class VideoNote extends BaseType implements TypesInterface
 {

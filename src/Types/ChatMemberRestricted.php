@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Represents a chat member that is under certain restrictions in the
  * chat. Supergroups only.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatMemberRestricted extends BaseType implements TypesInterface
 {

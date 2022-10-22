@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents a service message about new members invited to
  * a video chat.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class VideoChatParticipantsInvited extends BaseType implements TypesInterface
 {

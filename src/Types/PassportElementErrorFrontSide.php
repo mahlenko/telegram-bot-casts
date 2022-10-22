@@ -11,6 +11,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * Represents an issue with the front side of a document. The error is
  * considered resolved when the file with the front side of the document
  * changes.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorFrontSide extends BaseType implements TelegramPassportInterface
 {

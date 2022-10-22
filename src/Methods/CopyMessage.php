@@ -16,6 +16,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
  * method is analogous to the method forwardMessage, but the copied
  * message doesn't have a link to the original message. Returns the
  * MessageId of the sent message on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CopyMessage extends BaseMethod implements MethodsInterface
 {

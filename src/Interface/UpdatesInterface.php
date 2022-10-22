@@ -14,6 +14,7 @@ namespace TelegramBot\Interface;
  * Regardless of which option you choose, you will receive
  * JSON-serialized Update objects as a result.
  *
+ *
  * @version Bot API 6.2
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */

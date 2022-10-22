@@ -14,6 +14,9 @@ use TelegramBot\Interface\PaymentsInterface;
  * pre-checkout queries. On success, True is returned. Note: The Bot API
  * must receive an answer within 10 seconds after the pre-checkout query
  * was sent.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AnswerPreCheckoutQuery extends BaseMethod implements PaymentsInterface
 {

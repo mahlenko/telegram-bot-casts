@@ -9,6 +9,9 @@ use TelegramBot\Interface\PaymentsInterface;
 
 /**
  * This object contains basic information about an invoice.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Invoice extends BaseType implements PaymentsInterface
 {

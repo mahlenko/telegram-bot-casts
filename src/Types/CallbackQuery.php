@@ -14,6 +14,9 @@ use TelegramBot\Interface\TypesInterface;
  * present. If the button was attached to a message sent via the bot (in
  * inline mode), the field inline_message_id will be present. Exactly one
  * of the fields data or game_short_name will be present.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CallbackQuery extends BaseType implements TypesInterface
 {

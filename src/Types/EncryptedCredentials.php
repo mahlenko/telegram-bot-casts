@@ -12,6 +12,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * EncryptedPassportElement. See the Telegram Passport Documentation for
  * a complete description of the data decryption and authentication
  * processes.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class EncryptedCredentials extends BaseType implements TelegramPassportInterface
 {

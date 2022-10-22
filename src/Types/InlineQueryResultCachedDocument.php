@@ -12,6 +12,9 @@ use TelegramBot\Interface\InlineModeInterface;
  * default, this file will be sent by the user with an optional caption.
  * Alternatively, you can use input_message_content to send a message
  * with the specified content instead of the file.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultCachedDocument extends BaseType implements InlineModeInterface
 {

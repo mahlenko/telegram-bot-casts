@@ -12,6 +12,9 @@ use TelegramBot\Types\BotCommandScope;
  * Use this method to get the current list of the bot's commands for the
  * given scope and user language. Returns an Array of BotCommand objects.
  * If commands aren't set, an empty list is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetMyCommands extends BaseMethod implements MethodsInterface
 {

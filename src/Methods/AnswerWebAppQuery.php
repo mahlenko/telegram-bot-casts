@@ -13,6 +13,9 @@ use TelegramBot\Types\InlineQueryResult;
  * send a corresponding message on behalf of the user to the chat from
  * which the query originated. On success, a SentWebAppMessage object is
  * returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AnswerWebAppQuery extends BaseMethod implements InlineModeInterface
 {

@@ -11,6 +11,9 @@ use TelegramBot\Types\InlineKeyboardMarkup;
 /**
  * Use this method to stop a poll which was sent by the bot. On success,
  * the stopped Poll is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class StopPoll extends BaseMethod implements UpdatingMessagesInterface
 {

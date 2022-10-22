@@ -10,6 +10,9 @@ use TelegramBot\Interface\PaymentsInterface;
 /**
  * Use this method to create a link for an invoice. Returns the created
  * invoice link as String on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CreateInvoiceLink extends BaseMethod implements PaymentsInterface
 {

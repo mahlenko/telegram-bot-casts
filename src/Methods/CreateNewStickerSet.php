@@ -14,6 +14,9 @@ use TelegramBot\Types\MaskPosition;
  * will be able to edit the sticker set thus created. You must use
  * exactly one of the fields png_sticker, tgs_sticker, or webm_sticker.
  * Returns True on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CreateNewStickerSet extends BaseMethod implements StickersInterface
 {

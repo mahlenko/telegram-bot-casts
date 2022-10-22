@@ -10,6 +10,9 @@ use TelegramBot\Interface\MethodsInterface;
 /**
  * Use this method for your bot to leave a group, supergroup or channel.
  * Returns True on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class LeaveChat extends BaseMethod implements MethodsInterface
 {

@@ -18,6 +18,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * birthday date seems invalid, a submitted document is blurry, a scan
  * shows evidence of tampering, etc. Supply some details in the error
  * message to make sure the user knows how to correct the issues.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetPassportDataErrors extends BaseMethod implements TelegramPassportInterface
 {

@@ -13,6 +13,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
 /**
  * Use this method to send photos. On success, the sent Message is
  * returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendPhoto extends BaseMethod implements MethodsInterface
 {

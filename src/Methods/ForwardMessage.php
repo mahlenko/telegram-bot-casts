@@ -10,6 +10,9 @@ use TelegramBot\Interface\MethodsInterface;
 /**
  * Use this method to forward messages of any kind. Service messages
  * can't be forwarded. On success, the sent Message is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ForwardMessage extends BaseMethod implements MethodsInterface
 {

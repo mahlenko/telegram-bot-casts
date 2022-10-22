@@ -10,6 +10,9 @@ use TelegramBot\Interface\StickersInterface;
 /**
  * Use this method to move a sticker in a set created by the bot to a
  * specific position. Returns True on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetStickerPositionInSet extends BaseMethod implements StickersInterface
 {

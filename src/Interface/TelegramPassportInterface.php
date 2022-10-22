@@ -13,6 +13,7 @@ namespace TelegramBot\Interface;
  * real-world ID (finance, ICOs, etc.). Please see the manual for
  * details.
  *
+ *
  * @version Bot API 6.2
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */

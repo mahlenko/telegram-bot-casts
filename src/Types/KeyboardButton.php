@@ -12,6 +12,9 @@ use TelegramBot\Interface\TypesInterface;
  * text buttons String can be used instead of this object to specify text
  * of the button. Optional fields web_app, request_contact,
  * request_location, and request_poll are mutually exclusive.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class KeyboardButton extends BaseType implements TypesInterface
 {

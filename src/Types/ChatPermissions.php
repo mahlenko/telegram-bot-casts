@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Describes actions that a non-administrator user is allowed to take in
  * a chat.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatPermissions extends BaseType implements TypesInterface
 {

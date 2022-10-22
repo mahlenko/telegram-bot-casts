@@ -14,6 +14,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
  * Use this method to send general files. On success, the sent Message is
  * returned. Bots can currently send files of any type of up to 50 MB in
  * size, this limit may be changed in the future.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendDocument extends BaseMethod implements MethodsInterface
 {

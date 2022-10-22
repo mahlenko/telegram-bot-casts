@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Represents the scope of bot commands, covering all administrators of a
  * specific group or supergroup chat.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class BotCommandScopeChatAdministrators extends BaseType implements TypesInterface
 {

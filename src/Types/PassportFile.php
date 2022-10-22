@@ -11,6 +11,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * This object represents a file uploaded to Telegram Passport. Currently
  * all Telegram Passport files are in JPEG format when decrypted and
  * don't exceed 10MB.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportFile extends BaseType implements TelegramPassportInterface
 {

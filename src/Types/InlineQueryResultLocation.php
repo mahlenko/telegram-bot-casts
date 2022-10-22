@@ -11,6 +11,9 @@ use TelegramBot\Interface\InlineModeInterface;
  * Represents a location on a map. By default, the location will be sent
  * by the user. Alternatively, you can use input_message_content to send
  * a message with the specified content instead of the location.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultLocation extends BaseType implements InlineModeInterface
 {

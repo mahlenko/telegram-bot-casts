@@ -10,6 +10,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
 /**
  * Represents an issue with a document scan. The error is considered
  * resolved when the file with the document scan changes.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorFile extends BaseType implements TelegramPassportInterface
 {

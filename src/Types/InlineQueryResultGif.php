@@ -12,6 +12,9 @@ use TelegramBot\Interface\InlineModeInterface;
  * GIF file will be sent by the user with optional caption.
  * Alternatively, you can use input_message_content to send a message
  * with the specified content instead of the animation.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultGif extends BaseType implements InlineModeInterface
 {

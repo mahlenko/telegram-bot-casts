@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents one button of an inline keyboard. You must use
  * exactly one of the optional fields.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineKeyboardButton extends BaseType implements TypesInterface
 {

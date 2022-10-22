@@ -11,6 +11,9 @@ use TelegramBot\Interface\InlineModeInterface;
  * This object represents an incoming inline query. When the user sends
  * an empty query, your bot could return some default or trending
  * results.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQuery extends BaseType implements InlineModeInterface
 {

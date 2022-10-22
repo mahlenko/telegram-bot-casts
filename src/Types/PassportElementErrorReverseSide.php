@@ -11,6 +11,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * Represents an issue with the reverse side of a document. The error is
  * considered resolved when the file with reverse side of the document
  * changes.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorReverseSide extends BaseType implements TelegramPassportInterface
 {

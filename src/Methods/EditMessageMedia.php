@@ -18,6 +18,9 @@ use TelegramBot\Types\InputMedia;
  * uploaded file via its file_id or specify a URL. On success, if the
  * edited message is not an inline message, the edited Message is
  * returned, otherwise True is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class EditMessageMedia extends BaseMethod implements UpdatingMessagesInterface
 {

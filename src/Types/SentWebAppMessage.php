@@ -9,6 +9,9 @@ use TelegramBot\Interface\InlineModeInterface;
 
 /**
  * Describes an inline message sent by a Web App on behalf of a user.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SentWebAppMessage extends BaseType implements InlineModeInterface
 {

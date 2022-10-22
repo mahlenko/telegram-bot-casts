@@ -18,6 +18,9 @@ use TelegramBot\Interface\TypesInterface;
  * BotCommandScopeChat
  * BotCommandScopeChatAdministrators
  * BotCommandScopeChatMember
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class BotCommandScope extends BaseType implements TypesInterface
 {

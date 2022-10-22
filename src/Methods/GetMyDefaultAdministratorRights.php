@@ -10,6 +10,9 @@ use TelegramBot\Interface\MethodsInterface;
 /**
  * Use this method to get the current default administrator rights of the
  * bot. Returns ChatAdministratorRights on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetMyDefaultAdministratorRights extends BaseMethod implements MethodsInterface
 {

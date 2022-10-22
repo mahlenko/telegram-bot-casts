@@ -12,6 +12,9 @@ use TelegramBot\Interface\InlineModeInterface;
  * will be sent by the user. Alternatively, you can use
  * input_message_content to send a message with the specified content
  * instead of the audio.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultAudio extends BaseType implements InlineModeInterface
 {

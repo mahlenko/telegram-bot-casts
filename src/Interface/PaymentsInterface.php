@@ -12,6 +12,7 @@ namespace TelegramBot\Interface;
  * set up payments for your bot. Please note that users will need
  * Telegram v.4.0 or higher to use payments (released on May 18, 2017).
  *
+ *
  * @version Bot API 6.2
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */

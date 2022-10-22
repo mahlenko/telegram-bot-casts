@@ -11,6 +11,9 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * Represents an issue with one of the files that constitute the
  * translation of a document. The error is considered resolved when the
  * file changes.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorTranslationFile extends BaseType implements TelegramPassportInterface
 {

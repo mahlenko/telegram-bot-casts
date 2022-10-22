@@ -13,6 +13,9 @@ use TelegramBot\Types\ChatPermissions;
  * bot must be an administrator in the group or a supergroup for this to
  * work and must have the can_restrict_members administrator rights.
  * Returns True on success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetChatPermissions extends BaseMethod implements MethodsInterface
 {

@@ -13,6 +13,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
 /**
  * Use this method to send static .WEBP, animated .TGS, or video .WEBM
  * stickers. On success, the sent Message is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendSticker extends BaseMethod implements StickersInterface
 {

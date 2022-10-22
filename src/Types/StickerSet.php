@@ -9,6 +9,9 @@ use TelegramBot\Interface\StickersInterface;
 
 /**
  * This object represents a sticker set.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class StickerSet extends BaseType implements StickersInterface
 {

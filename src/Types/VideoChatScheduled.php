@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents a service message about a video chat scheduled
  * in the chat.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class VideoChatScheduled extends BaseType implements TypesInterface
 {

@@ -12,6 +12,9 @@ use TelegramBot\Types\InlineKeyboardMarkup;
  * Use this method to edit captions of messages. On success, if the
  * edited message is not an inline message, the edited Message is
  * returned, otherwise True is returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class EditMessageCaption extends BaseMethod implements UpdatingMessagesInterface
 {

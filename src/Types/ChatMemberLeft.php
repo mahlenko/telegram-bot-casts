@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Represents a chat member that isn't currently a member of the chat,
  * but may join it themselves.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatMemberLeft extends BaseType implements TypesInterface
 {

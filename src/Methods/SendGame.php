@@ -11,6 +11,9 @@ use TelegramBot\Types\InlineKeyboardMarkup;
 /**
  * Use this method to send a game. On success, the sent Message is
  * returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendGame extends BaseMethod implements GamesInterface
 {

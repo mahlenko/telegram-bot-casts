@@ -12,6 +12,9 @@ use TelegramBot\Types\ReplyKeyboardMarkup;
 /**
  * Use this method to send text messages. On success, the sent Message is
  * returned.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendMessage extends BaseMethod implements MethodsInterface
 {

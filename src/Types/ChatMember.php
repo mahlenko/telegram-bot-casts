@@ -17,6 +17,9 @@ use TelegramBot\Interface\TypesInterface;
  * ChatMemberRestricted
  * ChatMemberLeft
  * ChatMemberBanned
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatMember extends BaseType implements TypesInterface
 {

@@ -21,6 +21,9 @@ use TelegramBot\Interface\MethodsInterface;
  *
  * We only recommend using this method when a response from the bot will
  * take a noticeable amount of time to arrive.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendChatAction extends BaseMethod implements MethodsInterface
 {

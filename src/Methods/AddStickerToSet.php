@@ -16,6 +16,9 @@ use TelegramBot\Types\MaskPosition;
  * and only to them. Animated sticker sets can have up to 50 stickers.
  * Static sticker sets can have up to 120 stickers. Returns True on
  * success.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AddStickerToSet extends BaseMethod implements StickersInterface
 {

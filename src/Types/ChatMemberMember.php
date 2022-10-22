@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Represents a chat member that has no additional privileges or
  * restrictions.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatMemberMember extends BaseType implements TypesInterface
 {

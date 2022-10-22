@@ -10,6 +10,9 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents an animation file (GIF or H.264/MPEG-4 AVC
  * video without sound).
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Animation extends BaseType implements TypesInterface
 {

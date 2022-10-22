@@ -10,6 +10,9 @@ use TelegramBot\Interface\StickersInterface;
 /**
  * Use this method to get information about custom emoji stickers by
  * their identifiers. Returns an Array of Sticker objects.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetCustomEmojiStickers extends BaseMethod implements StickersInterface
 {

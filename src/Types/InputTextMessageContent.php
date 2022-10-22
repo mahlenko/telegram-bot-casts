@@ -10,6 +10,9 @@ use TelegramBot\Interface\InlineModeInterface;
 /**
  * Represents the content of a text message to be sent as the result of
  * an inline query.
+ *
+ * Bot API 6.2
+ * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InputTextMessageContent extends BaseType implements InlineModeInterface
 {
