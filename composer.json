@@ -1,7 +1,7 @@
 {
     "name": "makhlenko/telegram-bot-casts",
     "description": "Telegram bot API casts types and request method.",
-    "version": "1.0.1",
+    "version": "6.2",
     "license": "MIT",
     "autoload": {
         "psr-4": {
