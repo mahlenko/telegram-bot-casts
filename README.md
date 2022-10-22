@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Проект содержит описания всех типов и методов из документации Telegram Bot API.
-Файлы сгенерированы автоматически с помощью malenko/telegram-api-parser. 
+Файлы сгенерированы автоматически с помощью [mahlenko/telegram-api-parser](https://github.com/mahlenko/telegram-api-parser). 
 Вы можете попробовать сделать это самостоятельно, если файлы этого репозитория устареют.
 
 # Простая установка
