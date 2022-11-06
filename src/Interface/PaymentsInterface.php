@@ -13,7 +13,7 @@ namespace TelegramBot\Interface;
  * Telegram v.4.0 or higher to use payments (released on May 18, 2017).
  *
  *
- * @version Bot API 6.2
+ * @version Bot API 6.3
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */
 interface PaymentsInterface

@@ -15,7 +15,7 @@ use TelegramBot\Interface\MethodsInterface;
  * must have the appropriate administrator rights. Returns True on
  * success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class BanChatSenderChat extends BaseMethod implements MethodsInterface

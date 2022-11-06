@@ -14,7 +14,7 @@ use TelegramBot\Types\InputMedia;
  * with messages of the same type. On success, an array of Messages that
  * were sent is returned.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendMediaGroup extends BaseMethod implements MethodsInterface
@@ -24,6 +24,12 @@ class SendMediaGroup extends BaseMethod implements MethodsInterface
      * channel (in the format @channelusername)
      */
     public int|string $chat_id;
+
+    /**
+     * Unique identifier for the target message thread (topic) of the forum;
+     * for forum supergroups only
+     */
+    public ?int $message_thread_id;
 
     /**
      * A JSON-serialized array describing messages to be sent, must include

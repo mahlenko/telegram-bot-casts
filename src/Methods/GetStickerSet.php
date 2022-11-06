@@ -11,7 +11,7 @@ use TelegramBot\Interface\StickersInterface;
  * Use this method to get a sticker set. On success, a StickerSet object
  * is returned.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetStickerSet extends BaseMethod implements StickersInterface

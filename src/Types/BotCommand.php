@@ -10,7 +10,7 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents a bot command.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class BotCommand extends BaseType implements TypesInterface

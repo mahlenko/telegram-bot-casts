@@ -17,7 +17,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * up to 1 minute long. Use this method to send video messages. On
  * success, the sent Message is returned.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendVideoNote extends BaseMethod implements MethodsInterface
@@ -27,6 +27,12 @@ class SendVideoNote extends BaseMethod implements MethodsInterface
      * channel (in the format @channelusername)
      */
     public int|string $chat_id;
+
+    /**
+     * Unique identifier for the target message thread (topic) of the forum;
+     * for forum supergroups only
+     */
+    public ?int $message_thread_id;
 
     /**
      * Video note to send. Pass a file_id as String to send a video note that

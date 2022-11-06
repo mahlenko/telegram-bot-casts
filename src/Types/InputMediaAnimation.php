@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * Represents an animation file (GIF or H.264/MPEG-4 AVC video without
  * sound) to be sent.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InputMediaAnimation extends BaseType implements TypesInterface

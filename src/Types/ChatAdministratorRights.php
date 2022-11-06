@@ -10,7 +10,7 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Represents the rights of an administrator in a chat.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatAdministratorRights extends BaseType implements TypesInterface
@@ -69,4 +69,10 @@ class ChatAdministratorRights extends BaseType implements TypesInterface
      * supergroups only
      */
     public ?bool $can_pin_messages;
+
+    /**
+     * Optional. True, if the user is allowed to create, rename, close, and
+     * reopen forum topics; supergroups only
+     */
+    public ?bool $can_manage_topics;
 }

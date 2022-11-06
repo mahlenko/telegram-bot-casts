@@ -16,7 +16,7 @@ use TelegramBot\Interface\MethodsInterface;
  * server for 10 minutes. Returns True on success. Requires no
  * parameters.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class LogOut extends BaseMethod implements MethodsInterface

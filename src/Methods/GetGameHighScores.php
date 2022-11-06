@@ -17,7 +17,7 @@ use TelegramBot\Interface\GamesInterface;
  * three users if the user and their neighbors are not among them. Please
  * note that this behavior is subject to change.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetGameHighScores extends BaseMethod implements GamesInterface

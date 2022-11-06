@@ -10,7 +10,7 @@ use TelegramBot\Interface\UpdatesInterface;
 /**
  * Describes the current status of a webhook.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class WebhookInfo extends BaseType implements UpdatesInterface

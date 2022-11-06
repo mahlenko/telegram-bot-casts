@@ -12,7 +12,7 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * considered resolved when the file with the front side of the document
  * changes.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorFrontSide extends BaseType implements TelegramPassportInterface

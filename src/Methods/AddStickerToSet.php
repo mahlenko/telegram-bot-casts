@@ -17,7 +17,7 @@ use TelegramBot\Types\MaskPosition;
  * Static sticker sets can have up to 120 stickers. Returns True on
  * success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AddStickerToSet extends BaseMethod implements StickersInterface

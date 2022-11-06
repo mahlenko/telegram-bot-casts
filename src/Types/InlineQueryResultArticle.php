@@ -10,7 +10,7 @@ use TelegramBot\Interface\InlineModeInterface;
 /**
  * Represents a link to an article or web page.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultArticle extends BaseType implements InlineModeInterface

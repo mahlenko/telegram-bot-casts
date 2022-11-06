@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * Represents the default scope of bot commands. Default commands are
  * used if no commands with a narrower scope are specified for the user.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class BotCommandScopeDefault extends BaseType implements TypesInterface

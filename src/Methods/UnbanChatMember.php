@@ -17,7 +17,7 @@ use TelegramBot\Interface\MethodsInterface;
  * be removed from the chat. If you don't want this, use the parameter
  * only_if_banned. Returns True on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class UnbanChatMember extends BaseMethod implements MethodsInterface

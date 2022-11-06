@@ -10,7 +10,7 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents a unique message identifier.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class MessageId extends BaseType implements TypesInterface

@@ -14,7 +14,7 @@ use TelegramBot\Types\ChatPermissions;
  * appropriate administrator rights. Pass True for all permissions to
  * lift restrictions from a user. Returns True on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class RestrictChatMember extends BaseMethod implements MethodsInterface

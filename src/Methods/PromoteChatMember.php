@@ -13,7 +13,7 @@ use TelegramBot\Interface\MethodsInterface;
  * and must have the appropriate administrator rights. Pass False for all
  * boolean parameters to demote a user. Returns True on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PromoteChatMember extends BaseMethod implements MethodsInterface
@@ -75,6 +75,12 @@ class PromoteChatMember extends BaseMethod implements MethodsInterface
 
     /** Pass True if the administrator can pin messages, supergroups only */
     public ?bool $can_pin_messages;
+
+    /**
+     * Pass True if the user is allowed to create, rename, close, and reopen
+     * forum topics, supergroups only
+     */
+    public ?bool $can_manage_topics;
 
     /**
      * A list of necessary properties that should be checked before sending

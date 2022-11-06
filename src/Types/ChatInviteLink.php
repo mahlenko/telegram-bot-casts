@@ -10,7 +10,7 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Represents an invite link for a chat.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatInviteLink extends BaseType implements TypesInterface

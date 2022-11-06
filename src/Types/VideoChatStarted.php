@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * This object represents a service message about a video chat started in
  * the chat. Currently holds no information.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class VideoChatStarted extends BaseType implements TypesInterface

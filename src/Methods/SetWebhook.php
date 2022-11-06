@@ -20,7 +20,7 @@ use TelegramBot\Types\InputFile;
  * request will contain a header “X-Telegram-Bot-Api-Secret-Token”
  * with the secret token as content.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetWebhook extends BaseMethod implements UpdatesInterface

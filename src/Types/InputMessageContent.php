@@ -18,7 +18,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * InputContactMessageContent
  * InputInvoiceMessageContent
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InputMessageContent extends BaseType implements InlineModeInterface

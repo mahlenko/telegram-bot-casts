@@ -13,7 +13,7 @@ use TelegramBot\Interface\MethodsInterface;
  * this to work and must have the appropriate administrator rights.
  * Returns True on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetChatTitle extends BaseMethod implements MethodsInterface
@@ -24,7 +24,7 @@ class SetChatTitle extends BaseMethod implements MethodsInterface
      */
     public int|string $chat_id;
 
-    /** New chat title, 1-255 characters */
+    /** New chat title, 1-128 characters */
     public string $title;
 
     /**

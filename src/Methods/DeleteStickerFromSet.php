@@ -11,7 +11,7 @@ use TelegramBot\Interface\StickersInterface;
  * Use this method to delete a sticker from a set created by the bot.
  * Returns True on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class DeleteStickerFromSet extends BaseMethod implements StickersInterface

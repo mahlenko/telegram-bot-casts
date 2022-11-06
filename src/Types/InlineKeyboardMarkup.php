@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * This object represents an inline keyboard that appears right next to
  * the message it belongs to.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineKeyboardMarkup extends BaseType implements TypesInterface

@@ -15,7 +15,7 @@ use TelegramBot\Types\MaskPosition;
  * exactly one of the fields png_sticker, tgs_sticker, or webm_sticker.
  * Returns True on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CreateNewStickerSet extends BaseMethod implements StickersInterface

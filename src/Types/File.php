@@ -16,7 +16,7 @@ use TelegramBot\Interface\TypesInterface;
  *
  * The maximum file size to download is 20 MB
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class File extends BaseType implements TypesInterface

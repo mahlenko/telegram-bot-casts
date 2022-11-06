@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * Describes actions that a non-administrator user is allowed to take in
  * a chat.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatPermissions extends BaseType implements TypesInterface
@@ -60,4 +60,10 @@ class ChatPermissions extends BaseType implements TypesInterface
      * public supergroups
      */
     public ?bool $can_pin_messages;
+
+    /**
+     * Optional. True, if the user is allowed to create forum topics. If
+     * omitted defaults to the value of can_pin_messages
+     */
+    public ?bool $can_manage_topics;
 }
