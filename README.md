@@ -1,4 +1,4 @@
-![alt text](TelegramBotCastsCover.png "Telegram Bot Casts")
+![alt text](TelegramBotCastsCover.png?v=1 "Telegram Bot Casts")
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
