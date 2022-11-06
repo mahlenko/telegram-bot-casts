@@ -13,7 +13,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * use input_message_content to send a message with the specified content
  * instead of the sticker.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultCachedSticker extends BaseType implements InlineModeInterface

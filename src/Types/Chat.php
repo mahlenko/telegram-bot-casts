@@ -10,7 +10,7 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents a chat.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Chat extends BaseType implements TypesInterface
@@ -45,8 +45,25 @@ class Chat extends BaseType implements TypesInterface
     /** Optional. Last name of the other party in a private chat */
     public ?string $last_name;
 
+    /** Optional. True, if the supergroup chat is a forum (has topics enabled) */
+    public ?bool $is_forum;
+
     /** Optional. Chat photo. Returned only in getChat. */
     public ?ChatPhoto $photo;
+
+    /**
+     * Optional. If non-empty, the list of all active chat usernames; for
+     * private chats, supergroups and channels. Returned only in getChat.
+     *
+     * @var array<string>
+     */
+    public ?array $active_usernames;
+
+    /**
+     * Optional. Custom emoji identifier of emoji status of the other party
+     * in a private chat. Returned only in getChat.
+     */
+    public ?string $emoji_status_custom_emoji_id;
 
     /**
      * Optional. Bio of the other party in a private chat. Returned only in

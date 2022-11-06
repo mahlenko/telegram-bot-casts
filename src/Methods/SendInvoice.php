@@ -13,7 +13,7 @@ use TelegramBot\Types\LabeledPrice;
  * Use this method to send invoices. On success, the sent Message is
  * returned.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendInvoice extends BaseMethod implements PaymentsInterface
@@ -23,6 +23,12 @@ class SendInvoice extends BaseMethod implements PaymentsInterface
      * channel (in the format @channelusername)
      */
     public int|string $chat_id;
+
+    /**
+     * Unique identifier for the target message thread (topic) of the forum;
+     * for forum supergroups only
+     */
+    public ?int $message_thread_id;
 
     /** Product name, 1-32 characters */
     public string $title;

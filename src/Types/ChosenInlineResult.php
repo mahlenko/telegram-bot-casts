@@ -11,7 +11,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * Represents a result of an inline query that was chosen by the user and
  * sent to their chat partner.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChosenInlineResult extends BaseType implements InlineModeInterface

@@ -12,7 +12,7 @@ use TelegramBot\Interface\MethodsInterface;
  * private chat, or the default menu button. Returns MenuButton on
  * success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetChatMenuButton extends BaseMethod implements MethodsInterface

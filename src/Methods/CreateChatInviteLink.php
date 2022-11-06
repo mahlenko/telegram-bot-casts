@@ -14,7 +14,7 @@ use TelegramBot\Interface\MethodsInterface;
  * using the method revokeChatInviteLink. Returns the new invite link as
  * ChatInviteLink object.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CreateChatInviteLink extends BaseMethod implements MethodsInterface

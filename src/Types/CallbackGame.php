@@ -11,7 +11,7 @@ use TelegramBot\Interface\GamesInterface;
  * A placeholder, currently holds no information. Use BotFather to set up
  * your game.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CallbackGame extends BaseType implements GamesInterface

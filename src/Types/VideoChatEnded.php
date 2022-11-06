@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * This object represents a service message about a video chat ended in
  * the chat.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class VideoChatEnded extends BaseType implements TypesInterface

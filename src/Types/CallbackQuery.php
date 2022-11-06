@@ -15,7 +15,7 @@ use TelegramBot\Interface\TypesInterface;
  * inline mode), the field inline_message_id will be present. Exactly one
  * of the fields data or game_short_name will be present.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CallbackQuery extends BaseType implements TypesInterface

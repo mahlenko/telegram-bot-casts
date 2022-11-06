@@ -10,7 +10,7 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Describes that no specific value for the menu button was set.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class MenuButtonDefault extends BaseType implements TypesInterface

@@ -10,7 +10,7 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Represents a join request sent to a chat.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatJoinRequest extends BaseType implements TypesInterface

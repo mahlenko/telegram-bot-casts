@@ -13,7 +13,7 @@ use TelegramBot\Types\InputFile;
  * createNewStickerSet and addStickerToSet methods (can be used multiple
  * times). Returns the uploaded File on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class UploadStickerFile extends BaseMethod implements StickersInterface

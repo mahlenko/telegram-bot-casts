@@ -10,7 +10,7 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represent a user's profile pictures.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class UserProfilePhotos extends BaseType implements TypesInterface

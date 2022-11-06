@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * This object represents a general file (as opposed to photos, voice
  * messages and audio files).
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Document extends BaseType implements TypesInterface

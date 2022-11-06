@@ -12,7 +12,7 @@ use TelegramBot\Interface\MethodsInterface;
  * name of the user for one-on-one conversations, current username of a
  * user, group or channel, etc.). Returns a Chat object on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetChat extends BaseMethod implements MethodsInterface

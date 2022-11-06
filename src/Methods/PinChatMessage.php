@@ -15,7 +15,7 @@ use TelegramBot\Interface\MethodsInterface;
  * 'can_edit_messages' administrator right in a channel. Returns True on
  * success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PinChatMessage extends BaseMethod implements MethodsInterface

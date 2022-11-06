@@ -20,7 +20,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * message doesn't have a link to the original message. Returns the
  * MessageId of the sent message on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CopyMessage extends BaseMethod implements MethodsInterface
@@ -30,6 +30,12 @@ class CopyMessage extends BaseMethod implements MethodsInterface
      * channel (in the format @channelusername)
      */
     public int|string $chat_id;
+
+    /**
+     * Unique identifier for the target message thread (topic) of the forum;
+     * for forum supergroups only
+     */
+    public ?int $message_thread_id;
 
     /**
      * Unique identifier for the chat where the original message was sent (or

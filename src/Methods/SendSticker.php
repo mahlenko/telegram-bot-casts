@@ -16,7 +16,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * Use this method to send static .WEBP, animated .TGS, or video .WEBM
  * stickers. On success, the sent Message is returned.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendSticker extends BaseMethod implements StickersInterface
@@ -26,6 +26,12 @@ class SendSticker extends BaseMethod implements StickersInterface
      * channel (in the format @channelusername)
      */
     public int|string $chat_id;
+
+    /**
+     * Unique identifier for the target message thread (topic) of the forum;
+     * for forum supergroups only
+     */
+    public ?int $message_thread_id;
 
     /**
      * Sticker to send. Pass a file_id as String to send a file that exists

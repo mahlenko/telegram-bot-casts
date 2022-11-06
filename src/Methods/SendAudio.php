@@ -21,7 +21,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * changed in the future.
  * For sending voice messages, use the sendVoice method instead.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendAudio extends BaseMethod implements MethodsInterface
@@ -31,6 +31,12 @@ class SendAudio extends BaseMethod implements MethodsInterface
      * channel (in the format @channelusername)
      */
     public int|string $chat_id;
+
+    /**
+     * Unique identifier for the target message thread (topic) of the forum;
+     * for forum supergroups only
+     */
+    public ?int $message_thread_id;
 
     /**
      * Audio file to send. Pass a file_id as String to send an audio file

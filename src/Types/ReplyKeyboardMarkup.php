@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * This object represents a custom keyboard with reply options (see
  * Introduction to bots for details and examples).
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ReplyKeyboardMarkup extends BaseType implements TypesInterface

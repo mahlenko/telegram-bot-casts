@@ -12,7 +12,7 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * considered resolved when the file with reverse side of the document
  * changes.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorReverseSide extends BaseType implements TelegramPassportInterface

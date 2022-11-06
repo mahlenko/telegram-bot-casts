@@ -10,13 +10,19 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * This object represents a message.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Message extends BaseType implements TypesInterface
 {
     /** Unique message identifier inside this chat */
     public int $message_id;
+
+    /**
+     * Optional. Unique identifier of a message thread to which the message
+     * belongs; for supergroups only
+     */
+    public ?int $message_thread_id;
 
     /**
      * Optional. Sender of the message; empty for messages sent to channels.
@@ -74,6 +80,9 @@ class Message extends BaseType implements TypesInterface
      * in Unix time
      */
     public ?int $forward_date;
+
+    /** Optional. True, if the message is sent to a forum topic */
+    public ?bool $is_topic_message;
 
     /**
      * Optional. True, if the message is a channel post that was
@@ -298,6 +307,15 @@ class Message extends BaseType implements TypesInterface
      * proximity alert while sharing Live Location.
      */
     public ?ProximityAlertTriggered $proximity_alert_triggered;
+
+    /** Optional. Service message: forum topic created */
+    public ?ForumTopicCreated $forum_topic_created;
+
+    /** Optional. Service message: forum topic closed */
+    public ?ForumTopicClosed $forum_topic_closed;
+
+    /** Optional. Service message: forum topic reopened */
+    public ?ForumTopicReopened $forum_topic_reopened;
 
     /** Optional. Service message: video chat scheduled */
     public ?VideoChatScheduled $video_chat_scheduled;

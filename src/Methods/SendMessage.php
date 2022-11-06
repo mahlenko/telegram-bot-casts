@@ -16,7 +16,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * Use this method to send text messages. On success, the sent Message is
  * returned.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendMessage extends BaseMethod implements MethodsInterface
@@ -26,6 +26,12 @@ class SendMessage extends BaseMethod implements MethodsInterface
      * channel (in the format @channelusername)
      */
     public int|string $chat_id;
+
+    /**
+     * Unique identifier for the target message thread (topic) of the forum;
+     * for forum supergroups only
+     */
+    public ?int $message_thread_id;
 
     /**
      * Text of the message to be sent, 1-4096 characters after entities

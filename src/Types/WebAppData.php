@@ -10,7 +10,7 @@ use TelegramBot\Interface\TypesInterface;
 /**
  * Describes data sent from a Web App to the bot.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class WebAppData extends BaseType implements TypesInterface

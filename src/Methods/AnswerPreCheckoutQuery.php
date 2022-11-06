@@ -15,7 +15,7 @@ use TelegramBot\Interface\PaymentsInterface;
  * must receive an answer within 10 seconds after the pre-checkout query
  * was sent.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AnswerPreCheckoutQuery extends BaseMethod implements PaymentsInterface

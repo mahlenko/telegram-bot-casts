@@ -15,7 +15,7 @@ use TelegramBot\Interface\TypesInterface;
  * keyboards that are hidden immediately after the user presses a button
  * (see ReplyKeyboardMarkup).
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ReplyKeyboardRemove extends BaseType implements TypesInterface

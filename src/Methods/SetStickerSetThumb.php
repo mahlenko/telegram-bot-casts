@@ -13,7 +13,7 @@ use TelegramBot\Types\InputFile;
  * thumbnails can be set for animated sticker sets only. Video thumbnails
  * can be set only for video sticker sets only. Returns True on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetStickerSetThumb extends BaseMethod implements StickersInterface

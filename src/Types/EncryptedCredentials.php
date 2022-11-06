@@ -13,7 +13,7 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * a complete description of the data decryption and authentication
  * processes.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class EncryptedCredentials extends BaseType implements TelegramPassportInterface

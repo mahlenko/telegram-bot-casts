@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * Represents a chat member that is under certain restrictions in the
  * chat. Supergroups only.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatMemberRestricted extends BaseType implements TypesInterface
@@ -36,6 +36,9 @@ class ChatMemberRestricted extends BaseType implements TypesInterface
 
     /** True, if the user is allowed to pin messages */
     public bool $can_pin_messages;
+
+    /** True, if the user is allowed to create forum topics */
+    public bool $can_manage_topics;
 
     /**
      * True, if the user is allowed to send text messages, contacts,

@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * Represents a chat member that owns the chat and has all administrator
  * privileges.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatMemberOwner extends BaseType implements TypesInterface

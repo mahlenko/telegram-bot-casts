@@ -14,7 +14,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * input_message_content to send a message with specified content instead
  * of the animation.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultCachedGif extends BaseType implements InlineModeInterface

@@ -11,7 +11,7 @@ use TelegramBot\Interface\UpdatesInterface;
  * This object represents an incoming update.At most one of the optional
  * parameters can be present in any given update.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Update extends BaseType implements UpdatesInterface

@@ -11,7 +11,7 @@ use TelegramBot\Interface\UpdatesInterface;
  * Use this method to receive incoming updates using long polling (wiki).
  * Returns an Array of Update objects.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetUpdates extends BaseMethod implements UpdatesInterface

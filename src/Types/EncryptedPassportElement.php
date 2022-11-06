@@ -11,7 +11,7 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * Describes documents or other Telegram Passport elements shared with
  * the bot by the user.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class EncryptedPassportElement extends BaseType implements TelegramPassportInterface

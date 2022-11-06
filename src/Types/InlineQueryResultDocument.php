@@ -14,7 +14,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * instead of the file. Currently, only .PDF and .ZIP files can be sent
  * using this method.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultDocument extends BaseType implements InlineModeInterface

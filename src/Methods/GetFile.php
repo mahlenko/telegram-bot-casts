@@ -17,7 +17,7 @@ use TelegramBot\Interface\MethodsInterface;
  * will be valid for at least 1 hour. When the link expires, a new one
  * can be requested by calling getFile again.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetFile extends BaseMethod implements MethodsInterface

@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * This object represents an audio file to be treated as music by the
  * Telegram clients.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Audio extends BaseType implements TypesInterface

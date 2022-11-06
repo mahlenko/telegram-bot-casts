@@ -11,7 +11,7 @@ use TelegramBot\Interface\TypesInterface;
  * Represents a chat member that was banned in the chat and can't return
  * to the chat or view chat messages.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatMemberBanned extends BaseType implements TypesInterface

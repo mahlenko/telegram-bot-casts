@@ -14,7 +14,7 @@ use TelegramBot\Interface\MethodsInterface;
  * can_set_sticker_set optionally returned in getChat requests to check
  * if the bot can use this method. Returns True on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class DeleteChatStickerSet extends BaseMethod implements MethodsInterface

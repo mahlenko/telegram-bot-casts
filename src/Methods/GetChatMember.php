@@ -11,7 +11,7 @@ use TelegramBot\Interface\MethodsInterface;
  * Use this method to get information about a member of a chat. Returns a
  * ChatMember object on success.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetChatMember extends BaseMethod implements MethodsInterface

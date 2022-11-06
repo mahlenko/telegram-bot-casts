@@ -12,13 +12,19 @@ use TelegramBot\Types\InlineKeyboardMarkup;
  * Use this method to send a game. On success, the sent Message is
  * returned.
  *
- * Bot API 6.2
+ * Bot API 6.3
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendGame extends BaseMethod implements GamesInterface
 {
     /** Unique identifier for the target chat */
     public int $chat_id;
+
+    /**
+     * Unique identifier for the target message thread (topic) of the forum;
+     * for forum supergroups only
+     */
+    public ?int $message_thread_id;
 
     /**
      * Short name of the game, serves as the unique identifier for the game.
