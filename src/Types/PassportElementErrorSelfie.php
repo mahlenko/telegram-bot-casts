@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
 
 /**
  * Represents an issue with the selfie with a document. The error is
  * considered resolved when the file with the selfie changes.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class PassportElementErrorSelfie extends BaseType implements TelegramPassportInterface
+class PassportElementErrorSelfie extends TelegramType implements TelegramPassportInterface
 {
     /** Error source, must be selfie */
     public string $source;

@@ -4,18 +4,19 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\InlineModeInterface;
 use TelegramBot\Types\InlineQueryResult;
+use TelegramBot\Types\InlineQueryResultsButton;
 
 /**
  * Use this method to send answers to an inline query. On success, True
  * is returned.No more than 50 results per query are allowed.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class AnswerInlineQuery extends BaseMethod implements InlineModeInterface
+class AnswerInlineQuery extends TelegramMethod implements InlineModeInterface
 {
     /** Unique identifier for the answered query */
     public string $inline_query_id;
@@ -36,7 +37,7 @@ class AnswerInlineQuery extends BaseMethod implements InlineModeInterface
     /**
      * Pass True if results may be cached on the server side only for the
      * user that sent the query. By default, results may be returned to any
-     * user who sends the same query
+     * user who sends the same query.
      */
     public ?bool $is_personal;
 
@@ -49,26 +50,10 @@ class AnswerInlineQuery extends BaseMethod implements InlineModeInterface
     public ?string $next_offset;
 
     /**
-     * If passed, clients will display a button with specified text that
-     * switches the user to a private chat with the bot and sends the bot a
-     * start message with the parameter switch_pm_parameter
+     * A JSON-serialized object describing a button to be shown above inline
+     * query results
      */
-    public ?string $switch_pm_text;
-
-    /**
-     * Deep-linking parameter for the /start message sent to the bot when
-     * user presses the switch button. 1-64 characters, only A-Z, a-z, 0-9, _
-     * and - are allowed.Example: An inline bot that sends YouTube videos can
-     * ask the user to connect the bot to their YouTube account to adapt
-     * search results accordingly. To do this, it displays a 'Connect your
-     * YouTube account' button above the results, or even before showing any.
-     * The user presses the button, switches to a private chat with the bot
-     * and, in doing so, passes a start parameter that instructs the bot to
-     * return an OAuth link. Once done, the bot can offer a switch_inline
-     * button so that the user can easily return to the chat where they
-     * wanted to use the bot's inline capabilities.
-     */
-    public ?string $switch_pm_parameter;
+    public ?InlineQueryResultsButton $button;
 
     /**
      * A list of necessary properties that should be checked before sending

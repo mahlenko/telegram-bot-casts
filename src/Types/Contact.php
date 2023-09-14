@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents a phone contact.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Contact extends BaseType implements TypesInterface
+class Contact extends TelegramType implements TypesInterface
 {
     /** Contact's phone number */
     public string $phone_number;

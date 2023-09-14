@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
@@ -20,9 +20,9 @@ use TelegramBot\Interface\TypesInterface;
  * button is applied. By default, the menu button opens the list of bot
  * commands.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class MenuButton extends BaseType implements TypesInterface
+class MenuButton extends TelegramType implements TypesInterface
 {
 }

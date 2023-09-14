@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\PaymentsInterface;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\LabeledPrice;
@@ -13,10 +13,10 @@ use TelegramBot\Types\LabeledPrice;
  * Use this method to send invoices. On success, the sent Message is
  * returned.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SendInvoice extends BaseMethod implements PaymentsInterface
+class SendInvoice extends TelegramMethod implements PaymentsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

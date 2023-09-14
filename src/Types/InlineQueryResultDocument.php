@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
@@ -14,10 +14,10 @@ use TelegramBot\Interface\InlineModeInterface;
  * instead of the file. Currently, only .PDF and .ZIP files can be sent
  * using this method.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQueryResultDocument extends BaseType implements InlineModeInterface
+class InlineQueryResultDocument extends TelegramType implements InlineModeInterface
 {
     /** Type of the result, must be document */
     public string $type;
@@ -67,11 +67,11 @@ class InlineQueryResultDocument extends BaseType implements InlineModeInterface
     public ?InputMessageContent $input_message_content;
 
     /** Optional. URL of the thumbnail (JPEG only) for the file */
-    public ?string $thumb_url;
+    public ?string $thumbnail_url;
 
     /** Optional. Thumbnail width */
-    public ?int $thumb_width;
+    public ?int $thumbnail_width;
 
     /** Optional. Thumbnail height */
-    public ?int $thumb_height;
+    public ?int $thumbnail_height;
 }

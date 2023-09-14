@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
@@ -14,10 +14,10 @@ use TelegramBot\Interface\TypesInterface;
  * you want to create user-friendly step-by-step interfaces without
  * having to sacrifice privacy mode.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ForceReply extends BaseType implements TypesInterface
+class ForceReply extends TelegramType implements TypesInterface
 {
     /**
      * Shows reply interface to the user, as if they manually selected the

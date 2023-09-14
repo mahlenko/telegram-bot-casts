@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object contains information about a poll.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Poll extends BaseType implements TypesInterface
+class Poll extends TelegramType implements TypesInterface
 {
     /** Unique poll identifier */
     public string $id;

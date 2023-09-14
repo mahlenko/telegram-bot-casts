@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\GamesInterface;
 use TelegramBot\Types\InlineKeyboardMarkup;
 
@@ -12,10 +12,10 @@ use TelegramBot\Types\InlineKeyboardMarkup;
  * Use this method to send a game. On success, the sent Message is
  * returned.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SendGame extends BaseMethod implements GamesInterface
+class SendGame extends TelegramMethod implements GamesInterface
 {
     /** Unique identifier for the target chat */
     public int $chat_id;

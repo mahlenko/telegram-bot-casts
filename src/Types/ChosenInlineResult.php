@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
  * Represents a result of an inline query that was chosen by the user and
  * sent to their chat partner.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ChosenInlineResult extends BaseType implements InlineModeInterface
+class ChosenInlineResult extends TelegramType implements InlineModeInterface
 {
     /** The unique identifier for the result that was chosen */
     public string $result_id;

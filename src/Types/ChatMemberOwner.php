@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents a chat member that owns the chat and has all administrator
  * privileges.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ChatMemberOwner extends BaseType implements TypesInterface
+class ChatMemberOwner extends TelegramType implements TypesInterface
 {
     /** The member's status in the chat, always “creator” */
     public string $status;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
@@ -12,10 +12,10 @@ use TelegramBot\Interface\InlineModeInterface;
  * an empty query, your bot could return some default or trending
  * results.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQuery extends BaseType implements InlineModeInterface
+class InlineQuery extends TelegramType implements InlineModeInterface
 {
     /** Unique identifier for this query */
     public string $id;

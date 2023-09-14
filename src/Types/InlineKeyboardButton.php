@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents one button of an inline keyboard. You must use
  * exactly one of the optional fields.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineKeyboardButton extends BaseType implements TypesInterface
+class InlineKeyboardButton extends TelegramType implements TypesInterface
 {
     /** Label text on the button */
     public string $text;
@@ -51,12 +51,7 @@ class InlineKeyboardButton extends BaseType implements TypesInterface
      * Optional. If set, pressing the button will prompt the user to select
      * one of their chats, open that chat and insert the bot's username and
      * the specified inline query in the input field. May be empty, in which
-     * case just the bot's username will be inserted.Note: This offers an
-     * easy way for users to start using your bot in inline mode when they
-     * are currently in a private chat with it. Especially useful when
-     * combined with switch_pm… actions - in this case the user will be
-     * automatically returned to the chat they switched from, skipping the
-     * chat selection screen.
+     * case just the bot's username will be inserted.
      */
     public ?string $switch_inline_query;
 
@@ -68,6 +63,13 @@ class InlineKeyboardButton extends BaseType implements TypesInterface
      * same chat - good for selecting something from multiple options.
      */
     public ?string $switch_inline_query_current_chat;
+
+    /**
+     * Optional. If set, pressing the button will prompt the user to select
+     * one of their chats of the specified type, open that chat and insert
+     * the bot's username and the specified inline query in the input field
+     */
+    public ?SwitchInlineQueryChosenChat $switch_inline_query_chosen_chat;
 
     /**
      * Optional. Description of the game that will be launched when the user

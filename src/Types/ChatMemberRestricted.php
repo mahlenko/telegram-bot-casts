@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents a chat member that is under certain restrictions in the
  * chat. Supergroups only.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ChatMemberRestricted extends BaseType implements TypesInterface
+class ChatMemberRestricted extends TelegramType implements TypesInterface
 {
     /** The member's status in the chat, always “restricted” */
     public string $status;
@@ -26,31 +26,28 @@ class ChatMemberRestricted extends BaseType implements TypesInterface
     public bool $is_member;
 
     /**
-     * True, if the user is allowed to change the chat title, photo and other
-     * settings
-     */
-    public bool $can_change_info;
-
-    /** True, if the user is allowed to invite new users to the chat */
-    public bool $can_invite_users;
-
-    /** True, if the user is allowed to pin messages */
-    public bool $can_pin_messages;
-
-    /** True, if the user is allowed to create forum topics */
-    public bool $can_manage_topics;
-
-    /**
      * True, if the user is allowed to send text messages, contacts,
-     * locations and venues
+     * invoices, locations and venues
      */
     public bool $can_send_messages;
 
-    /**
-     * True, if the user is allowed to send audios, documents, photos,
-     * videos, video notes and voice notes
-     */
-    public bool $can_send_media_messages;
+    /** True, if the user is allowed to send audios */
+    public bool $can_send_audios;
+
+    /** True, if the user is allowed to send documents */
+    public bool $can_send_documents;
+
+    /** True, if the user is allowed to send photos */
+    public bool $can_send_photos;
+
+    /** True, if the user is allowed to send videos */
+    public bool $can_send_videos;
+
+    /** True, if the user is allowed to send video notes */
+    public bool $can_send_video_notes;
+
+    /** True, if the user is allowed to send voice notes */
+    public bool $can_send_voice_notes;
 
     /** True, if the user is allowed to send polls */
     public bool $can_send_polls;
@@ -68,7 +65,22 @@ class ChatMemberRestricted extends BaseType implements TypesInterface
     public bool $can_add_web_page_previews;
 
     /**
-     * Date when restrictions will be lifted for this user; unix time. If 0,
+     * True, if the user is allowed to change the chat title, photo and other
+     * settings
+     */
+    public bool $can_change_info;
+
+    /** True, if the user is allowed to invite new users to the chat */
+    public bool $can_invite_users;
+
+    /** True, if the user is allowed to pin messages */
+    public bool $can_pin_messages;
+
+    /** True, if the user is allowed to create forum topics */
+    public bool $can_manage_topics;
+
+    /**
+     * Date when restrictions will be lifted for this user; Unix time. If 0,
      * then the user is restricted forever
      */
     public int $until_date;

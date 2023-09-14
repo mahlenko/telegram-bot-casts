@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -12,10 +12,10 @@ use TelegramBot\Interface\MethodsInterface;
  * name of the user for one-on-one conversations, current username of a
  * user, group or channel, etc.). Returns a Chat object on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class GetChat extends BaseMethod implements MethodsInterface
+class GetChat extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

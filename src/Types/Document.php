@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents a general file (as opposed to photos, voice
  * messages and audio files).
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Document extends BaseType implements TypesInterface
+class Document extends TelegramType implements TypesInterface
 {
     /**
      * Identifier for this file, which can be used to download or reuse the
@@ -30,7 +30,7 @@ class Document extends BaseType implements TypesInterface
     public string $file_unique_id;
 
     /** Optional. Document thumbnail as defined by sender */
-    public ?PhotoSize $thumb;
+    public ?PhotoSize $thumbnail;
 
     /** Optional. Original filename as defined by sender */
     public ?string $file_name;

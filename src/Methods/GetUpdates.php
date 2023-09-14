@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\UpdatesInterface;
 
 /**
  * Use this method to receive incoming updates using long polling (wiki).
  * Returns an Array of Update objects.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class GetUpdates extends BaseMethod implements UpdatesInterface
+class GetUpdates extends TelegramMethod implements UpdatesInterface
 {
     /**
      * Identifier of the first update to be returned. Must be greater by one
@@ -23,7 +23,7 @@ class GetUpdates extends BaseMethod implements UpdatesInterface
      * returned. An update is considered confirmed as soon as getUpdates is
      * called with an offset higher than its update_id. The negative offset
      * can be specified to retrieve updates starting from -offset update from
-     * the end of the updates queue. All previous updates will forgotten.
+     * the end of the updates queue. All previous updates will be forgotten.
      */
     public ?int $offset;
 

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
@@ -16,10 +16,10 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * Use this method to send text messages. On success, the sent Message is
  * returned.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SendMessage extends BaseMethod implements MethodsInterface
+class SendMessage extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

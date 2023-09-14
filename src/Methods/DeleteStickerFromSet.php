@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
 
 /**
  * Use this method to delete a sticker from a set created by the bot.
  * Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class DeleteStickerFromSet extends BaseMethod implements StickersInterface
+class DeleteStickerFromSet extends TelegramMethod implements StickersInterface
 {
     /** File identifier of the sticker */
     public string $sticker;

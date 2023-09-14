@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents a forum topic.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ForumTopic extends BaseType implements TypesInterface
+class ForumTopic extends TelegramType implements TypesInterface
 {
     /** Unique identifier of the forum topic */
     public int $message_thread_id;

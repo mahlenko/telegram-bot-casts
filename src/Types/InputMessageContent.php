@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
@@ -18,9 +18,9 @@ use TelegramBot\Interface\InlineModeInterface;
  * InputContactMessageContent
  * InputInvoiceMessageContent
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InputMessageContent extends BaseType implements InlineModeInterface
+class InputMessageContent extends TelegramType implements InlineModeInterface
 {
 }

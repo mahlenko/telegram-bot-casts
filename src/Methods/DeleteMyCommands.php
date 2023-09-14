@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\Types\BotCommandScope;
 
@@ -13,10 +13,10 @@ use TelegramBot\Types\BotCommandScope;
  * scope and user language. After deletion, higher level commands will be
  * shown to affected users. Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class DeleteMyCommands extends BaseMethod implements MethodsInterface
+class DeleteMyCommands extends TelegramMethod implements MethodsInterface
 {
     /**
      * A JSON-serialized object, describing scope of users for which the

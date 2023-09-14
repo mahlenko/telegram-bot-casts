@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\Types\ChatPermissions;
 
@@ -14,10 +14,10 @@ use TelegramBot\Types\ChatPermissions;
  * work and must have the can_restrict_members administrator rights.
  * Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SetChatPermissions extends BaseMethod implements MethodsInterface
+class SetChatPermissions extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target
@@ -27,6 +27,16 @@ class SetChatPermissions extends BaseMethod implements MethodsInterface
 
     /** A JSON-serialized object for new default chat permissions */
     public ChatPermissions $permissions;
+
+    /**
+     * Pass True if chat permissions are set independently. Otherwise, the
+     * can_send_other_messages and can_add_web_page_previews permissions will
+     * imply the can_send_messages, can_send_audios, can_send_documents,
+     * can_send_photos, can_send_videos, can_send_video_notes, and
+     * can_send_voice_notes permissions; the can_send_polls permission will
+     * imply the can_send_messages permission.
+     */
+    public ?bool $use_independent_chat_permissions;
 
     /**
      * A list of necessary properties that should be checked before sending

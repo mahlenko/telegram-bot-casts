@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\PaymentsInterface;
 
 /**
  * This object contains basic information about an invoice.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Invoice extends BaseType implements PaymentsInterface
+class Invoice extends TelegramType implements PaymentsInterface
 {
     /** Product name */
     public string $title;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -17,10 +17,10 @@ use TelegramBot\Interface\MethodsInterface;
  * be removed from the chat. If you don't want this, use the parameter
  * only_if_banned. Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class UnbanChatMember extends BaseMethod implements MethodsInterface
+class UnbanChatMember extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target group or username of the target

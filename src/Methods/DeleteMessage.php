@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\UpdatingMessagesInterface;
 
 /**
@@ -21,10 +21,10 @@ use TelegramBot\Interface\UpdatingMessagesInterface;
  * permission in a supergroup or a channel, it can delete any message
  * there.Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class DeleteMessage extends BaseMethod implements UpdatingMessagesInterface
+class DeleteMessage extends TelegramMethod implements UpdatingMessagesInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -14,10 +14,10 @@ use TelegramBot\Interface\MethodsInterface;
  * can_set_sticker_set optionally returned in getChat requests to check
  * if the bot can use this method. Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SetChatStickerSet extends BaseMethod implements MethodsInterface
+class SetChatStickerSet extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

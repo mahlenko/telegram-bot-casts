@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents a chat.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Chat extends BaseType implements TypesInterface
+class Chat extends TelegramType implements TypesInterface
 {
     /**
      * Unique identifier for this chat. This number may have more than 32
@@ -64,6 +64,12 @@ class Chat extends BaseType implements TypesInterface
      * in a private chat. Returned only in getChat.
      */
     public ?string $emoji_status_custom_emoji_id;
+
+    /**
+     * Optional. Expiration date of the emoji status of the other party in a
+     * private chat in Unix time, if any. Returned only in getChat.
+     */
+    public ?int $emoji_status_expiration_date;
 
     /**
      * Optional. Bio of the other party in a private chat. Returned only in
@@ -133,6 +139,19 @@ class Chat extends BaseType implements TypesInterface
      * automatically deleted; in seconds. Returned only in getChat.
      */
     public ?int $message_auto_delete_time;
+
+    /**
+     * Optional. True, if aggressive anti-spam checks are enabled in the
+     * supergroup. The field is only available to chat administrators.
+     * Returned only in getChat.
+     */
+    public ?bool $has_aggressive_anti_spam_enabled;
+
+    /**
+     * Optional. True, if non-administrators can only get the list of bots
+     * and administrators in the chat. Returned only in getChat.
+     */
+    public ?bool $has_hidden_members;
 
     /**
      * Optional. True, if messages from the chat can't be forwarded to other

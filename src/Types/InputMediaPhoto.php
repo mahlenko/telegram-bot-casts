@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents a photo to be sent.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InputMediaPhoto extends BaseType implements TypesInterface
+class InputMediaPhoto extends TelegramType implements TypesInterface
 {
     /** Type of the result, must be photo */
     public string $type;
@@ -46,4 +46,10 @@ class InputMediaPhoto extends BaseType implements TypesInterface
      * @var array<MessageEntity>
      */
     public ?array $caption_entities;
+
+    /**
+     * Optional. Pass True if the photo needs to be covered with a spoiler
+     * animation
+     */
+    public ?bool $has_spoiler;
 }

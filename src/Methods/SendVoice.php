@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
@@ -21,10 +21,10 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * Bots can currently send voice messages of up to 50 MB in size, this
  * limit may be changed in the future.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SendVoice extends BaseMethod implements MethodsInterface
+class SendVoice extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

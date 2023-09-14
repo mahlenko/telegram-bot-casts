@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents an inline keyboard that appears right next to
  * the message it belongs to.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineKeyboardMarkup extends BaseType implements TypesInterface
+class InlineKeyboardMarkup extends TelegramType implements TypesInterface
 {
     /**
      * Array of button rows, each represented by an Array of

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -13,10 +13,10 @@ use TelegramBot\Interface\MethodsInterface;
  * have the appropriate administrator rights. Returns the edited invite
  * link as a ChatInviteLink object.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class EditChatInviteLink extends BaseMethod implements MethodsInterface
+class EditChatInviteLink extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

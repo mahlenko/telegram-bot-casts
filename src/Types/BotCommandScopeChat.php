@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents the scope of bot commands, covering a specific chat.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class BotCommandScopeChat extends BaseType implements TypesInterface
+class BotCommandScopeChat extends TelegramType implements TypesInterface
 {
     /** Scope type, must be chat */
     public string $type;

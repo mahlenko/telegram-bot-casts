@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\UpdatesInterface;
 
 /**
  * This object represents an incoming update.At most one of the optional
  * parameters can be present in any given update.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Update extends BaseType implements UpdatesInterface
+class Update extends TelegramType implements UpdatesInterface
 {
     /**
      * The update's unique identifier. Update identifiers start from a

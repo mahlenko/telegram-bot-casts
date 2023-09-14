@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents a video message (available in Telegram apps as
  * of v.4.0).
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class VideoNote extends BaseType implements TypesInterface
+class VideoNote extends TelegramType implements TypesInterface
 {
     /**
      * Identifier for this file, which can be used to download or reuse the
@@ -39,7 +39,7 @@ class VideoNote extends BaseType implements TypesInterface
     public int $duration;
 
     /** Optional. Video thumbnail */
-    public ?PhotoSize $thumb;
+    public ?PhotoSize $thumbnail;
 
     /** Optional. File size in bytes */
     public ?int $file_size;

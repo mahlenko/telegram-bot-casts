@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents an invite link for a chat.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ChatInviteLink extends BaseType implements TypesInterface
+class ChatInviteLink extends TelegramType implements TypesInterface
 {
     /**
      * The invite link. If the link was created by another chat

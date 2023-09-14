@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -17,10 +17,10 @@ use TelegramBot\Interface\MethodsInterface;
  * will be valid for at least 1 hour. When the link expires, a new one
  * can be requested by calling getFile again.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class GetFile extends BaseMethod implements MethodsInterface
+class GetFile extends TelegramMethod implements MethodsInterface
 {
     /** File identifier to get information about */
     public string $file_id;

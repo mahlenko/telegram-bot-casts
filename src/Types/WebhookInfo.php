@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\UpdatesInterface;
 
 /**
  * Describes the current status of a webhook.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class WebhookInfo extends BaseType implements UpdatesInterface
+class WebhookInfo extends TelegramType implements UpdatesInterface
 {
     /** Webhook URL, may be empty if webhook is not set up */
     public string $url;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\Types\MenuButton;
 
@@ -12,10 +12,10 @@ use TelegramBot\Types\MenuButton;
  * Use this method to change the bot's menu button in a private chat, or
  * the default menu button. Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SetChatMenuButton extends BaseMethod implements MethodsInterface
+class SetChatMenuButton extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target private chat. If not specified,

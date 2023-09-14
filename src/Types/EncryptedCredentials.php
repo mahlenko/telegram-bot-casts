@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
 
 /**
@@ -13,10 +13,10 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * a complete description of the data decryption and authentication
  * processes.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class EncryptedCredentials extends BaseType implements TelegramPassportInterface
+class EncryptedCredentials extends TelegramType implements TelegramPassportInterface
 {
     /**
      * Base64-encoded encrypted JSON-serialized data with unique user's

@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents the scope of bot commands, covering all administrators of a
  * specific group or supergroup chat.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class BotCommandScopeChatAdministrators extends BaseType implements TypesInterface
+class BotCommandScopeChatAdministrators extends TelegramType implements TypesInterface
 {
     /** Scope type, must be chat_administrators */
     public string $type;

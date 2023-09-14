@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\GamesInterface;
 
 /**
@@ -14,10 +14,10 @@ use TelegramBot\Interface\GamesInterface;
  * the new score is not greater than the user's current score in the chat
  * and force is False.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SetGameScore extends BaseMethod implements GamesInterface
+class SetGameScore extends TelegramMethod implements GamesInterface
 {
     /** User identifier */
     public int $user_id;

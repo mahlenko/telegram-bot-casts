@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\PaymentsInterface;
 
 /**
  * This object represents a portion of the price for goods or services.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class LabeledPrice extends BaseType implements PaymentsInterface
+class LabeledPrice extends TelegramType implements PaymentsInterface
 {
     /** Portion label */
     public string $label;

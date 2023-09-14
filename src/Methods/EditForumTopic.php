@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -13,10 +13,10 @@ use TelegramBot\Interface\MethodsInterface;
  * and must have can_manage_topics administrator rights, unless it is the
  * creator of the topic. Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class EditForumTopic extends BaseMethod implements MethodsInterface
+class EditForumTopic extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target
@@ -27,18 +27,23 @@ class EditForumTopic extends BaseMethod implements MethodsInterface
     /** Unique identifier for the target message thread of the forum topic */
     public int $message_thread_id;
 
-    /** New topic name, 1-128 characters */
-    public string $name;
+    /**
+     * New topic name, 0-128 characters. If not specified or empty, the
+     * current name of the topic will be kept
+     */
+    public ?string $name;
 
     /**
      * New unique identifier of the custom emoji shown as the topic icon. Use
-     * getForumTopicIconStickers to get all allowed custom emoji identifiers
+     * getForumTopicIconStickers to get all allowed custom emoji identifiers.
+     * Pass an empty string to remove the icon. If not specified, the current
+     * icon will be kept
      */
-    public string $icon_custom_emoji_id;
+    public ?string $icon_custom_emoji_id;
 
     /**
      * A list of necessary properties that should be checked before sending
      * requests to the Telegram Bot API
      */
-    public array $required_properties = ['chat_id', 'message_thread_id', 'name', 'icon_custom_emoji_id'];
+    public array $required_properties = ['chat_id', 'message_thread_id'];
 }

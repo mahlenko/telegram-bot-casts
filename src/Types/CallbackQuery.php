@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
@@ -15,10 +15,10 @@ use TelegramBot\Interface\TypesInterface;
  * inline mode), the field inline_message_id will be present. Exactly one
  * of the fields data or game_short_name will be present.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class CallbackQuery extends BaseType implements TypesInterface
+class CallbackQuery extends TelegramType implements TypesInterface
 {
     /** Unique identifier for this query */
     public string $id;

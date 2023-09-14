@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\PaymentsInterface;
 
 /**
  * This object represents one shipping option.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ShippingOption extends BaseType implements PaymentsInterface
+class ShippingOption extends TelegramType implements PaymentsInterface
 {
     /** Shipping option identifier */
     public string $id;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
@@ -16,10 +16,10 @@ use TelegramBot\Interface\InlineModeInterface;
  * If an InlineQueryResultVideo message contains an embedded video (e.g.,
  * YouTube), you must replace its content using input_message_content.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQueryResultVideo extends BaseType implements InlineModeInterface
+class InlineQueryResultVideo extends TelegramType implements InlineModeInterface
 {
     /** Type of the result, must be video */
     public string $type;
@@ -37,7 +37,7 @@ class InlineQueryResultVideo extends BaseType implements InlineModeInterface
     public string $mime_type;
 
     /** URL of the thumbnail (JPEG only) for the video */
-    public string $thumb_url;
+    public string $thumbnail_url;
 
     /** Title for the result */
     public string $title;

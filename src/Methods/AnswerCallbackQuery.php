@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -18,10 +18,10 @@ use TelegramBot\Interface\MethodsInterface;
  * @BotFather and accept the terms. Otherwise, you may use links like
  * t.me/your_bot?start=XXXX that open your bot with a parameter.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class AnswerCallbackQuery extends BaseMethod implements MethodsInterface
+class AnswerCallbackQuery extends TelegramMethod implements MethodsInterface
 {
     /** Unique identifier for the query to be answered */
     public string $callback_query_id;

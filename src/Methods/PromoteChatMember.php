@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -13,10 +13,10 @@ use TelegramBot\Interface\MethodsInterface;
  * and must have the appropriate administrator rights. Pass False for all
  * boolean parameters to demote a user. Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class PromoteChatMember extends BaseMethod implements MethodsInterface
+class PromoteChatMember extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target
@@ -58,7 +58,7 @@ class PromoteChatMember extends BaseMethod implements MethodsInterface
 
     /**
      * Pass True if the administrator can add new administrators with a
-     * subset of their own privileges or demote administrators that he has
+     * subset of their own privileges or demote administrators that they have
      * promoted, directly or indirectly (promoted by administrators that were
      * appointed by him)
      */

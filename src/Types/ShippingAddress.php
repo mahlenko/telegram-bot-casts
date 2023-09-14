@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\PaymentsInterface;
 
 /**
  * This object represents a shipping address.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ShippingAddress extends BaseType implements PaymentsInterface
+class ShippingAddress extends TelegramType implements PaymentsInterface
 {
     /** Two-letter ISO 3166-1 alpha-2 country code */
     public string $country_code;

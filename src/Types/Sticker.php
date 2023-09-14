@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\StickersInterface;
 
 /**
  * This object represents a sticker.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Sticker extends BaseType implements StickersInterface
+class Sticker extends TelegramType implements StickersInterface
 {
     /**
      * Identifier for this file, which can be used to download or reuse the
@@ -48,7 +48,7 @@ class Sticker extends BaseType implements StickersInterface
     public bool $is_video;
 
     /** Optional. Sticker thumbnail in the .WEBP or .JPG format */
-    public ?PhotoSize $thumb;
+    public ?PhotoSize $thumbnail;
 
     /** Optional. Emoji associated with the sticker */
     public ?string $emoji;
@@ -73,6 +73,14 @@ class Sticker extends BaseType implements StickersInterface
      * emoji
      */
     public ?string $custom_emoji_id;
+
+    /**
+     * Optional. True, if the sticker must be repainted to a text color in
+     * messages, the color of the Telegram Premium badge in emoji status,
+     * white color on chat photos, or another appropriate color in other
+     * places
+     */
+    public ?bool $needs_repainting;
 
     /** Optional. File size in bytes */
     public ?int $file_size;

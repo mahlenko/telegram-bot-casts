@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
@@ -13,10 +13,10 @@ use TelegramBot\Interface\InlineModeInterface;
  * input_message_content to send a message with the specified content
  * instead of the photo.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQueryResultPhoto extends BaseType implements InlineModeInterface
+class InlineQueryResultPhoto extends TelegramType implements InlineModeInterface
 {
     /** Type of the result, must be photo */
     public string $type;
@@ -31,7 +31,7 @@ class InlineQueryResultPhoto extends BaseType implements InlineModeInterface
     public string $photo_url;
 
     /** URL of the thumbnail for the photo */
-    public string $thumb_url;
+    public string $thumbnail_url;
 
     /** Optional. Width of the photo */
     public ?int $photo_width;

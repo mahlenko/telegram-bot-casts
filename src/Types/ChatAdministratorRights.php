@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents the rights of an administrator in a chat.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ChatAdministratorRights extends BaseType implements TypesInterface
+class ChatAdministratorRights extends TelegramType implements TypesInterface
 {
     /** True, if the user's presence in the chat is hidden */
     public bool $is_anonymous;
@@ -37,7 +37,7 @@ class ChatAdministratorRights extends BaseType implements TypesInterface
 
     /**
      * True, if the administrator can add new administrators with a subset of
-     * their own privileges or demote administrators that he has promoted,
+     * their own privileges or demote administrators that they have promoted,
      * directly or indirectly (promoted by administrators that were appointed
      * by the user)
      */

@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
 
 /**
  * Represents an issue with a document scan. The error is considered
  * resolved when the file with the document scan changes.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class PassportElementErrorFile extends BaseType implements TelegramPassportInterface
+class PassportElementErrorFile extends TelegramType implements TelegramPassportInterface
 {
     /** Error source, must be file */
     public string $source;

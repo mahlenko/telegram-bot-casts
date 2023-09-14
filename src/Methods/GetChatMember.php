@@ -4,17 +4,18 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
- * Use this method to get information about a member of a chat. Returns a
- * ChatMember object on success.
+ * Use this method to get information about a member of a chat. The
+ * method is only guaranteed to work for other users if the bot is an
+ * administrator in the chat. Returns a ChatMember object on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class GetChatMember extends BaseMethod implements MethodsInterface
+class GetChatMember extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
 
 /**
@@ -12,10 +12,10 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * translation of a document. The error is considered resolved when the
  * file changes.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class PassportElementErrorTranslationFile extends BaseType implements TelegramPassportInterface
+class PassportElementErrorTranslationFile extends TelegramType implements TelegramPassportInterface
 {
     /** Error source, must be translation_file */
     public string $source;

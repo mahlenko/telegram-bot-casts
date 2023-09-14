@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
 
 /**
@@ -12,10 +12,10 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * all Telegram Passport files are in JPEG format when decrypted and
  * don't exceed 10MB.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class PassportFile extends BaseType implements TelegramPassportInterface
+class PassportFile extends TelegramType implements TelegramPassportInterface
 {
     /**
      * Identifier for this file, which can be used to download or reuse the

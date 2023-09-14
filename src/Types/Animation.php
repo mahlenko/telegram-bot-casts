@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents an animation file (GIF or H.264/MPEG-4 AVC
  * video without sound).
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Animation extends BaseType implements TypesInterface
+class Animation extends TelegramType implements TypesInterface
 {
     /**
      * Identifier for this file, which can be used to download or reuse the
@@ -39,7 +39,7 @@ class Animation extends BaseType implements TypesInterface
     public int $duration;
 
     /** Optional. Animation thumbnail as defined by sender */
-    public ?PhotoSize $thumb;
+    public ?PhotoSize $thumbnail;
 
     /** Optional. Original animation filename as defined by sender */
     public ?string $file_name;

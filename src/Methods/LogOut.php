@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -16,10 +16,10 @@ use TelegramBot\Interface\MethodsInterface;
  * server for 10 minutes. Returns True on success. Requires no
  * parameters.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class LogOut extends BaseMethod implements MethodsInterface
+class LogOut extends TelegramMethod implements MethodsInterface
 {
     /**
      * A list of necessary properties that should be checked before sending

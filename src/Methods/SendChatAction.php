@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -22,16 +22,19 @@ use TelegramBot\Interface\MethodsInterface;
  * We only recommend using this method when a response from the bot will
  * take a noticeable amount of time to arrive.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SendChatAction extends BaseMethod implements MethodsInterface
+class SendChatAction extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target
      * channel (in the format @channelusername)
      */
     public int|string $chat_id;
+
+    /** Unique identifier for the target message thread; supergroups only */
+    public ?int $message_thread_id;
 
     /**
      * Type of action to broadcast. Choose one, depending on what the user is

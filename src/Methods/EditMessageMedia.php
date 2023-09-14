@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\UpdatingMessagesInterface;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\InputMedia;
@@ -19,10 +19,10 @@ use TelegramBot\Types\InputMedia;
  * edited message is not an inline message, the edited Message is
  * returned, otherwise True is returned.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class EditMessageMedia extends BaseMethod implements UpdatingMessagesInterface
+class EditMessageMedia extends TelegramMethod implements UpdatingMessagesInterface
 {
     /**
      * Required if inline_message_id is not specified. Unique identifier for

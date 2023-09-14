@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
@@ -14,10 +14,10 @@ use TelegramBot\Interface\InlineModeInterface;
  * input_message_content to send a message with the specified content
  * instead of the animation.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQueryResultMpeg4Gif extends BaseType implements InlineModeInterface
+class InlineQueryResultMpeg4Gif extends TelegramType implements InlineModeInterface
 {
     /** Type of the result, must be mpeg4_gif */
     public string $type;
@@ -41,13 +41,13 @@ class InlineQueryResultMpeg4Gif extends BaseType implements InlineModeInterface
      * URL of the static (JPEG or GIF) or animated (MPEG4) thumbnail for the
      * result
      */
-    public string $thumb_url;
+    public string $thumbnail_url;
 
     /**
      * Optional. MIME type of the thumbnail, must be one of “image/jpeg”,
      * “image/gif”, or “video/mp4”. Defaults to “image/jpeg”
      */
-    public ?string $thumb_mime_type;
+    public ?string $thumbnail_mime_type;
 
     /** Optional. Title for the result */
     public ?string $title;

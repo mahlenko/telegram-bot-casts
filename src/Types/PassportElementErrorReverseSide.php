@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
 
 /**
@@ -12,10 +12,10 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * considered resolved when the file with reverse side of the document
  * changes.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class PassportElementErrorReverseSide extends BaseType implements TelegramPassportInterface
+class PassportElementErrorReverseSide extends TelegramType implements TelegramPassportInterface
 {
     /** Error source, must be reverse_side */
     public string $source;

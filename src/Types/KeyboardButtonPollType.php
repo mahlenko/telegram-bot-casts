@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents type of a poll, which is allowed to be created
  * and sent when the corresponding button is pressed.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class KeyboardButtonPollType extends BaseType implements TypesInterface
+class KeyboardButtonPollType extends TelegramType implements TypesInterface
 {
     /**
      * Optional. If quiz is passed, the user will be allowed to create only

@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
 
 /**
  * Represents an issue in one of the data fields that was provided by the
  * user. The error is considered resolved when the field's value changes.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class PassportElementErrorDataField extends BaseType implements TelegramPassportInterface
+class PassportElementErrorDataField extends TelegramType implements TelegramPassportInterface
 {
     /** Error source, must be data */
     public string $source;

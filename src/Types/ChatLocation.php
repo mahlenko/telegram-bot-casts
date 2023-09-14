@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents a location to which a chat is connected.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ChatLocation extends BaseType implements TypesInterface
+class ChatLocation extends TelegramType implements TypesInterface
 {
     /**
      * The location to which the supergroup is connected. Can't be a live

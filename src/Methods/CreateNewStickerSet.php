@@ -4,21 +4,19 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
-use TelegramBot\Types\InputFile;
-use TelegramBot\Types\MaskPosition;
+use TelegramBot\Types\InputSticker;
 
 /**
  * Use this method to create a new sticker set owned by a user. The bot
- * will be able to edit the sticker set thus created. You must use
- * exactly one of the fields png_sticker, tgs_sticker, or webm_sticker.
- * Returns True on success.
+ * will be able to edit the sticker set thus created. Returns True on
+ * success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class CreateNewStickerSet extends BaseMethod implements StickersInterface
+class CreateNewStickerSet extends TelegramMethod implements StickersInterface
 {
     /** User identifier of created sticker set owner */
     public int $user_id;
@@ -36,48 +34,36 @@ class CreateNewStickerSet extends BaseMethod implements StickersInterface
     public string $title;
 
     /**
-     * PNG image with the sticker, must be up to 512 kilobytes in size,
-     * dimensions must not exceed 512px, and either width or height must be
-     * exactly 512px. Pass a file_id as a String to send a file that already
-     * exists on the Telegram servers, pass an HTTP URL as a String for
-     * Telegram to get a file from the Internet, or upload a new one using
-     * multipart/form-data. More information on Sending Files »
+     * A JSON-serialized list of 1-50 initial stickers to be added to the
+     * sticker set
+     *
+     * @var array<InputSticker>
      */
-    public InputFile|string|null $png_sticker;
+    public array $stickers;
 
     /**
-     * TGS animation with the sticker, uploaded using multipart/form-data.
-     * See https://core.telegram.org/stickers#animated-sticker-requirements
-     * for technical requirements
+     * Format of stickers in the set, must be one of “static”,
+     * “animated”, “video”
      */
-    public ?InputFile $tgs_sticker;
+    public string $sticker_format;
 
     /**
-     * WEBM video with the sticker, uploaded using multipart/form-data. See
-     * https://core.telegram.org/stickers#video-sticker-requirements for
-     * technical requirements
-     */
-    public ?InputFile $webm_sticker;
-
-    /**
-     * Type of stickers in the set, pass “regular” or “mask”. Custom
-     * emoji sticker sets can't be created via the Bot API at the moment. By
-     * default, a regular sticker set is created.
+     * Type of stickers in the set, pass “regular”, “mask”, or
+     * “custom_emoji”. By default, a regular sticker set is created.
      */
     public ?string $sticker_type;
 
-    /** One or more emoji corresponding to the sticker */
-    public string $emojis;
-
     /**
-     * A JSON-serialized object for position where the mask should be placed
-     * on faces
+     * Pass True if stickers in the sticker set must be repainted to the
+     * color of text when used in messages, the accent color if used as emoji
+     * status, white on chat photos, or another appropriate color based on
+     * context; for custom emoji sticker sets only
      */
-    public ?MaskPosition $mask_position;
+    public ?bool $needs_repainting;
 
     /**
      * A list of necessary properties that should be checked before sending
      * requests to the Telegram Bot API
      */
-    public array $required_properties = ['user_id', 'name', 'title', 'emojis'];
+    public array $required_properties = ['user_id', 'name', 'title', 'stickers', 'sticker_format'];
 }

@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
  * Represents the content of a text message to be sent as the result of
  * an inline query.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InputTextMessageContent extends BaseType implements InlineModeInterface
+class InputTextMessageContent extends TelegramType implements InlineModeInterface
 {
     /** Text of the message to be sent, 1-4096 characters */
     public string $message_text;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\Types\BotCommandScope;
 
@@ -13,10 +13,10 @@ use TelegramBot\Types\BotCommandScope;
  * given scope and user language. Returns an Array of BotCommand objects.
  * If commands aren't set, an empty list is returned.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class GetMyCommands extends BaseMethod implements MethodsInterface
+class GetMyCommands extends TelegramMethod implements MethodsInterface
 {
     /**
      * A JSON-serialized object, describing scope of users. Defaults to

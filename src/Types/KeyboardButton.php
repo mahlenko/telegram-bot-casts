@@ -4,25 +4,42 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents one button of the reply keyboard. For simple
- * text buttons String can be used instead of this object to specify text
- * of the button. Optional fields web_app, request_contact,
- * request_location, and request_poll are mutually exclusive.
+ * text buttons, String can be used instead of this object to specify the
+ * button text. The optional fields web_app, request_user, request_chat,
+ * request_contact, request_location, and request_poll are mutually
+ * exclusive.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class KeyboardButton extends BaseType implements TypesInterface
+class KeyboardButton extends TelegramType implements TypesInterface
 {
     /**
      * Text of the button. If none of the optional fields are used, it will
      * be sent as a message when the button is pressed
      */
     public string $text;
+
+    /**
+     * Optional. If specified, pressing the button will open a list of
+     * suitable users. Tapping on any user will send their identifier to the
+     * bot in a “user_shared” service message. Available in private chats
+     * only.
+     */
+    public ?KeyboardButtonRequestUser $request_user;
+
+    /**
+     * Optional. If specified, pressing the button will open a list of
+     * suitable chats. Tapping on a chat will send its identifier to the bot
+     * in a “chat_shared” service message. Available in private chats
+     * only.
+     */
+    public ?KeyboardButtonRequestChat $request_chat;
 
     /**
      * Optional. If True, the user's phone number will be sent as a contact

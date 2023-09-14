@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
@@ -21,10 +21,10 @@ use TelegramBot\Interface\TypesInterface;
  *
  * Sample bot: @discussbot
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class LoginUrl extends BaseType implements TypesInterface
+class LoginUrl extends TelegramType implements TypesInterface
 {
     /**
      * An HTTPS URL to be opened with user authorization data added to the

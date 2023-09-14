@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents an animation file (GIF or H.264/MPEG-4 AVC video without
  * sound) to be sent.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InputMediaAnimation extends BaseType implements TypesInterface
+class InputMediaAnimation extends TelegramType implements TypesInterface
 {
     /** Type of the result, must be animation */
     public string $type;
@@ -39,7 +39,7 @@ class InputMediaAnimation extends BaseType implements TypesInterface
      * multipart/form-data under <file_attach_name>. More information on
      * Sending Files »
      */
-    public InputFile|string|null $thumb;
+    public InputFile|string|null $thumbnail;
 
     /**
      * Optional. Caption of the animation to be sent, 0-1024 characters after
@@ -69,4 +69,10 @@ class InputMediaAnimation extends BaseType implements TypesInterface
 
     /** Optional. Animation duration in seconds */
     public ?int $duration;
+
+    /**
+     * Optional. Pass True if the animation needs to be covered with a
+     * spoiler animation
+     */
+    public ?bool $has_spoiler;
 }

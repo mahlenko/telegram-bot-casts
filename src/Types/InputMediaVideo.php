@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents a video to be sent.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InputMediaVideo extends BaseType implements TypesInterface
+class InputMediaVideo extends TelegramType implements TypesInterface
 {
     /** Type of the result, must be video */
     public string $type;
@@ -38,7 +38,7 @@ class InputMediaVideo extends BaseType implements TypesInterface
      * multipart/form-data under <file_attach_name>. More information on
      * Sending Files »
      */
-    public InputFile|string|null $thumb;
+    public InputFile|string|null $thumbnail;
 
     /**
      * Optional. Caption of the video to be sent, 0-1024 characters after
@@ -71,4 +71,10 @@ class InputMediaVideo extends BaseType implements TypesInterface
 
     /** Optional. Pass True if the uploaded video is suitable for streaming */
     public ?bool $supports_streaming;
+
+    /**
+     * Optional. Pass True if the video needs to be covered with a spoiler
+     * animation
+     */
+    public ?bool $has_spoiler;
 }

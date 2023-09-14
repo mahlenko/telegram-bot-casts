@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\PaymentsInterface;
 
 /**
  * This object contains basic information about a successful payment.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SuccessfulPayment extends BaseType implements PaymentsInterface
+class SuccessfulPayment extends TelegramType implements PaymentsInterface
 {
     /** Three-letter ISO 4217 currency code */
     public string $currency;

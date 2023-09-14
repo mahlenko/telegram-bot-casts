@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents an audio file to be treated as music by the
  * Telegram clients.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Audio extends BaseType implements TypesInterface
+class Audio extends TelegramType implements TypesInterface
 {
     /**
      * Identifier for this file, which can be used to download or reuse the
@@ -54,5 +54,5 @@ class Audio extends BaseType implements TypesInterface
     public ?int $file_size;
 
     /** Optional. Thumbnail of the album cover to which the music file belongs */
-    public ?PhotoSize $thumb;
+    public ?PhotoSize $thumbnail;
 }

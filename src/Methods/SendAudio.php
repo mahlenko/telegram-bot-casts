@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
@@ -21,10 +21,10 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * changed in the future.
  * For sending voice messages, use the sendVoice method instead.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SendAudio extends BaseMethod implements MethodsInterface
+class SendAudio extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target
@@ -84,7 +84,7 @@ class SendAudio extends BaseMethod implements MethodsInterface
      * multipart/form-data under <file_attach_name>. More information on
      * Sending Files »
      */
-    public InputFile|string|null $thumb;
+    public InputFile|string|null $thumbnail;
 
     /**
      * Sends the message silently. Users will receive a notification with no

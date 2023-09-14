@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -13,10 +13,10 @@ use TelegramBot\Interface\MethodsInterface;
  * the can_manage_topics administrator rights. Returns information about
  * the created topic as a ForumTopic object.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class CreateForumTopic extends BaseMethod implements MethodsInterface
+class CreateForumTopic extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target
@@ -29,7 +29,8 @@ class CreateForumTopic extends BaseMethod implements MethodsInterface
 
     /**
      * Color of the topic icon in RGB format. Currently, must be one of
-     * 0x6FB9F0, 0xFFD67E, 0xCB86DB, 0x8EEE98, 0xFF93B2, or 0xFB6F5F
+     * 7322096 (0x6FB9F0), 16766590 (0xFFD67E), 13338331 (0xCB86DB), 9367192
+     * (0x8EEE98), 16749490 (0xFF93B2), or 16478047 (0xFB6F5F)
      */
     public ?int $icon_color;
 

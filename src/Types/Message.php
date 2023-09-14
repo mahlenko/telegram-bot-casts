@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents a message.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class Message extends BaseType implements TypesInterface
+class Message extends TelegramType implements TypesInterface
 {
     /** Unique message identifier inside this chat */
     public int $message_id;
@@ -152,6 +152,9 @@ class Message extends BaseType implements TypesInterface
     /** Optional. Message is a sticker, information about the sticker */
     public ?Sticker $sticker;
 
+    /** Optional. Message is a forwarded story */
+    public ?Story $story;
+
     /** Optional. Message is a video, information about the video */
     public ?Video $video;
 
@@ -174,6 +177,9 @@ class Message extends BaseType implements TypesInterface
      * @var array<MessageEntity>
      */
     public ?array $caption_entities;
+
+    /** Optional. True, if the message media is covered by a spoiler animation */
+    public ?bool $has_media_spoiler;
 
     /** Optional. Message is a shared contact, information about the contact */
     public ?Contact $contact;
@@ -293,11 +299,23 @@ class Message extends BaseType implements TypesInterface
      */
     public ?SuccessfulPayment $successful_payment;
 
+    /** Optional. Service message: a user was shared with the bot */
+    public ?UserShared $user_shared;
+
+    /** Optional. Service message: a chat was shared with the bot */
+    public ?ChatShared $chat_shared;
+
     /**
      * Optional. The domain name of the website on which the user has logged
      * in. More about Telegram Login »
      */
     public ?string $connected_website;
+
+    /**
+     * Optional. Service message: the user allowed the bot added to the
+     * attachment menu to write messages
+     */
+    public ?WriteAccessAllowed $write_access_allowed;
 
     /** Optional. Telegram Passport data */
     public ?PassportData $passport_data;
@@ -311,11 +329,20 @@ class Message extends BaseType implements TypesInterface
     /** Optional. Service message: forum topic created */
     public ?ForumTopicCreated $forum_topic_created;
 
+    /** Optional. Service message: forum topic edited */
+    public ?ForumTopicEdited $forum_topic_edited;
+
     /** Optional. Service message: forum topic closed */
     public ?ForumTopicClosed $forum_topic_closed;
 
     /** Optional. Service message: forum topic reopened */
     public ?ForumTopicReopened $forum_topic_reopened;
+
+    /** Optional. Service message: the 'General' forum topic hidden */
+    public ?GeneralForumTopicHidden $general_forum_topic_hidden;
+
+    /** Optional. Service message: the 'General' forum topic unhidden */
+    public ?GeneralForumTopicUnhidden $general_forum_topic_unhidden;
 
     /** Optional. Service message: video chat scheduled */
     public ?VideoChatScheduled $video_chat_scheduled;

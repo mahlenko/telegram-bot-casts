@@ -4,23 +4,21 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
-use TelegramBot\Types\InputFile;
-use TelegramBot\Types\MaskPosition;
+use TelegramBot\Types\InputSticker;
 
 /**
- * Use this method to add a new sticker to a set created by the bot. You
- * must use exactly one of the fields png_sticker, tgs_sticker, or
- * webm_sticker. Animated stickers can be added to animated sticker sets
- * and only to them. Animated sticker sets can have up to 50 stickers.
- * Static sticker sets can have up to 120 stickers. Returns True on
- * success.
+ * Use this method to add a new sticker to a set created by the bot. The
+ * format of the added sticker must match the format of the other
+ * stickers in the set. Emoji sticker sets can have up to 200 stickers.
+ * Animated and video sticker sets can have up to 50 stickers. Static
+ * sticker sets can have up to 120 stickers. Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class AddStickerToSet extends BaseMethod implements StickersInterface
+class AddStickerToSet extends TelegramMethod implements StickersInterface
 {
     /** User identifier of sticker set owner */
     public int $user_id;
@@ -29,41 +27,15 @@ class AddStickerToSet extends BaseMethod implements StickersInterface
     public string $name;
 
     /**
-     * PNG image with the sticker, must be up to 512 kilobytes in size,
-     * dimensions must not exceed 512px, and either width or height must be
-     * exactly 512px. Pass a file_id as a String to send a file that already
-     * exists on the Telegram servers, pass an HTTP URL as a String for
-     * Telegram to get a file from the Internet, or upload a new one using
-     * multipart/form-data. More information on Sending Files »
+     * A JSON-serialized object with information about the added sticker. If
+     * exactly the same sticker had already been added to the set, then the
+     * set isn't changed.
      */
-    public InputFile|string|null $png_sticker;
-
-    /**
-     * TGS animation with the sticker, uploaded using multipart/form-data.
-     * See https://core.telegram.org/stickers#animated-sticker-requirements
-     * for technical requirements
-     */
-    public ?InputFile $tgs_sticker;
-
-    /**
-     * WEBM video with the sticker, uploaded using multipart/form-data. See
-     * https://core.telegram.org/stickers#video-sticker-requirements for
-     * technical requirements
-     */
-    public ?InputFile $webm_sticker;
-
-    /** One or more emoji corresponding to the sticker */
-    public string $emojis;
-
-    /**
-     * A JSON-serialized object for position where the mask should be placed
-     * on faces
-     */
-    public ?MaskPosition $mask_position;
+    public InputSticker $sticker;
 
     /**
      * A list of necessary properties that should be checked before sending
      * requests to the Telegram Bot API
      */
-    public array $required_properties = ['user_id', 'name', 'emojis'];
+    public array $required_properties = ['user_id', 'name', 'sticker'];
 }

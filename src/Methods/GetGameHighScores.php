@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\GamesInterface;
 
 /**
@@ -17,10 +17,10 @@ use TelegramBot\Interface\GamesInterface;
  * three users if the user and their neighbors are not among them. Please
  * note that this behavior is subject to change.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class GetGameHighScores extends BaseMethod implements GamesInterface
+class GetGameHighScores extends TelegramMethod implements GamesInterface
 {
     /** Target user id */
     public int $user_id;

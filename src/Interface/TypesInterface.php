@@ -15,7 +15,7 @@ namespace TelegramBot\Interface;
  * Optional fields may be not returned when irrelevant.
  *
  *
- * @version Bot API 6.3
+ * @version Bot API 6.8
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */
 interface TypesInterface

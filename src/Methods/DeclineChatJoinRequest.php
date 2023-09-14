@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -12,10 +12,10 @@ use TelegramBot\Interface\MethodsInterface;
  * administrator in the chat for this to work and must have the
  * can_invite_users administrator right. Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class DeclineChatJoinRequest extends BaseMethod implements MethodsInterface
+class DeclineChatJoinRequest extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

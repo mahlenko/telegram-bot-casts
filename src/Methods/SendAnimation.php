@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
@@ -19,10 +19,10 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * currently send animation files of up to 50 MB in size, this limit may
  * be changed in the future.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SendAnimation extends BaseMethod implements MethodsInterface
+class SendAnimation extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target
@@ -65,7 +65,7 @@ class SendAnimation extends BaseMethod implements MethodsInterface
      * multipart/form-data under <file_attach_name>. More information on
      * Sending Files »
      */
-    public InputFile|string|null $thumb;
+    public InputFile|string|null $thumbnail;
 
     /**
      * Animation caption (may also be used when resending animation by
@@ -86,6 +86,12 @@ class SendAnimation extends BaseMethod implements MethodsInterface
      * @var array<MessageEntity>
      */
     public ?array $caption_entities;
+
+    /**
+     * Pass True if the animation needs to be covered with a spoiler
+     * animation
+     */
+    public ?bool $has_spoiler;
 
     /**
      * Sends the message silently. Users will receive a notification with no

@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
 
 /**
  * Use this method to get information about custom emoji stickers by
  * their identifiers. Returns an Array of Sticker objects.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class GetCustomEmojiStickers extends BaseMethod implements StickersInterface
+class GetCustomEmojiStickers extends TelegramMethod implements StickersInterface
 {
     /**
      * List of custom emoji identifiers. At most 200 custom emoji identifiers

@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents a general file to be sent.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InputMediaDocument extends BaseType implements TypesInterface
+class InputMediaDocument extends TelegramType implements TypesInterface
 {
     /** Type of the result, must be document */
     public string $type;
@@ -38,7 +38,7 @@ class InputMediaDocument extends BaseType implements TypesInterface
      * multipart/form-data under <file_attach_name>. More information on
      * Sending Files »
      */
-    public InputFile|string|null $thumb;
+    public InputFile|string|null $thumbnail;
 
     /**
      * Optional. Caption of the document to be sent, 0-1024 characters after

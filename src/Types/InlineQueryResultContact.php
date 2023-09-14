@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
@@ -13,10 +13,10 @@ use TelegramBot\Interface\InlineModeInterface;
  * input_message_content to send a message with the specified content
  * instead of the contact.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQueryResultContact extends BaseType implements InlineModeInterface
+class InlineQueryResultContact extends TelegramType implements InlineModeInterface
 {
     /** Type of the result, must be contact */
     public string $type;
@@ -46,11 +46,11 @@ class InlineQueryResultContact extends BaseType implements InlineModeInterface
     public ?InputMessageContent $input_message_content;
 
     /** Optional. Url of the thumbnail for the result */
-    public ?string $thumb_url;
+    public ?string $thumbnail_url;
 
     /** Optional. Thumbnail width */
-    public ?int $thumb_width;
+    public ?int $thumbnail_width;
 
     /** Optional. Thumbnail height */
-    public ?int $thumb_height;
+    public ?int $thumbnail_height;
 }

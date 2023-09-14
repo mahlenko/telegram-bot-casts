@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 
 /**
@@ -12,10 +12,10 @@ use TelegramBot\Interface\MethodsInterface;
  * private chat, or the default menu button. Returns MenuButton on
  * success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class GetChatMenuButton extends BaseMethod implements MethodsInterface
+class GetChatMenuButton extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target private chat. If not specified,

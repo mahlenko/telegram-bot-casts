@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * This object represents a custom keyboard with reply options (see
  * Introduction to bots for details and examples).
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ReplyKeyboardMarkup extends BaseType implements TypesInterface
+class ReplyKeyboardMarkup extends TelegramType implements TypesInterface
 {
     /**
      * Array of button rows, each represented by an Array of KeyboardButton
@@ -23,6 +23,13 @@ class ReplyKeyboardMarkup extends BaseType implements TypesInterface
      * @var array<array>
      */
     public array $keyboard;
+
+    /**
+     * Optional. Requests clients to always show the keyboard when the
+     * regular keyboard is hidden. Defaults to false, in which case the
+     * custom keyboard can be hidden and opened with a keyboard icon.
+     */
+    public ?bool $is_persistent;
 
     /**
      * Optional. Requests clients to resize the keyboard vertically for

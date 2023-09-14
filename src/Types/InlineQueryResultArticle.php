@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
  * Represents a link to an article or web page.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQueryResultArticle extends BaseType implements InlineModeInterface
+class InlineQueryResultArticle extends TelegramType implements InlineModeInterface
 {
     /** Type of the result, must be article */
     public string $type;
@@ -43,11 +43,11 @@ class InlineQueryResultArticle extends BaseType implements InlineModeInterface
     public ?string $description;
 
     /** Optional. Url of the thumbnail for the result */
-    public ?string $thumb_url;
+    public ?string $thumbnail_url;
 
     /** Optional. Thumbnail width */
-    public ?int $thumb_width;
+    public ?int $thumbnail_width;
 
     /** Optional. Thumbnail height */
-    public ?int $thumb_height;
+    public ?int $thumbnail_height;
 }

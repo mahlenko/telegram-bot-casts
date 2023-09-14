@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
@@ -19,9 +19,9 @@ use TelegramBot\Interface\TypesInterface;
  * BotCommandScopeChatAdministrators
  * BotCommandScopeChatMember
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class BotCommandScope extends BaseType implements TypesInterface
+class BotCommandScope extends TelegramType implements TypesInterface
 {
 }

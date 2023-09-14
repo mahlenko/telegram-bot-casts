@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
 
 /**
  * Describes documents or other Telegram Passport elements shared with
  * the bot by the user.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class EncryptedPassportElement extends BaseType implements TelegramPassportInterface
+class EncryptedPassportElement extends TelegramType implements TelegramPassportInterface
 {
     /**
      * Element type. One of “personal_details”, “passport”,

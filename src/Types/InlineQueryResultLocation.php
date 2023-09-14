@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
@@ -12,10 +12,10 @@ use TelegramBot\Interface\InlineModeInterface;
  * by the user. Alternatively, you can use input_message_content to send
  * a message with the specified content instead of the location.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQueryResultLocation extends BaseType implements InlineModeInterface
+class InlineQueryResultLocation extends TelegramType implements InlineModeInterface
 {
     /** Type of the result, must be location */
     public string $type;
@@ -64,11 +64,11 @@ class InlineQueryResultLocation extends BaseType implements InlineModeInterface
     public ?InputMessageContent $input_message_content;
 
     /** Optional. Url of the thumbnail for the result */
-    public ?string $thumb_url;
+    public ?string $thumbnail_url;
 
     /** Optional. Thumbnail width */
-    public ?int $thumb_width;
+    public ?int $thumbnail_width;
 
     /** Optional. Thumbnail height */
-    public ?int $thumb_height;
+    public ?int $thumbnail_height;
 }

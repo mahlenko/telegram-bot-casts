@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
  * Represents a Game.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQueryResultGame extends BaseType implements InlineModeInterface
+class InlineQueryResultGame extends TelegramType implements InlineModeInterface
 {
     /** Type of the result, must be game */
     public string $type;

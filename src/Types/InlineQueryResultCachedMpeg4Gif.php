@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
@@ -14,10 +14,10 @@ use TelegramBot\Interface\InlineModeInterface;
  * Alternatively, you can use input_message_content to send a message
  * with the specified content instead of the animation.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InlineQueryResultCachedMpeg4Gif extends BaseType implements InlineModeInterface
+class InlineQueryResultCachedMpeg4Gif extends TelegramType implements InlineModeInterface
 {
     /** Type of the result, must be mpeg4_gif */
     public string $type;

@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
 
 /**
  * Represents the content of an invoice message to be sent as the result
  * of an inline query.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class InputInvoiceMessageContent extends BaseType implements InlineModeInterface
+class InputInvoiceMessageContent extends TelegramType implements InlineModeInterface
 {
     /** Product name, 1-32 characters */
     public string $title;

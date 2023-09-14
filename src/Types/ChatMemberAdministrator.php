@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
  * Represents a chat member that has some additional privileges.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ChatMemberAdministrator extends BaseType implements TypesInterface
+class ChatMemberAdministrator extends TelegramType implements TypesInterface
 {
     /** The member's status in the chat, always “administrator” */
     public string $status;
@@ -49,7 +49,7 @@ class ChatMemberAdministrator extends BaseType implements TypesInterface
 
     /**
      * True, if the administrator can add new administrators with a subset of
-     * their own privileges or demote administrators that he has promoted,
+     * their own privileges or demote administrators that they have promoted,
      * directly or indirectly (promoted by administrators that were appointed
      * by the user)
      */

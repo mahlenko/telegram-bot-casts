@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\BaseType;
+use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
 
 /**
@@ -15,10 +15,10 @@ use TelegramBot\Interface\TypesInterface;
  * keyboards that are hidden immediately after the user presses a button
  * (see ReplyKeyboardMarkup).
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class ReplyKeyboardRemove extends BaseType implements TypesInterface
+class ReplyKeyboardRemove extends TelegramType implements TypesInterface
 {
     /**
      * Requests clients to remove the custom keyboard (user will not be able

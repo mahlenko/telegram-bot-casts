@@ -4,19 +4,19 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
 use TelegramBot\Types\InputFile;
 
 /**
- * Use this method to set the thumbnail of a sticker set. Animated
- * thumbnails can be set for animated sticker sets only. Video thumbnails
- * can be set only for video sticker sets only. Returns True on success.
+ * Use this method to set the thumbnail of a regular or mask sticker set.
+ * The format of the thumbnail file must match the format of the stickers
+ * in the set. Returns True on success.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SetStickerSetThumb extends BaseMethod implements StickersInterface
+class SetStickerSetThumbnail extends TelegramMethod implements StickersInterface
 {
     /** Sticker set name */
     public string $name;
@@ -25,21 +25,22 @@ class SetStickerSetThumb extends BaseMethod implements StickersInterface
     public int $user_id;
 
     /**
-     * A PNG image with the thumbnail, must be up to 128 kilobytes in size
-     * and have width and height exactly 100px, or a TGS animation with the
-     * thumbnail up to 32 kilobytes in size; see
+     * A .WEBP or .PNG image with the thumbnail, must be up to 128 kilobytes
+     * in size and have a width and height of exactly 100px, or a .TGS
+     * animation with a thumbnail up to 32 kilobytes in size (see
      * https://core.telegram.org/stickers#animated-sticker-requirements for
-     * animated sticker technical requirements, or a WEBM video with the
+     * animated sticker technical requirements), or a WEBM video with the
      * thumbnail up to 32 kilobytes in size; see
      * https://core.telegram.org/stickers#video-sticker-requirements for
      * video sticker technical requirements. Pass a file_id as a String to
      * send a file that already exists on the Telegram servers, pass an HTTP
      * URL as a String for Telegram to get a file from the Internet, or
      * upload a new one using multipart/form-data. More information on
-     * Sending Files ». Animated sticker set thumbnails can't be uploaded
-     * via HTTP URL.
+     * Sending Files ». Animated and video sticker set thumbnails can't be
+     * uploaded via HTTP URL. If omitted, then the thumbnail is dropped and
+     * the first sticker is used as the thumbnail.
      */
-    public InputFile|string|null $thumb;
+    public InputFile|string|null $thumbnail;
 
     /**
      * A list of necessary properties that should be checked before sending

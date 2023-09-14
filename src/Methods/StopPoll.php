@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\UpdatingMessagesInterface;
 use TelegramBot\Types\InlineKeyboardMarkup;
 
@@ -12,10 +12,10 @@ use TelegramBot\Types\InlineKeyboardMarkup;
  * Use this method to stop a poll which was sent by the bot. On success,
  * the stopped Poll is returned.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class StopPoll extends BaseMethod implements UpdatingMessagesInterface
+class StopPoll extends TelegramMethod implements UpdatingMessagesInterface
 {
     /**
      * Unique identifier for the target chat or username of the target

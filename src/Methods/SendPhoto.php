@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\BaseMethod;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
@@ -17,10 +17,10 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * Use this method to send photos. On success, the sent Message is
  * returned.
  *
- * Bot API 6.3
+ * Bot API 6.8
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
-class SendPhoto extends BaseMethod implements MethodsInterface
+class SendPhoto extends TelegramMethod implements MethodsInterface
 {
     /**
      * Unique identifier for the target chat or username of the target
@@ -63,6 +63,9 @@ class SendPhoto extends BaseMethod implements MethodsInterface
      * @var array<MessageEntity>
      */
     public ?array $caption_entities;
+
+    /** Pass True if the photo needs to be covered with a spoiler animation */
+    public ?bool $has_spoiler;
 
     /**
      * Sends the message silently. Users will receive a notification with no
