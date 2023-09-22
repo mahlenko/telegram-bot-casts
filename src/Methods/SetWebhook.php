@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\UpdatesInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\InputFile;
 
 /**
@@ -20,7 +20,7 @@ use TelegramBot\Types\InputFile;
  * request will contain a header “X-Telegram-Bot-Api-Secret-Token”
  * with the secret token as content.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetWebhook extends TelegramMethod implements UpdatesInterface

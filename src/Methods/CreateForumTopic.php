@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to create a topic in a forum supergroup chat. The bot
@@ -13,7 +13,7 @@ use TelegramBot\Interface\MethodsInterface;
  * the can_manage_topics administrator rights. Returns information about
  * the created topic as a ForumTopic object.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CreateForumTopic extends TelegramMethod implements MethodsInterface

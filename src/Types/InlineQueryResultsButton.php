@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents a button to be shown above inline query
  * results. You must use exactly one of the optional fields.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultsButton extends TelegramType implements InlineModeInterface

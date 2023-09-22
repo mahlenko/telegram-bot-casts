@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to log out from the cloud Bot API server before
@@ -16,7 +16,7 @@ use TelegramBot\Interface\MethodsInterface;
  * server for 10 minutes. Returns True on success. Requires no
  * parameters.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class LogOut extends TelegramMethod implements MethodsInterface

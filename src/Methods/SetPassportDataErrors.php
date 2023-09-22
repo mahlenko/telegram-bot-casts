@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\TelegramPassportInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\PassportElementError;
 
 /**
@@ -20,7 +20,7 @@ use TelegramBot\Types\PassportElementError;
  * shows evidence of tampering, etc. Supply some details in the error
  * message to make sure the user knows how to correct the issues.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetPassportDataErrors extends TelegramMethod implements TelegramPassportInterface

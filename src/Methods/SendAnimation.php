@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\InputFile;
@@ -19,7 +19,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * currently send animation files of up to 50 MB in size, this limit may
  * be changed in the future.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendAnimation extends TelegramMethod implements MethodsInterface

@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to forward messages of any kind. Service messages
  * can't be forwarded. On success, the sent Message is returned.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ForwardMessage extends TelegramMethod implements MethodsInterface

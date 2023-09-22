@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to set the thumbnail of a custom emoji sticker set.
  * Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetCustomEmojiStickerSetThumbnail extends TelegramMethod implements StickersInterface

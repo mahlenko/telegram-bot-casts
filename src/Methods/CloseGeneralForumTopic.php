@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to close an open 'General' topic in a forum supergroup
@@ -13,7 +13,7 @@ use TelegramBot\Interface\MethodsInterface;
  * and must have the can_manage_topics administrator rights. Returns True
  * on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CloseGeneralForumTopic extends TelegramMethod implements MethodsInterface

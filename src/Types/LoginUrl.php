@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents a parameter of the inline keyboard button used
@@ -21,7 +21,7 @@ use TelegramBot\Interface\TypesInterface;
  *
  * Sample bot: @discussbot
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class LoginUrl extends TelegramType implements TypesInterface

@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents a unique message identifier.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class MessageId extends TelegramType implements TypesInterface

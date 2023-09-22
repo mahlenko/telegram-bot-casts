@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\ChatAdministratorRights;
 
 /**
@@ -14,7 +14,7 @@ use TelegramBot\Types\ChatAdministratorRights;
  * These rights will be suggested to users, but they are free to modify
  * the list before adding the bot. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetMyDefaultAdministratorRights extends TelegramMethod implements MethodsInterface

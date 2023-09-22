@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\InputMedia;
 
 /**
@@ -14,7 +14,7 @@ use TelegramBot\Types\InputMedia;
  * with messages of the same type. On success, an array of Messages that
  * were sent is returned.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendMediaGroup extends TelegramMethod implements MethodsInterface

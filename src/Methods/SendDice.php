@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\ReplyKeyboardMarkup;
@@ -15,7 +15,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * Use this method to send an animated emoji that will display a random
  * value. On success, the sent Message is returned.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendDice extends TelegramMethod implements MethodsInterface

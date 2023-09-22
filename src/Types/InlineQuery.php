@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents an incoming inline query. When the user sends
  * an empty query, your bot could return some default or trending
  * results.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQuery extends TelegramType implements InlineModeInterface

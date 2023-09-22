@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Represents a link to a page containing an embedded video player or a
@@ -16,7 +16,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * If an InlineQueryResultVideo message contains an embedded video (e.g.,
  * YouTube), you must replace its content using input_message_content.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultVideo extends TelegramType implements InlineModeInterface

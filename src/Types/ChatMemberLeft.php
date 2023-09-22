@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Represents a chat member that isn't currently a member of the chat,
  * but may join it themselves.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatMemberLeft extends TelegramType implements TypesInterface

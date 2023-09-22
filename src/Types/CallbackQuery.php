@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents an incoming callback query from a callback
@@ -15,7 +15,7 @@ use TelegramBot\Interface\TypesInterface;
  * inline mode), the field inline_message_id will be present. Exactly one
  * of the fields data or game_short_name will be present.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CallbackQuery extends TelegramType implements TypesInterface

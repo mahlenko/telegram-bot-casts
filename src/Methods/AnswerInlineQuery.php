@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\InlineQueryResult;
 use TelegramBot\Types\InlineQueryResultsButton;
 
@@ -13,7 +13,7 @@ use TelegramBot\Types\InlineQueryResultsButton;
  * Use this method to send answers to an inline query. On success, True
  * is returned.No more than 50 results per query are allowed.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AnswerInlineQuery extends TelegramMethod implements InlineModeInterface

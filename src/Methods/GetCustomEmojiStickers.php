@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to get information about custom emoji stickers by
  * their identifiers. Returns an Array of Sticker objects.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetCustomEmojiStickers extends TelegramMethod implements StickersInterface

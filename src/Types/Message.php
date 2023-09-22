@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents a message.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Message extends TelegramType implements TypesInterface
@@ -312,8 +312,10 @@ class Message extends TelegramType implements TypesInterface
     public ?string $connected_website;
 
     /**
-     * Optional. Service message: the user allowed the bot added to the
-     * attachment menu to write messages
+     * Optional. Service message: the user allowed the bot to write messages
+     * after adding it to the attachment or side menu, launching a Web App
+     * from a link, or accepting an explicit request from a Web App sent by
+     * the method requestWriteAccess
      */
     public ?WriteAccessAllowed $write_access_allowed;
 

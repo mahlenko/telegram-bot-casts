@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Represents a link to an MP3 audio file. By default, this audio file
@@ -13,7 +13,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * input_message_content to send a message with the specified content
  * instead of the audio.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultAudio extends TelegramType implements InlineModeInterface

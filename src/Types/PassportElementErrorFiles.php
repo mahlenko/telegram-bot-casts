@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Represents an issue with a list of scans. The error is considered
  * resolved when the list of files containing the scans changes.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportElementErrorFiles extends TelegramType implements TelegramPassportInterface

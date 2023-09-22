@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to unban a previously banned user in a supergroup or
@@ -17,7 +17,7 @@ use TelegramBot\Interface\MethodsInterface;
  * be removed from the chat. If you don't want this, use the parameter
  * only_if_banned. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class UnbanChatMember extends TelegramMethod implements MethodsInterface

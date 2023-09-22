@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\UpdatingMessagesInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\MessageEntity;
 
@@ -14,7 +14,7 @@ use TelegramBot\Types\MessageEntity;
  * edited message is not an inline message, the edited Message is
  * returned, otherwise True is returned.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class EditMessageCaption extends TelegramMethod implements UpdatingMessagesInterface

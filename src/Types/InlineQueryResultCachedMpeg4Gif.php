@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Represents a link to a video animation (H.264/MPEG-4 AVC video without
@@ -14,7 +14,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * Alternatively, you can use input_message_content to send a message
  * with the specified content instead of the animation.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultCachedMpeg4Gif extends TelegramType implements InlineModeInterface

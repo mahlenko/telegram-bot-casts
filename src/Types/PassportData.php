@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Describes Telegram Passport data shared with the bot by the user.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PassportData extends TelegramType implements TelegramPassportInterface

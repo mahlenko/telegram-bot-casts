@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\UpdatesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Describes the current status of a webhook.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class WebhookInfo extends TelegramType implements UpdatesInterface

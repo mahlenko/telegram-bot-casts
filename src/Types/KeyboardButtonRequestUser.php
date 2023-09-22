@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object defines the criteria used to request a suitable user. The
  * identifier of the selected user will be shared with the bot when the
  * corresponding button is pressed. More about requesting users »
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class KeyboardButtonRequestUser extends TelegramType implements TypesInterface

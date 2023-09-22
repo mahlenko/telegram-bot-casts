@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\StickersInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents a sticker.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Sticker extends TelegramType implements StickersInterface

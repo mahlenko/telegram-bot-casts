@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to close the bot instance before moving it from one
@@ -15,7 +15,7 @@ use TelegramBot\Interface\MethodsInterface;
  * after the bot is launched. Returns True on success. Requires no
  * parameters.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class Close extends TelegramMethod implements MethodsInterface

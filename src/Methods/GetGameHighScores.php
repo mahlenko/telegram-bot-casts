@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\GamesInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to get data for high score tables. Will return the
@@ -17,7 +17,7 @@ use TelegramBot\Interface\GamesInterface;
  * three users if the user and their neighbors are not among them. Please
  * note that this behavior is subject to change.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetGameHighScores extends TelegramMethod implements GamesInterface

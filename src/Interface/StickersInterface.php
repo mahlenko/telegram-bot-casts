@@ -11,7 +11,7 @@ namespace TelegramBot\Interface;
  * and sticker sets.
  *
  *
- * @version Bot API 6.8
+ * @version Bot API 6.9
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */
 interface StickersInterface

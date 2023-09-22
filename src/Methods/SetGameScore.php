@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\GamesInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to set the score of the specified user in a game
@@ -14,7 +14,7 @@ use TelegramBot\Interface\GamesInterface;
  * the new score is not greater than the user's current score in the chat
  * and force is False.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetGameScore extends TelegramMethod implements GamesInterface

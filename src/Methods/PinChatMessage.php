@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to add a message to the list of pinned messages in a
@@ -15,7 +15,7 @@ use TelegramBot\Interface\MethodsInterface;
  * 'can_edit_messages' administrator right in a channel. Returns True on
  * success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class PinChatMessage extends TelegramMethod implements MethodsInterface

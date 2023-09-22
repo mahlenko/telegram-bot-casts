@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\InlineQueryResult;
 
 /**
@@ -14,7 +14,7 @@ use TelegramBot\Types\InlineQueryResult;
  * which the query originated. On success, a SentWebAppMessage object is
  * returned.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AnswerWebAppQuery extends TelegramMethod implements InlineModeInterface

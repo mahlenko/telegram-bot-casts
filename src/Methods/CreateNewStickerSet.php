@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\InputSticker;
 
 /**
@@ -13,7 +13,7 @@ use TelegramBot\Types\InputSticker;
  * will be able to edit the sticker set thus created. Returns True on
  * success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CreateNewStickerSet extends TelegramMethod implements StickersInterface

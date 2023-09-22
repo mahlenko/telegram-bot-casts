@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to get basic information about a file and prepare it
@@ -17,7 +17,7 @@ use TelegramBot\Interface\MethodsInterface;
  * will be valid for at least 1 hour. When the link expires, a new one
  * can be requested by calling getFile again.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetFile extends TelegramMethod implements MethodsInterface

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\InputFile;
 
 /**
@@ -14,7 +14,7 @@ use TelegramBot\Types\InputFile;
  * chat for this to work and must have the appropriate administrator
  * rights. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetChatPhoto extends TelegramMethod implements MethodsInterface

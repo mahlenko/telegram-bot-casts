@@ -15,7 +15,7 @@ namespace TelegramBot\Interface;
  * JSON-serialized Update objects as a result.
  *
  *
- * @version Bot API 6.8
+ * @version Bot API 6.9
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */
 interface UpdatesInterface

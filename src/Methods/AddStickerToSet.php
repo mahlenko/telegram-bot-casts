@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\InputSticker;
 
 /**
@@ -15,7 +15,7 @@ use TelegramBot\Types\InputSticker;
  * Animated and video sticker sets can have up to 50 stickers. Static
  * sticker sets can have up to 120 stickers. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AddStickerToSet extends TelegramMethod implements StickersInterface

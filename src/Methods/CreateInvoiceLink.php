@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\PaymentsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\LabeledPrice;
 
 /**
  * Use this method to create a link for an invoice. Returns the created
  * invoice link as String on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CreateInvoiceLink extends TelegramMethod implements PaymentsInterface

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to set a new group sticker set for a supergroup. The
@@ -14,7 +14,7 @@ use TelegramBot\Interface\MethodsInterface;
  * can_set_sticker_set optionally returned in getChat requests to check
  * if the bot can use this method. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetChatStickerSet extends TelegramMethod implements MethodsInterface

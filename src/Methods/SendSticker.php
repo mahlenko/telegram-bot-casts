@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\StickersInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\InputFile;
@@ -16,7 +16,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * Use this method to send static .WEBP, animated .TGS, or video .WEBM
  * stickers. On success, the sent Message is returned.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendSticker extends TelegramMethod implements StickersInterface

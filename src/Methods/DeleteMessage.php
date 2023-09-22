@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\UpdatingMessagesInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to delete a message, including service messages, with
@@ -21,7 +21,7 @@ use TelegramBot\Interface\UpdatingMessagesInterface;
  * permission in a supergroup or a channel, it can delete any message
  * there.Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class DeleteMessage extends TelegramMethod implements UpdatingMessagesInterface

@@ -16,7 +16,7 @@ namespace TelegramBot\Interface;
  * without reply_markup or with inline keyboards.
  *
  *
- * @version Bot API 6.8
+ * @version Bot API 6.9
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */
 interface UpdatingMessagesInterface

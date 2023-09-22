@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\MessageEntity;
@@ -20,7 +20,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * message doesn't have a link to the original message. Returns the
  * MessageId of the sent message on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CopyMessage extends TelegramMethod implements MethodsInterface

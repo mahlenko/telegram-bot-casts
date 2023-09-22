@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\UpdatesInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to receive incoming updates using long polling (wiki).
  * Returns an Array of Update objects.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class GetUpdates extends TelegramMethod implements UpdatesInterface

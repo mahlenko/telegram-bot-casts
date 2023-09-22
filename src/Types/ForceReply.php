@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Upon receiving a message with this object, Telegram clients will
@@ -14,7 +14,7 @@ use TelegramBot\Interface\TypesInterface;
  * you want to create user-friendly step-by-step interfaces without
  * having to sacrifice privacy mode.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ForceReply extends TelegramType implements TypesInterface

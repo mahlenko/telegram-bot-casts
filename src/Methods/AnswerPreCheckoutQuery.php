@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\PaymentsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Once the user has confirmed their payment and shipping details, the
@@ -15,7 +15,7 @@ use TelegramBot\Interface\PaymentsInterface;
  * must receive an answer within 10 seconds after the pre-checkout query
  * was sent.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AnswerPreCheckoutQuery extends TelegramMethod implements PaymentsInterface

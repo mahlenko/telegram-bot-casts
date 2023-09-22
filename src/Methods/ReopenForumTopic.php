@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to reopen a closed topic in a forum supergroup chat.
@@ -13,7 +13,7 @@ use TelegramBot\Interface\MethodsInterface;
  * have the can_manage_topics administrator rights, unless it is the
  * creator of the topic. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ReopenForumTopic extends TelegramMethod implements MethodsInterface

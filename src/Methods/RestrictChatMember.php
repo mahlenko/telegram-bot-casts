@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\ChatPermissions;
 
 /**
@@ -14,7 +14,7 @@ use TelegramBot\Types\ChatPermissions;
  * appropriate administrator rights. Pass True for all permissions to
  * lift restrictions from a user. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class RestrictChatMember extends TelegramMethod implements MethodsInterface

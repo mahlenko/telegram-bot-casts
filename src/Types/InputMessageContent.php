@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents the content of a message to be sent as a result
@@ -18,7 +18,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * InputContactMessageContent
  * InputInvoiceMessageContent
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InputMessageContent extends TelegramType implements InlineModeInterface

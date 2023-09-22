@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method when you need to tell the user that something is
@@ -22,7 +22,7 @@ use TelegramBot\Interface\MethodsInterface;
  * We only recommend using this method when a response from the bot will
  * take a noticeable amount of time to arrive.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendChatAction extends TelegramMethod implements MethodsInterface

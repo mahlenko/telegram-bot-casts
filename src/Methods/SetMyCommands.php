@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\BotCommand;
 use TelegramBot\Types\BotCommandScope;
 
@@ -13,7 +13,7 @@ use TelegramBot\Types\BotCommandScope;
  * Use this method to change the list of the bot's commands. See this
  * manual for more details about bot commands. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetMyCommands extends TelegramMethod implements MethodsInterface

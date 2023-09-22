@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to edit a non-primary invite link created by the bot.
@@ -13,7 +13,7 @@ use TelegramBot\Interface\MethodsInterface;
  * have the appropriate administrator rights. Returns the edited invite
  * link as a ChatInviteLink object.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class EditChatInviteLink extends TelegramMethod implements MethodsInterface

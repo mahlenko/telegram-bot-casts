@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to change the bot's short description, which is shown
  * on the bot's profile page and is sent together with the link when
  * users share the bot. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SetMyShortDescription extends TelegramMethod implements MethodsInterface

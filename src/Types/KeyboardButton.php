@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents one button of the reply keyboard. For simple
@@ -14,7 +14,7 @@ use TelegramBot\Interface\TypesInterface;
  * request_contact, request_location, and request_poll are mutually
  * exclusive.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class KeyboardButton extends TelegramType implements TypesInterface

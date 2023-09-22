@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\PaymentsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\ShippingOption;
 
 /**
@@ -14,7 +14,7 @@ use TelegramBot\Types\ShippingOption;
  * shipping_query field to the bot. Use this method to reply to shipping
  * queries. On success, True is returned.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AnswerShippingQuery extends TelegramMethod implements PaymentsInterface

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to delete a chat photo. Photos can't be changed for
@@ -13,7 +13,7 @@ use TelegramBot\Interface\MethodsInterface;
  * to work and must have the appropriate administrator rights. Returns
  * True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class DeleteChatPhoto extends TelegramMethod implements MethodsInterface

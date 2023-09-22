@@ -14,7 +14,7 @@ namespace TelegramBot\Interface;
  * containing the result will be returned.
  *
  *
- * @version Bot API 6.8
+ * @version Bot API 6.9
  * @author Sergey Makhlenko <https://github.com/mahlenko>
  */
 interface MethodsInterface

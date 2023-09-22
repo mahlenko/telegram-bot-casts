@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to create an additional invite link for a chat. The
@@ -14,7 +14,7 @@ use TelegramBot\Interface\MethodsInterface;
  * using the method revokeChatInviteLink. Returns the new invite link as
  * ChatInviteLink object.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class CreateChatInviteLink extends TelegramMethod implements MethodsInterface

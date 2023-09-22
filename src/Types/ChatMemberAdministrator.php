@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Represents a chat member that has some additional privileges.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ChatMemberAdministrator extends TelegramType implements TypesInterface
@@ -32,9 +32,9 @@ class ChatMemberAdministrator extends TelegramType implements TypesInterface
 
     /**
      * True, if the administrator can access the chat event log, chat
-     * statistics, message statistics in channels, see channel members, see
-     * anonymous administrators in supergroups and ignore slow mode. Implied
-     * by any other administrator privilege
+     * statistics, boost list in channels, message statistics in channels,
+     * see channel members, see anonymous administrators in supergroups and
+     * ignore slow mode. Implied by any other administrator privilege
      */
     public bool $can_manage_chat;
 
@@ -65,8 +65,8 @@ class ChatMemberAdministrator extends TelegramType implements TypesInterface
     public bool $can_invite_users;
 
     /**
-     * Optional. True, if the administrator can post in the channel; channels
-     * only
+     * Optional. True, if the administrator can post messages in the channel;
+     * channels only
      */
     public ?bool $can_post_messages;
 
@@ -81,6 +81,24 @@ class ChatMemberAdministrator extends TelegramType implements TypesInterface
      * supergroups only
      */
     public ?bool $can_pin_messages;
+
+    /**
+     * Optional. True, if the administrator can post stories in the channel;
+     * channels only
+     */
+    public ?bool $can_post_stories;
+
+    /**
+     * Optional. True, if the administrator can edit stories posted by other
+     * users; channels only
+     */
+    public ?bool $can_edit_stories;
+
+    /**
+     * Optional. True, if the administrator can delete stories posted by
+     * other users
+     */
+    public ?bool $can_delete_stories;
 
     /**
      * Optional. True, if the user is allowed to create, rename, close, and

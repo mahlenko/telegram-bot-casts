@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TypesInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents a file ready to be downloaded. The file can be
@@ -16,7 +16,7 @@ use TelegramBot\Interface\TypesInterface;
  *
  * The maximum file size to download is 20 MB
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class File extends TelegramType implements TypesInterface

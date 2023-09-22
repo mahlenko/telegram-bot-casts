@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 use TelegramBot\Types\ForceReply;
 use TelegramBot\Types\InlineKeyboardMarkup;
 use TelegramBot\Types\InputFile;
@@ -21,7 +21,7 @@ use TelegramBot\Types\ReplyKeyboardRemove;
  * changed in the future.
  * For sending voice messages, use the sendVoice method instead.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class SendAudio extends TelegramMethod implements MethodsInterface

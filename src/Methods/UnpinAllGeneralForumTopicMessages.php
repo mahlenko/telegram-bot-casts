@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to clear the list of pinned messages in a General
@@ -13,7 +13,7 @@ use TelegramBot\Interface\MethodsInterface;
  * work and must have the can_pin_messages administrator right in the
  * supergroup. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class UnpinAllGeneralForumTopicMessages extends TelegramMethod implements MethodsInterface

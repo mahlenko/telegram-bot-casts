@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\PaymentsInterface;
+use TelegramBot\TelegramType;
 
 /**
  * This object represents a shipping address.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ShippingAddress extends TelegramType implements PaymentsInterface

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to send answers to callback queries sent from inline
@@ -18,7 +18,7 @@ use TelegramBot\Interface\MethodsInterface;
  * @BotFather and accept the terms. Otherwise, you may use links like
  * t.me/your_bot?start=XXXX that open your bot with a parameter.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class AnswerCallbackQuery extends TelegramMethod implements MethodsInterface

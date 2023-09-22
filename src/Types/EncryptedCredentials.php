@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\TelegramPassportInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Describes data required for decrypting and authenticating
@@ -13,7 +13,7 @@ use TelegramBot\Interface\TelegramPassportInterface;
  * a complete description of the data decryption and authentication
  * processes.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class EncryptedCredentials extends TelegramType implements TelegramPassportInterface

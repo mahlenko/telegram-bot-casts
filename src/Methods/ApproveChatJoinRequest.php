@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
-use TelegramBot\TelegramMethod;
 use TelegramBot\Interface\MethodsInterface;
+use TelegramBot\TelegramMethod;
 
 /**
  * Use this method to approve a chat join request. The bot must be an
  * administrator in the chat for this to work and must have the
  * can_invite_users administrator right. Returns True on success.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class ApproveChatJoinRequest extends TelegramMethod implements MethodsInterface

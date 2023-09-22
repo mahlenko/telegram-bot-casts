@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TelegramBot\Types;
 
-use TelegramBot\TelegramType;
 use TelegramBot\Interface\InlineModeInterface;
+use TelegramBot\TelegramType;
 
 /**
  * Represents a link to a file. By default, this file will be sent by the
@@ -14,7 +14,7 @@ use TelegramBot\Interface\InlineModeInterface;
  * instead of the file. Currently, only .PDF and .ZIP files can be sent
  * using this method.
  *
- * Bot API 6.8
+ * Bot API 6.9
  * Sergey Makhlenko <https://github.com/mahlenko>
  */
 class InlineQueryResultDocument extends TelegramType implements InlineModeInterface
