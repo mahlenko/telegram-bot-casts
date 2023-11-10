@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace TelegramBot\Methods;
 
+use TelegramBot\Interface\MenuButtonInterface;
 use TelegramBot\Interface\MethodsInterface;
 use TelegramBot\TelegramMethod;
 use TelegramBot\Types\MenuButton;
@@ -27,7 +28,7 @@ class SetChatMenuButton extends TelegramMethod implements MethodsInterface
      * A JSON-serialized object for the bot's new menu button. Defaults to
      * MenuButtonDefault
      */
-    public ?MenuButton $menu_button;
+    public ?MenuButtonInterface $menu_button;
 
     /**
      * A list of necessary properties that should be checked before sending
